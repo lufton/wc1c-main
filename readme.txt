@@ -82,6 +82,7 @@ List of major changes from version to version. [Goto full list.](https://wc1c.in
 * Up: styles
 * Up: ProductsCML to 0.15.0
 * Fix: 1C information column in new orders list by HPOS
+* Fix: configurations sort
 * Fix: more
 
 = 0.22.0 =
