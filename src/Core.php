@@ -253,12 +253,12 @@ final class Core extends CoreAbstract
 					$level = $this->settings('logs')->get('logger_configurations_level', 'logger_level');
 					break;
 				default:
-					$level = $this->settings('logs')->get('logger_level', 300);
+					$level = $this->settings('logs')->get('logger_level', 250);
 			}
 
 			if('logger_level' === $level)
 			{
-				$level = $this->settings('logs')->get('logger_level', 300);
+				$level = $this->settings('logs')->get('logger_level', 250);
 			}
 
 			if(!is_null($params['hard_level']))
