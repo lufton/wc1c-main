@@ -57,7 +57,7 @@ class LogsForm extends Form
                 __('Will be recorded only data on errors occurring during the processing of plugin algorithms.', 'wc1c-main'),
                 __('Event logs always record data about critical errors in the code, regardless of the level configured.', 'wc1c-main')
             ),
-            'default' => '300',
+            'default' => '250',
 			'options' =>
 			[
 				'100' => __('DEBUG (100)', 'wc1c-main'),
