@@ -81,6 +81,7 @@ List of major changes from version to version. [Goto full list.](https://wc1c.in
 * Support PHP: 8.3
 * Up: Bootstrap to 5.3.2
 * Up: styles
+* Up: set default level for main events to 250
 * Up: ProductsCML to 0.15.0
 * Fix: 1C information column in new orders list by HPOS
 * Fix: configurations sort
