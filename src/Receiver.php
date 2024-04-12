@@ -1,5 +1,7 @@
 <?php namespace Wc1c\Main;
 
+use Wc1c\Main\Schemas\Abstracts\SchemaAbstract;
+
 defined('ABSPATH') || exit;
 
 /**
@@ -74,9 +76,12 @@ final class Receiver
 
 		wc1c()->environment()->set('current_configuration_id', $wc1c_receiver);
 
+        /**
+         * Полноценная обработка по полным алгоритмам схемы
+         */
 		if(method_exists($schema, 'receiver'))
 		{
-			wc1c()->log('receiver')->info(__('The request was successfully submitted for processing in the schema for the selected configuration.', 'wc1c-main'), ['action' => 'receiver']);
+			wc1c()->log('receiver')->info(__('The request was successfully submitted for processing in the schema for the selected configuration.', 'wc1c-main'), ['action' => 'receiver', 'schema' => $configuration->getSchema(), 'configuration_id' =>$configuration->getId()]);
 
 			$schema->receiver();
 
@@ -103,6 +108,9 @@ final class Receiver
 		$action = false;
 		$receiver_action = wc1c()->context()->getSlug() . '_receiver_' . $configuration->getSchema();
 
+        /**
+         * Обработка событий исходя из схемы
+         */
 		if(has_action($receiver_action))
 		{
 			$action = true;
@@ -110,8 +118,13 @@ final class Receiver
 			ob_start();
 			nocache_headers();
 
-			wc1c()->log('receiver')->info(__('The request was successfully submitted for processing in the schema for the selected configuration.', 'wc1c-main'), ['action' => $receiver_action]);
-			do_action($receiver_action);
+			wc1c()->log('receiver')->notice(__('The request for processing actions for the selected configuration has been successfully submitted.', 'wc1c-main'), ['action' => $receiver_action, 'schema' => $configuration->getSchema(), 'configuration_id' =>$configuration->getId()]);
+
+            /**
+             * @param Configuration $configuration Текущая конфигурация
+             * @param SchemaAbstract $schema Текущая схема
+             */
+            do_action($receiver_action, $configuration, $schema);
 
 			ob_end_clean();
 		}
