@@ -103,28 +103,6 @@ class LogsForm extends Form
             ),
 		];
 
-		$fields['logger_receiver_level'] =
-		[
-			'title' => __('Receiver', 'wc1c-main'),
-			'type' => 'select',
-            'description' => sprintf
-            (
-                '%s<hr>%s',
-                __('All events of the selected level will be recorded the Receiver events in the log file. The higher the level, the less data is recorded.', 'wc1c-main'),
-                __('It is convenient to use for debugging missing requests from 1C to the site in case need to understand on which side there is a problem with the connection.', 'wc1c-main')
-            ),
-            'default' => 'logger_level',
-			'options' =>
-			[
-				'logger_level' => __('Use level for main events', 'wc1c-main'),
-				'100' => __('DEBUG (100)', 'wc1c-main'),
-				'200' => __('INFO (200)', 'wc1c-main'),
-				'250' => __('NOTICE (250)', 'wc1c-main'),
-				'300' => __('WARNING (300)', 'wc1c-main'),
-				'400' => __('ERROR (400)', 'wc1c-main'),
-			],
-		];
-
 		$fields['logger_tools_level'] =
 		[
 			'title' => __('Tools', 'wc1c-main'),

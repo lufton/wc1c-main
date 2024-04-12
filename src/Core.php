@@ -240,9 +240,6 @@ final class Core extends CoreAbstract
 
 			switch($channel)
 			{
-				case 'receiver':
-					$level = $this->settings('logs')->get('logger_receiver_level', 'logger_level');
-					break;
 				case 'tools':
 					$path = $this->environment()->get('wc1c_tools_logs_directory') . '/' . $name . '.log';
 					$level = $this->settings('logs')->get('logger_tools_level', 'logger_level');
