@@ -77,7 +77,7 @@ List of major changes from version to version. [Goto full list.](https://wc1c.in
 * Improvement: High Performance Order Storage (HPOS) compatibility
 * Improvement: remove log setting for receiver
 * WP tested up to: 6.4 & 6.5
-* WC tested up to: 8.1 & 8.2 & 8.3 & 8.4 & 8.5 & 8.6 & 8.7
+* WC tested up to: 8.1 & 8.2 & 8.3 & 8.4 & 8.5 & 8.6 & 8.7 & 8.8
 * Support PHP: 8.3
 * Up: Bootstrap to 5.3.2
 * Up: styles
