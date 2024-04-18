@@ -124,17 +124,20 @@ final class Receiver extends ReceiverAbstract
 	 */
 	public function handlerCatalogModeDeactivate()
 	{
+        $message = __('The time of the last full exchange has been set.', 'wc1c-main');
+
         if(isset($_GET['timestamp']))
         {
             $timestamp = (int)$_GET['timestamp'];
 
-            $this->core()->log()->notice(__('The time of the last full exchange has been set.', 'wc1c-main'), ['timestamp' => $timestamp]);
+            $this->core()->log()->notice($message, ['timestamp' => $timestamp]);
 
+            $this->core()->configuration()->addMetaData('_catalog_deactivate', $timestamp, true);
             $this->core()->configuration()->addMetaData('_catalog_full_time', $timestamp, true);
             $this->core()->configuration()->saveMetaData();
         }
 
-		$this->sendResponseByType('success');
+		$this->sendResponseByType('success', $message);
 	}
 
 	/**
@@ -437,13 +440,13 @@ final class Receiver extends ReceiverAbstract
 	{
 		$directory = $this->core()->getUploadDirectory();
 
-		$this->core()->log()->info(__('Cleaning the directory for temporary files.', 'wc1c-main'), ['directory' => $directory]);
+		$this->core()->log()->debug(__('Cleaning the directory for temporary files.', 'wc1c-main'), ['directory' => $directory]);
 
 		wc1c()->filesystem()->ensureDirectoryExists($directory);
 
 		if(wc1c()->filesystem()->cleanDirectory($directory))
 		{
-			$this->core()->log()->notice(__('Cleaning the directory for temporary files as completed.', 'wc1c-main'), ['directory' => $this->core()->getUploadDirectory()]);
+			$this->core()->log()->info(__('Cleaning the directory for temporary files as completed.', 'wc1c-main'), ['directory' => $this->core()->getUploadDirectory()]);
 		}
 		else
 		{
@@ -698,6 +701,11 @@ final class Receiver extends ReceiverAbstract
                             $new_image->addMetaData('_wc1c_external_image_extension', $file_extension);
                             $new_image->addMetaData('_wc1c_external_hash', $file_hash);
 
+                            /**
+                             * @since 0.23
+                             */
+                            $new_image->addMetaData('_wc1c_external_file', $filename);
+
                             $new_image->setConfigurationId($this->core()->configuration()->getId());
 							$new_image->setSchemaId($this->core()->getId());
 
@@ -745,7 +753,7 @@ final class Receiver extends ReceiverAbstract
 	{
 		$filename = wc1c()->getVar($_GET['filename'], '');
 
-        $this->core()->log()->notice(__('On request from 1C - started importing data from a file.', 'wc1c-main'), ['file' => $filename]);
+        $this->core()->log()->info(__('On request from 1C - started importing data from a file.', 'wc1c-main'), ['file' => $filename]);
 
 		if($filename === '')
 		{
@@ -773,7 +781,7 @@ final class Receiver extends ReceiverAbstract
 			{
 				$response_description = __('Import of data from file completed successfully.', 'wc1c-main');
 
-                $this->core()->log()->notice($response_description, ['file_name' => $filename, 'file_path' => $file]);
+                $this->core()->log()->info($response_description, ['file_name' => $filename, 'file_path' => $file]);
 				$this->sendResponseByType('success', $response_description);
 			}
 		}
