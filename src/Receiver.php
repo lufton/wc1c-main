@@ -1,6 +1,6 @@
 <?php namespace Wc1c\Main;
 
-use Wc1c\Main\Data\Entities\Configuration;
+use Wc1c\Main\Schemas\Abstracts\SchemaAbstract;
 
 defined('ABSPATH') || exit;
 
@@ -16,7 +16,7 @@ final class Receiver
 	 */
 	public function __construct()
 	{
-		do_action('wc1c_receiver_loaded');
+		do_action(wc1c()->context()->getSlug() . '_receiver_loaded');
 	}
 
 	/**
@@ -76,9 +76,12 @@ final class Receiver
 
 		wc1c()->environment()->set('current_configuration_id', $wc1c_receiver);
 
+        /**
+         * Полноценная обработка по полным алгоритмам схемы
+         */
 		if(method_exists($schema, 'receiver'))
 		{
-			wc1c()->log('receiver')->info(__('The request was successfully submitted for processing in the schema for the selected configuration.', 'wc1c-main'), ['action' => 'receiver']);
+			wc1c()->log('receiver')->info(__('The request was successfully submitted for processing in the schema for the selected configuration.', 'wc1c-main'), ['action' => 'receiver', 'schema' => $configuration->getSchema(), 'configuration_id' =>$configuration->getId()]);
 
 			$schema->receiver();
 
@@ -103,24 +106,32 @@ final class Receiver
 		}
 
 		$action = false;
-		$wc1c_receiver_action = 'wc1c_receiver_' . $configuration->getSchema();
+		$receiver_action = wc1c()->context()->getSlug() . '_receiver_' . $configuration->getSchema();
 
-		if(has_action($wc1c_receiver_action))
+        /**
+         * Обработка событий исходя из схемы
+         */
+		if(has_action($receiver_action))
 		{
 			$action = true;
 
 			ob_start();
 			nocache_headers();
 
-			wc1c()->log('receiver')->info(__('The request was successfully submitted for processing in the schema for the selected configuration.', 'wc1c-main'), ['action' => $wc1c_receiver_action]);
-			do_action($wc1c_receiver_action);
+			wc1c()->log('receiver')->notice(__('The request for processing actions for the selected configuration has been successfully submitted.', 'wc1c-main'), ['action' => $receiver_action, 'schema' => $configuration->getSchema(), 'configuration_id' =>$configuration->getId()]);
+
+            /**
+             * @param Configuration $configuration Текущая конфигурация
+             * @param SchemaAbstract $schema Текущая схема
+             */
+            do_action($receiver_action, $configuration, $schema);
 
 			ob_end_clean();
 		}
 
 		if(false === $action)
 		{
-			wc1c()->log('receiver')->warning(__('Receiver request is very bad! Action not found in selected configuration.', 'wc1c-main'), ['action' => $wc1c_receiver_action]);
+			wc1c()->log('receiver')->warning(__('Receiver request is very bad! Action not found in selected configuration.', 'wc1c-main'), ['action' => $receiver_action]);
 			die(__('Receiver request is very bad! Action not found.', 'wc1c-main'));
 		}
 		die();

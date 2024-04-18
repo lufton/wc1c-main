@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
 "Project-Id-Version: WC1C\n"
-"POT-Creation-Date: 2023-08-14 12:47+0300\n"
+"POT-Creation-Date: 2024-04-18 05:40+0300\n"
 "PO-Revision-Date: 2022-12-16 23:34+0300\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -29,8 +29,8 @@ msgstr ""
 
 #: src/Activation.php:28
 msgid ""
-"The basic plugin setup has not been done yet, so you can proceed to the "
-"setup, which takes no more than 5 minutes."
+"The basic plugin setup has not been done yet, so can proceed to the setup, "
+"which takes no more than 5 minutes."
 msgstr ""
 
 #: src/Activation.php:30
@@ -41,16 +41,16 @@ msgstr ""
 msgid "Integration with 1C"
 msgstr ""
 
-#: src/Admin.php:121 src/Admin/Settings/LogsForm.php:133
+#: src/Admin.php:121 src/Admin/Settings/LogsForm.php:152
 #: src/Admin/Settings/MainForm.php:43
 msgid "Configurations"
 msgstr ""
 
-#: src/Admin.php:128 src/Admin/Settings/LogsForm.php:99
+#: src/Admin.php:128 src/Admin/Settings/LogsForm.php:108
 msgid "Tools"
 msgstr ""
 
-#: src/Admin.php:137
+#: src/Admin.php:137 src/Admin/Configurations/Update.php:35
 msgid "Settings"
 msgstr ""
 
@@ -83,7 +83,7 @@ msgid "not activated"
 msgstr ""
 
 #: src/Admin/Columns/WooCommerce/Categories.php:38
-#: src/Admin/Columns/WooCommerce/Orders.php:38
+#: src/Admin/Columns/WooCommerce/Orders.php:40
 #: src/Admin/Columns/WooCommerce/Products.php:38
 #: src/Admin/Columns/WordPress/MediaLibrary.php:38
 msgid "1C information"
@@ -98,19 +98,20 @@ msgid "Configuration ID: "
 msgstr ""
 
 #: src/Admin/Columns/WooCommerce/Categories.php:90
-#: src/Admin/Columns/WooCommerce/Orders.php:63
+#: src/Admin/Columns/WooCommerce/Orders.php:67
+#: src/Admin/Columns/WooCommerce/Orders.php:93
 #: src/Admin/Columns/WooCommerce/Products.php:63
 #: src/Admin/Columns/WordPress/MediaLibrary.php:63
 msgid "Not found"
 msgstr ""
 
-#: src/Admin/Columns/WooCommerce/Orders.php:85
+#: src/Admin/Columns/WooCommerce/Orders.php:115
 #: src/Admin/Columns/WooCommerce/Products.php:85
 #: src/Admin/Columns/WordPress/MediaLibrary.php:85
 msgid "Activity:"
 msgstr ""
 
-#: src/Admin/Columns/WooCommerce/Orders.php:86
+#: src/Admin/Columns/WooCommerce/Orders.php:116
 #: src/Admin/Columns/WooCommerce/Products.php:86
 #: src/Admin/Columns/WordPress/MediaLibrary.php:86
 #, php-format
@@ -118,14 +119,14 @@ msgctxt "%s = human-readable time difference"
 msgid "%s ago."
 msgstr ""
 
-#: src/Admin/Columns/WooCommerce/Orders.php:92
+#: src/Admin/Columns/WooCommerce/Orders.php:122
 #: src/Admin/Columns/WooCommerce/Products.php:92
 #: src/Admin/Columns/WordPress/MediaLibrary.php:92
-#: src/Admin/Configurations/MainUpdate.php:144
+#: src/Admin/Configurations/MainUpdate.php:146
 msgid "Schema ID:"
 msgstr ""
 
-#: src/Admin/Columns/WooCommerce/Orders.php:97
+#: src/Admin/Columns/WooCommerce/Orders.php:127
 #: src/Admin/Columns/WooCommerce/Products.php:97
 #: src/Admin/Columns/WordPress/MediaLibrary.php:97
 msgid "Configuration ID:"
@@ -146,7 +147,7 @@ msgid "No activity"
 msgstr ""
 
 #: src/Admin/Configurations/AllTable.php:144
-msgid "An initial setup is required."
+msgid "An initial configuration setup is required."
 msgstr ""
 
 #: src/Admin/Configurations/AllTable.php:149
@@ -154,25 +155,32 @@ msgid "All configuration algorithms are active."
 msgstr ""
 
 #: src/Admin/Configurations/AllTable.php:154
-msgid "All configuration algorithms are disabled."
+msgid ""
+"All configuration algorithms are disabled. Configuration is switched off in "
+"the settings."
 msgstr ""
 
 #: src/Admin/Configurations/AllTable.php:159
-msgid "Data is being exchanged. Changing settings is not recommended."
+msgid ""
+"Data is being exchanged. Changing configuration settings is not recommended."
 msgstr ""
 
 #: src/Admin/Configurations/AllTable.php:164
 msgid ""
-"An error has occurred. You need to look at the event logs, they contain "
-"detailed information."
+"An error has occurred. Should review the event logs for the configuration, "
+"they contain detailed information about the error."
 msgstr ""
 
 #: src/Admin/Configurations/AllTable.php:169
-msgid "Awaiting final removal. All algorithms are disabled."
+msgid "Awaiting final configuration removal. All algorithms are disabled."
 msgstr ""
 
-#: src/Admin/Configurations/AllTable.php:195 views/tools/item.php:14
-msgid "Open"
+#: src/Admin/Configurations/AllTable.php:172
+msgid "Status description"
+msgstr ""
+
+#: src/Admin/Configurations/AllTable.php:195
+msgid "Open configuration"
 msgstr ""
 
 #: src/Admin/Configurations/AllTable.php:196
@@ -184,12 +192,12 @@ msgid "Remove forever"
 msgstr ""
 
 #: src/Admin/Configurations/AllTable.php:214
-msgid "User: "
+#: src/Admin/Configurations/AllTable.php:218
+msgid "User:"
 msgstr ""
 
 #: src/Admin/Configurations/AllTable.php:218
-#: src/Admin/Configurations/MainUpdate.php:160
-msgid "User is not exists."
+msgid "user is not exists."
 msgstr ""
 
 #: src/Admin/Configurations/AllTable.php:224
@@ -209,7 +217,7 @@ msgid "%s ago"
 msgstr ""
 
 #: src/Admin/Configurations/AllTable.php:240
-msgid "in"
+msgid "at"
 msgstr ""
 
 #: src/Admin/Configurations/AllTable.php:250
@@ -229,7 +237,7 @@ msgid "Base information"
 msgstr ""
 
 #: src/Admin/Configurations/AllTable.php:311
-#: src/Admin/Configurations/MainUpdate.php:148
+#: src/Admin/Configurations/MainUpdate.php:150
 #: src/Admin/Configurations/UpdateForm.php:42
 #: src/Admin/Settings/ActivationForm.php:159
 msgid "Status"
@@ -252,88 +260,100 @@ msgid "Search"
 msgstr ""
 
 #: src/Admin/Configurations/CreateForm.php:42
-#: src/Admin/Configurations/Update.php:136
-msgid "Configuration name"
+msgid "Name of the configuration"
 msgstr ""
 
-#: src/Admin/Configurations/CreateForm.php:44
+#: src/Admin/Configurations/CreateForm.php:47
 msgid "Enter any data up to 255 characters."
 msgstr ""
 
-#: src/Admin/Configurations/CreateForm.php:72
+#: src/Admin/Configurations/CreateForm.php:48
+msgid ""
+"The name is used to quickly distinguish between multiple configurations that "
+"have been created."
+msgstr ""
+
+#: src/Admin/Configurations/CreateForm.php:49
+msgid ""
+"Some examples: 1. Exchange data on products, 2. Exchange data on orders, 3. "
+"Update prices and stocks, etc."
+msgstr ""
+
+#: src/Admin/Configurations/CreateForm.php:78
 msgid "Configuration schema"
 msgstr ""
 
-#: src/Admin/Configurations/CreateForm.php:137
+#: src/Admin/Configurations/CreateForm.php:143
 msgid "Identifier:"
 msgstr ""
 
 #: src/Admin/Configurations/CreateForm.php:187
-msgid "Configuration create error. Please retry."
+msgid "Configuration creating error. Please retry."
 msgstr ""
 
-#: src/Admin/Configurations/CreateForm.php:227
-msgid "Configuration create error. Name is required."
+#: src/Admin/Configurations/CreateForm.php:235
+msgid "Configuration creating error. Name is required."
 msgstr ""
 
-#: src/Admin/Configurations/CreateForm.php:240
-msgid "Configuration create error. Schema is required."
+#: src/Admin/Configurations/CreateForm.php:252
+msgid "Configuration creating error. Schema select is required."
 msgstr ""
 
-#: src/Admin/Configurations/CreateForm.php:257
-msgid "Configuration create error. Name is exists."
+#: src/Admin/Configurations/CreateForm.php:273
+msgid "Configuration creating error. Name is exists."
 msgstr ""
 
-#: src/Admin/Configurations/CreateForm.php:274
-msgid "Configuration create success. Configuration id: "
+#: src/Admin/Configurations/CreateForm.php:294
+msgid "Configuration creating is complete. Configuration ID:"
 msgstr ""
 
-#: src/Admin/Configurations/CreateForm.php:275
+#: src/Admin/Configurations/CreateForm.php:300
 msgid "edit configuration"
 msgstr ""
 
-#: src/Admin/Configurations/CreateForm.php:287
-msgid "Configuration create error. Please retry saving or change fields."
+#: src/Admin/Configurations/CreateForm.php:310
+msgid "Configuration creating error. Please try saving again or change fields."
 msgstr ""
 
-#: src/Admin/Configurations/Delete.php:55
+#: src/Admin/Configurations/Delete.php:56
 msgid "Error. The configuration to be deleted is active and cannot be deleted."
 msgstr ""
 
-#: src/Admin/Configurations/Delete.php:108
+#: src/Admin/Configurations/Delete.php:109
 msgid "The configuration has been marked as deleted."
 msgstr ""
 
-#: src/Admin/Configurations/Delete.php:118
+#: src/Admin/Configurations/Delete.php:119
 msgid "The configuration has been successfully deleted."
 msgstr ""
 
-#: src/Admin/Configurations/Delete.php:125
-msgid "Deleting error. Please retry again."
+#: src/Admin/Configurations/Delete.php:126
+msgid "Configuration deleting error. Please retry again."
 msgstr ""
 
-#: src/Admin/Configurations/DeleteForm.php:38
+#: src/Admin/Configurations/DeleteForm.php:37
 msgid "Delete confirmation"
 msgstr ""
 
-#: src/Admin/Configurations/DeleteForm.php:42
+#: src/Admin/Configurations/DeleteForm.php:41
 msgid ""
 "I confirm that Configuration will be permanently and irrevocably deleted "
 "from WooCommerce."
 msgstr ""
 
-#: src/Admin/Configurations/DeleteForm.php:43
+#: src/Admin/Configurations/DeleteForm.php:42
 msgid ""
 "The directory with files for configuration from the FILE system will be "
 "completely removed."
 msgstr ""
 
-#: src/Admin/Configurations/DeleteForm.php:84
-msgid "Delete error. Please retry."
+#: src/Admin/Configurations/DeleteForm.php:77
+msgid "Configuration deleting error. Please retry."
 msgstr ""
 
-#: src/Admin/Configurations/DeleteForm.php:126
-msgid "Delete error. Confirmation of final deletion is required."
+#: src/Admin/Configurations/DeleteForm.php:125
+msgid ""
+"Configuration deleting error. Confirmation of final deletion is required."
 msgstr ""
 
 #: src/Admin/Configurations/MainUpdate.php:74
@@ -344,77 +364,77 @@ msgstr ""
 msgid "Configuration update error. Please retry saving or change fields."
 msgstr ""
 
-#: src/Admin/Configurations/MainUpdate.php:110
+#: src/Admin/Configurations/MainUpdate.php:112
 msgid "Debug is enabled!"
 msgstr ""
 
-#: src/Admin/Configurations/MainUpdate.php:112
+#: src/Admin/Configurations/MainUpdate.php:114
 msgid ""
 "The current configuration has debug mode enabled. You must disable this mode "
 "after debugging is complete."
 msgstr ""
 
-#: src/Admin/Configurations/MainUpdate.php:121
+#: src/Admin/Configurations/MainUpdate.php:123
 msgid "Info is enabled!"
 msgstr ""
 
-#: src/Admin/Configurations/MainUpdate.php:123
+#: src/Admin/Configurations/MainUpdate.php:125
 msgid ""
 "The extended information recording mode is enabled for the current "
 "configuration. It is recommended to disable this mode after debugging is "
 "complete."
 msgstr ""
 
-#: src/Admin/Configurations/MainUpdate.php:135
+#: src/Admin/Configurations/MainUpdate.php:137
 msgid "About configuration"
 msgstr ""
 
-#: src/Admin/Configurations/MainUpdate.php:141 views/extensions/item.php:20
+#: src/Admin/Configurations/MainUpdate.php:143 views/extensions/item.php:20
 msgid "ID:"
 msgstr ""
 
-#: src/Admin/Configurations/MainUpdate.php:156
+#: src/Admin/Configurations/MainUpdate.php:158
 msgid "Owner:"
 msgstr ""
 
-#: src/Admin/Configurations/MainUpdate.php:165
+#: src/Admin/Configurations/MainUpdate.php:162
+msgid "User is not exists."
+msgstr ""
+
+#: src/Admin/Configurations/MainUpdate.php:167
 msgid "Date active:"
 msgstr ""
 
-#: src/Admin/Configurations/MainUpdate.php:169
-#: src/Admin/Configurations/MainUpdate.php:179
-#: src/Admin/Configurations/MainUpdate.php:188
+#: src/Admin/Configurations/MainUpdate.php:171
+#: src/Admin/Configurations/MainUpdate.php:181
+#: src/Admin/Configurations/MainUpdate.php:190
 #, php-format
 msgctxt "%s = human-readable time difference"
 msgid " (%s ago)."
 msgstr ""
 
-#: src/Admin/Configurations/MainUpdate.php:175
+#: src/Admin/Configurations/MainUpdate.php:177
 msgid "Date create:"
 msgstr ""
 
-#: src/Admin/Configurations/MainUpdate.php:184
+#: src/Admin/Configurations/MainUpdate.php:186
 msgid "Date modify:"
 msgstr ""
 
-#: src/Admin/Configurations/MainUpdate.php:194
+#: src/Admin/Configurations/MainUpdate.php:196
 msgid "Directory:"
 msgstr ""
 
-#: src/Admin/Configurations/MainUpdate.php:206
+#: src/Admin/Configurations/MainUpdate.php:208
 msgid "Directory size:"
 msgstr ""
 
-#: src/Admin/Configurations/MainUpdate.php:218
+#: src/Admin/Configurations/MainUpdate.php:220
 msgid "Logs directory size:"
 msgstr ""
 
-#: src/Admin/Configurations/MainUpdate.php:233
+#: src/Admin/Configurations/MainUpdate.php:235
 msgid "About schema"
-msgstr ""
-
-#: src/Admin/Configurations/Update.php:35 src/Admin/Settings.php:48
-msgid "Main"
 msgstr ""
 
 #: src/Admin/Configurations/Update.php:42
@@ -423,29 +443,33 @@ msgstr ""
 
 #: src/Admin/Configurations/Update.php:93
 msgid ""
-"The exchange scheme on the basis of which created configuration is "
-"unavailable ."
+"The exchange schema based on which the configuration was created is not "
+"available."
 msgstr ""
 
 #: src/Admin/Configurations/Update.php:95
 msgid ""
 "Install the missing schema to work this configuration, change the status and "
-"name, or delete the configuration."
+"name or delete the configuration."
+msgstr ""
+
+#: src/Admin/Configurations/Update.php:136
+msgid "Configuration name"
 msgstr ""
 
 #: src/Admin/Configurations/Update.php:138
 msgid "Used for convenient distribution of multiple configurations."
 msgstr ""
 
-#: src/Admin/Configurations/Update.php:141
+#: src/Admin/Configurations/Update.php:142
 msgid "Rename"
 msgstr ""
 
-#: src/Admin/Configurations/Update.php:170
+#: src/Admin/Configurations/Update.php:171
 msgid "Configuration name update success."
 msgstr ""
 
-#: src/Admin/Configurations/Update.php:180
+#: src/Admin/Configurations/Update.php:181
 msgid "Configuration name update error. Please retry saving or change fields."
 msgstr ""
 
@@ -480,8 +504,12 @@ msgstr ""
 msgid "Not a feature?"
 msgstr ""
 
+#: src/Admin/Settings.php:48
+msgid "Main"
+msgstr ""
+
 #: src/Admin/Settings.php:62 src/Schemas/Productscleanercml/Admin.php:291
-#: src/Schemas/Productscml/Admin.php:1909
+#: src/Schemas/Productscml/Admin.php:1997
 msgid "Event logs"
 msgstr ""
 
@@ -493,7 +521,7 @@ msgstr ""
 msgid "Connection to the WC1C"
 msgstr ""
 
-#: src/Admin/Settings/ActivationForm.php:50 src/Admin/Settings/Form.php:75
+#: src/Admin/Settings/ActivationForm.php:50
 msgid "Save error. Please retry."
 msgstr ""
 
@@ -541,57 +569,67 @@ msgstr ""
 msgid "Activate"
 msgstr ""
 
-#: src/Admin/Settings/ConnectionForm.php:106
+#: src/Admin/Settings/ConnectionForm.php:107
 #, php-format
 msgid ""
 "The user with the login %s on the site %s successfully connected to the "
 "current site."
 msgstr ""
 
-#: src/Admin/Settings/ConnectionForm.php:128
+#: src/Admin/Settings/ConnectionForm.php:129
 #, php-format
 msgid ""
 "Error connecting user with login %s on site %s to the current site. Please "
 "try again later."
 msgstr ""
 
-#: src/Admin/Settings/ConnectionForm.php:160
+#: src/Admin/Settings/ConnectionForm.php:161
 msgid "Connection error. Please retry."
 msgstr ""
 
-#: src/Admin/Settings/ConnectionForm.php:182
+#: src/Admin/Settings/ConnectionForm.php:183
 msgid "Disconnect successful. Reconnect is available"
 msgstr ""
 
-#: src/Admin/Settings/ConnectionForm.php:208
+#: src/Admin/Settings/ConnectionForm.php:209
 msgid "Site is connected to WC1C"
 msgstr ""
 
-#: src/Admin/Settings/ConnectionForm.php:210
+#: src/Admin/Settings/ConnectionForm.php:211
 msgid "To create a new connection, need to disconnect the current connection."
 msgstr ""
 
-#: src/Admin/Settings/ConnectionForm.php:215
-msgid "Login"
+#: src/Admin/Settings/ConnectionForm.php:216
+#: src/Schemas/Productscleanercml/Admin.php:95
+#: src/Schemas/Productscml/Admin.php:98
+msgid "Username"
 msgstr ""
 
-#: src/Admin/Settings/ConnectionForm.php:217
+#: src/Admin/Settings/ConnectionForm.php:218
 msgid "Connected login from the WC1C website."
 msgstr ""
 
-#: src/Admin/Settings/ConnectionForm.php:225
+#: src/Admin/Settings/ConnectionForm.php:226
 msgid "App token"
 msgstr ""
 
-#: src/Admin/Settings/ConnectionForm.php:227
+#: src/Admin/Settings/ConnectionForm.php:228
 msgid ""
 "The current application token for the user. This token can be revoked in "
 "your personal account on the WC1C website, as well as by clicking the "
 "Disconnect button."
 msgstr ""
 
-#: src/Admin/Settings/Form.php:130
-msgid "Save success."
+#: src/Admin/Settings/Form.php:69
+msgid "Saving settings."
+msgstr ""
+
+#: src/Admin/Settings/Form.php:71
+msgid "The settings have not been saved."
+msgstr ""
+
+#: src/Admin/Settings/Form.php:138
+msgid "The settings have been successfully saved."
 msgstr ""
 
 #: src/Admin/Settings/InterfaceForm.php:40
@@ -693,72 +731,115 @@ msgstr ""
 msgid "Level for main events"
 msgstr ""
 
-#: src/Admin/Settings/LogsForm.php:43
-#: src/Schemas/Productscleanercml/Admin.php:300
-#: src/Schemas/Productscml/Admin.php:1918
+#: src/Admin/Settings/LogsForm.php:46
 msgid ""
-"All events of the selected level will be recorded in the log file. The "
-"higher the level, the less data is recorded."
+"Events of the selected level will be recorded in the log file. The bigger "
+"the level (numbers), the less data is recorded."
 msgstr ""
 
-#: src/Admin/Settings/LogsForm.php:47 src/Admin/Settings/LogsForm.php:89
-#: src/Admin/Settings/LogsForm.php:106 src/Admin/Settings/LogsForm.php:123
-#: src/Admin/Settings/LogsForm.php:140
+#: src/Admin/Settings/LogsForm.php:47
+msgid ""
+"If the plugin is stable, you will need to use at least the NOTICE level "
+"(250), otherwise the event logs will become very large."
+msgstr ""
+
+#: src/Admin/Settings/LogsForm.php:48 src/Admin/Settings/LogsForm.php:63
+#: src/Admin/Settings/LogsForm.php:120 src/Admin/Settings/LogsForm.php:142
+#: src/Admin/Settings/LogsForm.php:164
 #: src/Schemas/Productscleanercml/Admin.php:305
-#: src/Schemas/Productscml/Admin.php:1923
+#: src/Schemas/Productscml/Admin.php:2011
 msgid "DEBUG (100)"
 msgstr ""
 
-#: src/Admin/Settings/LogsForm.php:48 src/Admin/Settings/LogsForm.php:90
-#: src/Admin/Settings/LogsForm.php:107 src/Admin/Settings/LogsForm.php:124
-#: src/Admin/Settings/LogsForm.php:141
+#: src/Admin/Settings/LogsForm.php:49
+msgid ""
+"Data from the algorithm development process with debugging information. It "
+"is used by administrators in case of some unclear errors in the process of "
+"plugin operation."
+msgstr ""
+
+#: src/Admin/Settings/LogsForm.php:50 src/Admin/Settings/LogsForm.php:64
+#: src/Admin/Settings/LogsForm.php:121 src/Admin/Settings/LogsForm.php:143
+#: src/Admin/Settings/LogsForm.php:165
 #: src/Schemas/Productscleanercml/Admin.php:306
-#: src/Schemas/Productscml/Admin.php:1924
+#: src/Schemas/Productscml/Admin.php:2012
 msgid "INFO (200)"
 msgstr ""
 
-#: src/Admin/Settings/LogsForm.php:49 src/Admin/Settings/LogsForm.php:91
-#: src/Admin/Settings/LogsForm.php:108 src/Admin/Settings/LogsForm.php:125
-#: src/Admin/Settings/LogsForm.php:142
+#: src/Admin/Settings/LogsForm.php:51
+msgid ""
+"Data from the algorithm development process, but without debugging "
+"information. In this mode, less data is written than in debugging mode, but "
+"still a lot."
+msgstr ""
+
+#: src/Admin/Settings/LogsForm.php:52 src/Admin/Settings/LogsForm.php:65
+#: src/Admin/Settings/LogsForm.php:122 src/Admin/Settings/LogsForm.php:144
+#: src/Admin/Settings/LogsForm.php:166
 #: src/Schemas/Productscleanercml/Admin.php:307
-#: src/Schemas/Productscml/Admin.php:1925
+#: src/Schemas/Productscml/Admin.php:2013
 msgid "NOTICE (250)"
 msgstr ""
 
-#: src/Admin/Settings/LogsForm.php:50 src/Admin/Settings/LogsForm.php:92
-#: src/Admin/Settings/LogsForm.php:109 src/Admin/Settings/LogsForm.php:126
-#: src/Admin/Settings/LogsForm.php:143
+#: src/Admin/Settings/LogsForm.php:53
+msgid ""
+"This mode records events that notify of situations that you need to be aware "
+"of. For example, when changing settings or renaming a product during data "
+"exchange."
+msgstr ""
+
+#: src/Admin/Settings/LogsForm.php:54 src/Admin/Settings/LogsForm.php:66
+#: src/Admin/Settings/LogsForm.php:123 src/Admin/Settings/LogsForm.php:145
+#: src/Admin/Settings/LogsForm.php:167
 #: src/Schemas/Productscleanercml/Admin.php:308
-#: src/Schemas/Productscml/Admin.php:1926
+#: src/Schemas/Productscml/Admin.php:2014
 msgid "WARNING (300)"
 msgstr ""
 
-#: src/Admin/Settings/LogsForm.php:51 src/Admin/Settings/LogsForm.php:93
-#: src/Admin/Settings/LogsForm.php:110 src/Admin/Settings/LogsForm.php:127
-#: src/Admin/Settings/LogsForm.php:144
+#: src/Admin/Settings/LogsForm.php:55
+msgid ""
+"Recording warnings that occur during operation. Warnings are worth "
+"investigating and taking into account, but they are not errors."
+msgstr ""
+
+#: src/Admin/Settings/LogsForm.php:56 src/Admin/Settings/LogsForm.php:67
+#: src/Admin/Settings/LogsForm.php:124 src/Admin/Settings/LogsForm.php:146
+#: src/Admin/Settings/LogsForm.php:168
 #: src/Schemas/Productscleanercml/Admin.php:309
-#: src/Schemas/Productscml/Admin.php:1927
+#: src/Schemas/Productscml/Admin.php:2015
 msgid "ERROR (400)"
 msgstr ""
 
 #: src/Admin/Settings/LogsForm.php:57
+msgid ""
+"Will be recorded only data on errors occurring during the processing of "
+"plugin algorithms."
+msgstr ""
+
+#: src/Admin/Settings/LogsForm.php:58
+msgid ""
+"Event logs always record data about critical errors in the code, regardless "
+"of the level configured."
+msgstr ""
+
+#: src/Admin/Settings/LogsForm.php:73
 #: src/Schemas/Productscleanercml/Admin.php:315
-#: src/Schemas/Productscml/Admin.php:1933
+#: src/Schemas/Productscml/Admin.php:2021
 msgid "Maximum files"
 msgstr ""
 
-#: src/Admin/Settings/LogsForm.php:59
+#: src/Admin/Settings/LogsForm.php:75
 #: src/Schemas/Productscleanercml/Admin.php:317
 msgid ""
 "Log files created daily. This option on the maximum number of stored files. "
 "By default saved of the logs are for the last 30 days."
 msgstr ""
 
-#: src/Admin/Settings/LogsForm.php:66
+#: src/Admin/Settings/LogsForm.php:82
 msgid "Output on display"
 msgstr ""
 
-#: src/Admin/Settings/LogsForm.php:68
+#: src/Admin/Settings/LogsForm.php:84
 #: src/Schemas/Productscleanercml/Admin.php:170
 #: src/Schemas/Productscml/Admin.php:173 src/Schemas/Productscml/Admin.php:210
 #: src/Schemas/Productscml/Admin.php:291 src/Schemas/Productscml/Admin.php:305
@@ -778,55 +859,74 @@ msgstr ""
 msgid "Check the box if you want to enable this feature. Disabled by default."
 msgstr ""
 
-#: src/Admin/Settings/LogsForm.php:69
-msgid "All entries in the event logs will be displayed."
+#: src/Admin/Settings/LogsForm.php:88
+msgid "All entries event logs will be displayed on the screen."
 msgstr ""
 
-#: src/Admin/Settings/LogsForm.php:75
+#: src/Admin/Settings/LogsForm.php:89
+msgid ""
+"It is used only by developers. If enable this setting just for fun, 1C will "
+"not be able to connect to the site."
+msgstr ""
+
+#: src/Admin/Settings/LogsForm.php:96
 msgid "Levels by context"
 msgstr ""
 
-#: src/Admin/Settings/LogsForm.php:77
+#: src/Admin/Settings/LogsForm.php:101
 msgid "Event log settings based on context."
 msgstr ""
 
-#: src/Admin/Settings/LogsForm.php:82 src/Admin/Settings/MainForm.php:140
-msgid "Receiver"
+#: src/Admin/Settings/LogsForm.php:102
+msgid "Logical distribution of event logs into contexts for flexible analysis."
 msgstr ""
 
-#: src/Admin/Settings/LogsForm.php:84
+#: src/Admin/Settings/LogsForm.php:113
 msgid ""
-"All events of the selected level will be recorded the Receiver events in the "
-"log file. The higher the level, the less data is recorded."
+"All events of the selected level are recorded in the tools events log file. "
+"The higher the level, the less data is logged."
 msgstr ""
 
-#: src/Admin/Settings/LogsForm.php:88 src/Admin/Settings/LogsForm.php:105
-#: src/Admin/Settings/LogsForm.php:122 src/Admin/Settings/LogsForm.php:139
+#: src/Admin/Settings/LogsForm.php:114
+msgid ""
+"In this context, events are recorded when users work with tools, both global "
+"and for a specific configuration."
+msgstr ""
+
+#: src/Admin/Settings/LogsForm.php:119 src/Admin/Settings/LogsForm.php:141
+#: src/Admin/Settings/LogsForm.php:163
 #: src/Schemas/Productscleanercml/Admin.php:304
-#: src/Schemas/Productscml/Admin.php:1922
+#: src/Schemas/Productscml/Admin.php:2010
 msgid "Use level for main events"
 msgstr ""
 
-#: src/Admin/Settings/LogsForm.php:101
-msgid ""
-"All events of the selected level will be recorded the tools events in the "
-"log file. The higher the level, the less data is recorded."
-msgstr ""
-
-#: src/Admin/Settings/LogsForm.php:116
+#: src/Admin/Settings/LogsForm.php:130
 msgid "Schemas"
-msgstr ""
-
-#: src/Admin/Settings/LogsForm.php:118
-msgid ""
-"All events of the selected level will be recorded the schemas events in the "
-"log file. The higher the level, the less data is recorded."
 msgstr ""
 
 #: src/Admin/Settings/LogsForm.php:135
 msgid ""
+"All events of the selected level are recorded in the events log files for "
+"schemas. The higher the level, the less data is logged."
+msgstr ""
+
+#: src/Admin/Settings/LogsForm.php:136
+msgid ""
+"Only events that are processed in the schema algorithms are recorded. If the "
+"events are related to the user configuration, they are not written to schema "
+"events."
+msgstr ""
+
+#: src/Admin/Settings/LogsForm.php:157
+msgid ""
 "All events of the selected level will be recorded the configurations events "
 "in the log file. The higher the level, the less data is recorded."
+msgstr ""
+
+#: src/Admin/Settings/LogsForm.php:158
+msgid ""
+"A personalized event log level can be set on the level of each "
+"configuration. The current value is taken for creating new configurations."
 msgstr ""
 
 #: src/Admin/Settings/MainForm.php:45
@@ -916,6 +1016,10 @@ msgid ""
 "server limit."
 msgstr ""
 
+#: src/Admin/Settings/MainForm.php:140
+msgid "Receiver"
+msgstr ""
+
 #: src/Admin/Settings/MainForm.php:142
 msgid "Enable data Receiver: background requests?"
 msgstr ""
@@ -947,11 +1051,13 @@ msgid "Completing"
 msgstr ""
 
 #: src/Core.php:81
-msgid "Timer is not loaded."
+msgid ""
+"Timer is not loaded. Further execution of algorithms without a timer is "
+"impossible."
 msgstr ""
 
 #: src/Core.php:91
-msgid "Extensions is not loaded."
+msgid "Extensions is not loaded. Execution continued, but without all plugins."
 msgstr ""
 
 #: src/Core.php:100
@@ -974,103 +1080,115 @@ msgstr ""
 msgid "Receiver is not loaded."
 msgstr ""
 
-#: src/Core.php:406
+#: src/Core.php:417
 msgid "This activation code is active."
 msgstr ""
 
-#: src/Core.php:407
+#: src/Core.php:418
 msgid "Error: This activation code has expired."
 msgstr ""
 
-#: src/Core.php:408
+#: src/Core.php:419
 msgid "Activation code republished. Awaiting reactivation."
 msgstr ""
 
-#: src/Core.php:409
+#: src/Core.php:420
 msgid "Error: This activation code has been suspended."
 msgstr ""
 
-#: src/Core.php:410
+#: src/Core.php:421
 msgid "This activation code is not found."
 msgstr ""
 
-#: src/Core.php:411
+#: src/Core.php:422
 msgid "This activation code is active (localhost)."
 msgstr ""
 
-#: src/Core.php:412
+#: src/Core.php:423
 msgid "Error: This activation code is pending review."
 msgstr ""
 
-#: src/Core.php:413
+#: src/Core.php:424
 msgid ""
 "Error: This version of the software was released after your download access "
 "expired. Please downgrade software or contact support for more information."
 msgstr ""
 
-#: src/Core.php:414
+#: src/Core.php:425
 msgid "Error: The activation code variable is empty."
 msgstr ""
 
-#: src/Core.php:415
+#: src/Core.php:426
 msgid "Error: I could not obtain a new local code."
 msgstr ""
 
-#: src/Core.php:416
+#: src/Core.php:427
 msgid "Error: The maximum local code delay period has expired."
 msgstr ""
 
-#: src/Core.php:417
+#: src/Core.php:428
 msgid "Error: The local key has been tampered with or is invalid."
 msgstr ""
 
-#: src/Core.php:418
+#: src/Core.php:429
 msgid "Error: The local code is invalid for this location."
 msgstr ""
 
-#: src/Core.php:419
+#: src/Core.php:430
 msgid ""
 "Error: Please create the following file (and directories if they dont exist "
 "already): "
 msgstr ""
 
-#: src/Core.php:420
+#: src/Core.php:431
 msgid "Error: Please make the following path writable: "
 msgstr ""
 
-#: src/Core.php:421
+#: src/Core.php:432
 msgid "Error: I could not determine the local key storage on clear."
 msgstr ""
 
-#: src/Core.php:422
+#: src/Core.php:433
 msgid "Error: I could not save the local key."
 msgstr ""
 
-#: src/Core.php:423
+#: src/Core.php:434
 msgid "Error: The local code is invalid for this activation code."
 msgstr ""
 
-#: src/Core.php:424
+#: src/Core.php:435
 msgid "Error: This activation code has been deleted."
 msgstr ""
 
-#: src/Core.php:425
+#: src/Core.php:436
 msgid "Error: This activation code has draft."
 msgstr ""
 
-#: src/Core.php:426
+#: src/Core.php:437
 msgid "Error: This activation code has available."
 msgstr ""
 
-#: src/Core.php:427
+#: src/Core.php:438
 msgid "Error: This activation code has been blocked."
 msgstr ""
 
-#: src/Core.php:474
+#: src/Core.php:479
+msgid "Receiver loading."
+msgstr ""
+
+#: src/Core.php:487
 msgid "Receiver loading: class is not exists, use is default."
 msgstr ""
 
-#: src/Core.php:501
+#: src/Core.php:498
+msgid "Receiver loading is completed."
+msgstr ""
+
+#: src/Core.php:506
+msgid "Localization loading."
+msgstr ""
+
+#: src/Core.php:518
 msgid "Localization loaded."
 msgstr ""
 
@@ -1082,32 +1200,68 @@ msgstr ""
 msgid "Meta value by name is not available."
 msgstr ""
 
-#: src/Extensions/Core.php:55
-msgid "Extension not found by id."
+#: src/Extensions/Core.php:52 src/Extensions/Core.php:84
+msgid "Initialization of the extension by identifier"
 msgstr ""
 
-#: src/Extensions/Core.php:60
-msgid "Extension is not implementation ExtensionContract. Skipped init."
+#: src/Extensions/Core.php:56
+msgid "Extension not found by identifier."
 msgstr ""
 
-#: src/Extensions/Core.php:75
-msgid "Init extension exception:"
+#: src/Extensions/Core.php:62
+msgid ""
+"Extension is not implementation ExtensionContract. Initialization skipped."
 msgstr ""
 
-#: src/Extensions/Core.php:116
+#: src/Extensions/Core.php:68
+msgid ""
+"The extension has already been initialized previously. Re-initialization is "
+"skipped."
+msgstr ""
+
+#: src/Extensions/Core.php:79
+msgid "The extension threw an exception on initialization"
+msgstr ""
+
+#: src/Extensions/Core.php:84
+msgid "is completed."
+msgstr ""
+
+#: src/Extensions/Core.php:89
+msgid "Initialization of available extensions."
+msgstr ""
+
+#: src/Extensions/Core.php:106
+msgid "Initialization of available extensions is completed."
+msgstr ""
+
+#: src/Extensions/Core.php:126
 msgid "Get extension by id is unavailable."
 msgstr ""
 
 #: src/Extensions/Core.php:140
-msgid "Extensions load error:"
+msgid "Extensions loading."
 msgstr ""
 
 #: src/Extensions/Core.php:144
+msgid ""
+"Extension loading is turned off in global settings. Extension loading is "
+"skipped."
+msgstr ""
+
+#: src/Extensions/Core.php:158
+msgid "Extensions load error:"
+msgstr ""
+
+#: src/Extensions/Core.php:162
 msgid "Extensions load exception:"
 msgstr ""
 
+#: src/Extensions/Core.php:168
+msgid "Extensions loading is completed."
+msgstr ""
+
 #: src/Receiver.php:46 src/Schemas/Productscleanercml/Receiver.php:64
-#: src/Schemas/Productscml/Receiver.php:52
 msgid "Received new request for Receiver."
 msgstr ""
 
@@ -1131,80 +1285,104 @@ msgstr ""
 msgid "Schema for configuration is not initialized."
 msgstr ""
 
-#: src/Receiver.php:81 src/Receiver.php:115
+#: src/Receiver.php:84
 msgid ""
 "The request was successfully submitted for processing in the schema for the "
 "selected configuration."
 msgstr ""
 
-#: src/Receiver.php:90 src/Receiver.php:91
+#: src/Receiver.php:93 src/Receiver.php:94
 msgid "Selected configuration is offline."
 msgstr ""
 
-#: src/Receiver.php:102 src/Schemas/Productscleanercml/Core.php:127
-#: src/Schemas/Productscml/Core.php:299
+#: src/Receiver.php:105 src/Schemas/Productscleanercml/Core.php:127
+#: src/Schemas/Productscml/Core.php:324
 msgid "Error saving configuration."
 msgstr ""
 
-#: src/Receiver.php:123
+#: src/Receiver.php:121
+msgid ""
+"The request for processing actions for the selected configuration has been "
+"successfully submitted."
+msgstr ""
+
+#: src/Receiver.php:134
 msgid ""
 "Receiver request is very bad! Action not found in selected configuration."
 msgstr ""
 
-#: src/Receiver.php:124 src/Schemas/Productscleanercml/Core.php:148
-#: src/Schemas/Productscml/Core.php:320
+#: src/Receiver.php:135 src/Schemas/Productscleanercml/Core.php:148
+#: src/Schemas/Productscml/Core.php:345
 msgid "Receiver request is very bad! Action not found."
 msgstr ""
 
-#: src/Schemas/Core.php:51
+#: src/Schemas/Core.php:49
+msgid "Initializing the schema for configuration."
+msgstr ""
+
+#: src/Schemas/Core.php:53
 msgid "$configuration is false"
 msgstr ""
 
-#: src/Schemas/Core.php:61
+#: src/Schemas/Core.php:63
 msgid "$configuration is not exists"
 msgstr ""
 
-#: src/Schemas/Core.php:69
+#: src/Schemas/Core.php:71
 msgid "$configuration is not instanceof Configuration"
 msgstr ""
 
-#: src/Schemas/Core.php:76
+#: src/Schemas/Core.php:78
 msgid "$schemas is not array."
 msgstr ""
 
-#: src/Schemas/Core.php:83
+#: src/Schemas/Core.php:85
 msgid "Schema not found by id:"
 msgstr ""
 
-#: src/Schemas/Core.php:88
+#: src/Schemas/Core.php:90
 msgid "$schemas[$schema_id] is not object"
 msgstr ""
 
-#: src/Schemas/Core.php:95
+#: src/Schemas/Core.php:97
 msgid "Old initialized, $schema_id:"
 msgstr ""
 
-#: src/Schemas/Core.php:100
+#: src/Schemas/Core.php:102
 msgid "Method init not found in schema, $schema_id:"
 msgstr ""
 
-#: src/Schemas/Core.php:120
+#: src/Schemas/Core.php:122
 msgid "Schema is not initialized."
 msgstr ""
 
-#: src/Schemas/Core.php:147
+#: src/Schemas/Core.php:127
+msgid "Initializing the schema for configuration is completed."
+msgstr ""
+
+#: src/Schemas/Core.php:151
 msgid "Schema by ID is unavailable."
 msgstr ""
 
-#: src/Schemas/Core.php:170
-msgid "Schemas loaded."
+#: src/Schemas/Core.php:164
+msgid "Schemas loading."
 msgstr ""
 
-#: src/Schemas/Core.php:197
+#: src/Schemas/Core.php:177
+msgid ""
+"Loading of external schemes is disabled through the settings. Only standard "
+"schemas are loaded."
+msgstr ""
+
+#: src/Schemas/Core.php:180
+msgid "Schemas loading is completed."
+msgstr ""
+
+#: src/Schemas/Core.php:207
 msgid "Schema ProductsCML is not loaded."
 msgstr ""
 
-#: src/Schemas/Core.php:221
+#: src/Schemas/Core.php:231
 msgid "Schema ProductsCleanerCML is not loaded."
 msgstr ""
 
@@ -1237,11 +1415,6 @@ msgstr ""
 msgid ""
 "When copying, you need to get rid of whitespace characters, if they are "
 "present."
-msgstr ""
-
-#: src/Schemas/Productscleanercml/Admin.php:95
-#: src/Schemas/Productscml/Admin.php:98
-msgid "Username"
 msgstr ""
 
 #: src/Schemas/Productscleanercml/Admin.php:99
@@ -1351,8 +1524,8 @@ msgstr ""
 #: src/Schemas/Productscml/Admin.php:1193
 #: src/Schemas/Productscml/Admin.php:1208
 #: src/Schemas/Productscml/Admin.php:1276
-#: src/Schemas/Productscml/Admin.php:1838
-#: src/Schemas/Productscml/Admin.php:1850
+#: src/Schemas/Productscml/Admin.php:1926
+#: src/Schemas/Productscml/Admin.php:1938
 msgid "Do not use"
 msgstr ""
 
@@ -1434,11 +1607,11 @@ msgstr ""
 #: src/Schemas/Productscleanercml/Admin.php:272
 #: src/Schemas/Productscml/Admin.php:663 src/Schemas/Productscml/Admin.php:1151
 #: src/Schemas/Productscml/Admin.php:1236
-#: src/Schemas/Productscml/Admin.php:1594
-#: src/Schemas/Productscml/Admin.php:1612
-#: src/Schemas/Productscml/Admin.php:1650
-#: src/Schemas/Productscml/Admin.php:1687
-#: src/Schemas/Productscml/Admin.php:1760
+#: src/Schemas/Productscml/Admin.php:1682
+#: src/Schemas/Productscml/Admin.php:1700
+#: src/Schemas/Productscml/Admin.php:1738
+#: src/Schemas/Productscml/Admin.php:1775
+#: src/Schemas/Productscml/Admin.php:1848
 msgid "Check the box to enable this feature. Disabled by default."
 msgstr ""
 
@@ -1459,15 +1632,22 @@ msgid ""
 msgstr ""
 
 #: src/Schemas/Productscleanercml/Admin.php:293
-#: src/Schemas/Productscml/Admin.php:1911
+#: src/Schemas/Productscml/Admin.php:1999
 msgid ""
 "Maintaining event logs for the current configuration. You can view the logs "
 "through the extension or via FTP."
 msgstr ""
 
 #: src/Schemas/Productscleanercml/Admin.php:298
-#: src/Schemas/Productscml/Admin.php:1916
+#: src/Schemas/Productscml/Admin.php:2004
 msgid "Level for events"
+msgstr ""
+
+#: src/Schemas/Productscleanercml/Admin.php:300
+#: src/Schemas/Productscml/Admin.php:2006
+msgid ""
+"All events of the selected level will be recorded in the log file. The "
+"higher the level, the less data is recorded."
 msgstr ""
 
 #: src/Schemas/Productscleanercml/Core.php:45
@@ -1481,32 +1661,32 @@ msgid ""
 msgstr ""
 
 #: src/Schemas/Productscleanercml/Core.php:114
-#: src/Schemas/Productscml/Core.php:284
+#: src/Schemas/Productscml/Core.php:309
 msgid "Configuration is offline."
 msgstr ""
 
 #: src/Schemas/Productscleanercml/Core.php:186
-#: src/Schemas/Productscml/Core.php:191
+#: src/Schemas/Productscml/Core.php:198
 msgid "The file cannot be processed. DecoderCML threw an exception."
 msgstr ""
 
 #: src/Schemas/Productscleanercml/Core.php:201
-#: src/Schemas/Productscml/Core.php:207
+#: src/Schemas/Productscml/Core.php:222
 msgid "The file cannot be processed. ReaderCML threw an exception."
 msgstr ""
 
 #: src/Schemas/Productscleanercml/Core.php:205
-#: src/Schemas/Productscml/Core.php:211
+#: src/Schemas/Productscml/Core.php:226
 msgid "Filetype:"
 msgstr ""
 
 #: src/Schemas/Productscleanercml/Core.php:220
-#: src/Schemas/Productscml/Core.php:227
+#: src/Schemas/Productscml/Core.php:250
 msgid "Import file processing not completed. ReaderCML threw an exception."
 msgstr ""
 
 #: src/Schemas/Productscleanercml/Core.php:240
-#: src/Schemas/Productscml/Core.php:247
+#: src/Schemas/Productscml/Core.php:270
 msgid "There was not enough time to load all the data."
 msgstr ""
 
@@ -1515,7 +1695,7 @@ msgid "Classifier !instanceof ClassifierDataContract. Skip processing."
 msgstr ""
 
 #: src/Schemas/Productscleanercml/Core.php:291
-#: src/Schemas/Productscml/Core.php:390
+#: src/Schemas/Productscml/Core.php:454
 msgid "An exception was thrown while saving the classifier."
 msgstr ""
 
@@ -1524,12 +1704,11 @@ msgid "Product !instanceof ProductDataContract. Skip processing."
 msgstr ""
 
 #: src/Schemas/Productscleanercml/Core.php:382
-#: src/Schemas/Productscml/Core.php:1325
 msgid "An exception was thrown while saving the product."
 msgstr ""
 
 #: src/Schemas/Productscleanercml/Core.php:400
-#: src/Schemas/Productscml/Core.php:3794
+#: src/Schemas/Productscml/Core.php:3968
 msgid "Processing a product from a catalog of products."
 msgstr ""
 
@@ -1542,23 +1721,22 @@ msgid "Product search result by external code from 1C."
 msgstr ""
 
 #: src/Schemas/Productscleanercml/Core.php:422
-#: src/Schemas/Productscml/Core.php:3810 src/Schemas/Productscml/Core.php:3835
-#: src/Schemas/Productscml/Core.php:4190 src/Schemas/Productscml/Core.php:4214
+#: src/Schemas/Productscml/Core.php:3984 src/Schemas/Productscml/Core.php:4009
+#: src/Schemas/Productscml/Core.php:4382 src/Schemas/Productscml/Core.php:4406
 msgid "Several identical products were found. The first one is selected."
 msgstr ""
 
 #: src/Schemas/Productscleanercml/Core.php:440
-#: src/Schemas/Productscml/Core.php:3839 src/Schemas/Productscml/Core.php:4218
+#: src/Schemas/Productscml/Core.php:4013 src/Schemas/Productscml/Core.php:4410
 msgid "Product search result by external algorithms."
 msgstr ""
 
 #: src/Schemas/Productscleanercml/Core.php:448
-#: src/Schemas/Productscml/Core.php:3847
+#: src/Schemas/Productscml/Core.php:4021
 msgid "Product is not found."
 msgstr ""
 
 #: src/Schemas/Productscleanercml/Receiver.php:102
-#: src/Schemas/Productscml/Receiver.php:58
 msgid "Received request params."
 msgstr ""
 
@@ -1572,17 +1750,17 @@ msgid "Schema: action not found."
 msgstr ""
 
 #: src/Schemas/Productscleanercml/Receiver.php:184
-#: src/Schemas/Productscml/Receiver.php:175
+#: src/Schemas/Productscml/Receiver.php:197
 msgid "In 1C was send a response of the type:"
 msgstr ""
 
 #: src/Schemas/Productscleanercml/Receiver.php:194
-#: src/Schemas/Productscml/Receiver.php:185
+#: src/Schemas/Productscml/Receiver.php:189
 msgid "Headers for response."
 msgstr ""
 
 #: src/Schemas/Productscleanercml/Receiver.php:246
-#: src/Schemas/Productscml/Receiver.php:239
+#: src/Schemas/Productscml/Receiver.php:243
 msgid ""
 "Server in CGI mode. Not detected the presence of an entry in the root ."
 "htaccess file on the subject of the contents of the lines."
@@ -1594,53 +1772,52 @@ msgstr ""
 
 #: src/Schemas/Productscleanercml/Receiver.php:288
 #: src/Schemas/Productscleanercml/Receiver.php:289
-#: src/Schemas/Productscml/Receiver.php:282
+#: src/Schemas/Productscml/Receiver.php:286
 msgid "Not a valid username."
 msgstr ""
 
 #: src/Schemas/Productscleanercml/Receiver.php:294
 #: src/Schemas/Productscleanercml/Receiver.php:295
-#: src/Schemas/Productscml/Receiver.php:290
+#: src/Schemas/Productscml/Receiver.php:295
 msgid "Not a valid user password."
 msgstr ""
 
 #: src/Schemas/Productscleanercml/Receiver.php:305
-#: src/Schemas/Productscml/Receiver.php:303
+#: src/Schemas/Productscml/Receiver.php:309
 msgid "PHP session none, start new PHP session."
 msgstr ""
 
 #: src/Schemas/Productscleanercml/Receiver.php:315
-#: src/Schemas/Productscml/Receiver.php:313
 msgid "Request authorization from 1C successfully completed."
 msgstr ""
 
 #: src/Schemas/Productscleanercml/Receiver.php:329
 #: src/Schemas/Productscleanercml/Receiver.php:490
-#: src/Schemas/Productscml/Receiver.php:327
-#: src/Schemas/Productscml/Receiver.php:513
+#: src/Schemas/Productscml/Receiver.php:334
+#: src/Schemas/Productscml/Receiver.php:530
 msgid "Print lines for 1C."
 msgstr ""
 
 #: src/Schemas/Productscleanercml/Receiver.php:354
-#: src/Schemas/Productscml/Receiver.php:352
+#: src/Schemas/Productscml/Receiver.php:365
 msgid ""
 "Authorization key verification failed. 1C did not send the name of the lazy "
 "signature."
 msgstr ""
 
 #: src/Schemas/Productscleanercml/Receiver.php:370
-#: src/Schemas/Productscml/Receiver.php:368
+#: src/Schemas/Productscml/Receiver.php:381
 msgid ""
 "Authorization key verification failed. 1C sent an incorrect lazy signature."
 msgstr ""
 
 #: src/Schemas/Productscleanercml/Receiver.php:385
-#: src/Schemas/Productscml/Receiver.php:383
+#: src/Schemas/Productscml/Receiver.php:396
 msgid "Authorization key verification failed. 1C sent an empty session name."
 msgstr ""
 
 #: src/Schemas/Productscleanercml/Receiver.php:400
-#: src/Schemas/Productscml/Receiver.php:398
+#: src/Schemas/Productscml/Receiver.php:411
 msgid "Authorization check failed - session id differs from the original."
 msgstr ""
 
@@ -1649,23 +1826,21 @@ msgid "PHP session none, restart PHP session."
 msgstr ""
 
 #: src/Schemas/Productscleanercml/Receiver.php:432
-#: src/Schemas/Productscml/Receiver.php:430
+#: src/Schemas/Productscml/Receiver.php:443
 msgid "Cleaning the directory for temporary files."
 msgstr ""
 
 #: src/Schemas/Productscleanercml/Receiver.php:438
-#: src/Schemas/Productscml/Receiver.php:436
 msgid ""
 "The directory for temporary files was successfully cleared of old files."
 msgstr ""
 
 #: src/Schemas/Productscleanercml/Receiver.php:442
-#: src/Schemas/Productscml/Receiver.php:440
 msgid "Failed to clear the temp directory of old files."
 msgstr ""
 
 #: src/Schemas/Productscleanercml/Receiver.php:454
-#: src/Schemas/Productscml/Receiver.php:452
+#: src/Schemas/Productscml/Receiver.php:466
 msgid "Initialization of receiving requests from 1C."
 msgstr ""
 
@@ -1674,91 +1849,90 @@ msgid "Session for receiving requests."
 msgstr ""
 
 #: src/Schemas/Productscleanercml/Receiver.php:469
-#: src/Schemas/Productscml/Receiver.php:492
+#: src/Schemas/Productscml/Receiver.php:509
 msgid "The maximum size of accepted files from 1C is assigned:"
 msgstr ""
 
 #: src/Schemas/Productscleanercml/Receiver.php:474
-#: src/Schemas/Productscml/Receiver.php:497
+#: src/Schemas/Productscml/Receiver.php:514
 msgid ""
 "Based on the global settings of WC1C, the size of received files has been "
 "reduced from 1C to:"
 msgstr ""
 
 #: src/Schemas/Productscleanercml/Receiver.php:480
-#: src/Schemas/Productscml/Receiver.php:503
+#: src/Schemas/Productscml/Receiver.php:520
 msgid ""
 "Based on the configuration settings of WC1C, the size of received files has "
 "been reduced from 1C to:"
 msgstr ""
 
 #: src/Schemas/Productscleanercml/Receiver.php:519
-#: src/Schemas/Productscml/Receiver.php:543
+#: src/Schemas/Productscml/Receiver.php:560
 msgid "Directory is unavailable:"
 msgstr ""
 
 #: src/Schemas/Productscleanercml/Receiver.php:534
-#: src/Schemas/Productscml/Receiver.php:558
+#: src/Schemas/Productscml/Receiver.php:576
 msgid "Filename is empty."
 msgstr ""
 
 #: src/Schemas/Productscleanercml/Receiver.php:542
-#: src/Schemas/Productscml/Receiver.php:566
 msgid "Saving data to a file named:"
 msgstr ""
 
 #: src/Schemas/Productscleanercml/Receiver.php:551
-#: src/Schemas/Productscml/Receiver.php:575
+#: src/Schemas/Productscml/Receiver.php:594
 msgid "Directory is unavailable for write."
 msgstr ""
 
 #: src/Schemas/Productscleanercml/Receiver.php:565
-#: src/Schemas/Productscml/Receiver.php:589
+#: src/Schemas/Productscml/Receiver.php:608
 msgid "The request contains no data to write to the file. Retry the upload."
 msgstr ""
 
 #: src/Schemas/Productscleanercml/Receiver.php:573
-#: src/Schemas/Productscml/Receiver.php:597
+#: src/Schemas/Productscml/Receiver.php:616
 msgid "The file exists. Write a data to the end of an existing file."
 msgstr ""
 
 #: src/Schemas/Productscleanercml/Receiver.php:586
-#: src/Schemas/Productscml/Receiver.php:613
+#: src/Schemas/Productscml/Receiver.php:632
 msgid "The data is successfully written to a file. Recorded data size:"
 msgstr ""
 
 #: src/Schemas/Productscleanercml/Receiver.php:593
-#: src/Schemas/Productscml/Receiver.php:711
+#: src/Schemas/Productscml/Receiver.php:743
 msgid "Failed to write data to file."
 msgstr ""
 
 #: src/Schemas/Productscleanercml/Receiver.php:604
-#: src/Schemas/Productscml/Receiver.php:722
+#: src/Schemas/Productscml/Receiver.php:756
 msgid "On request from 1C - started importing data from a file."
 msgstr ""
 
 #: src/Schemas/Productscleanercml/Receiver.php:610
-#: src/Schemas/Productscml/Receiver.php:728
+#: src/Schemas/Productscml/Receiver.php:760
 msgid "1C sent an empty file name for data import."
 msgstr ""
 
 #: src/Schemas/Productscleanercml/Receiver.php:620
-#: src/Schemas/Productscml/Receiver.php:738
+#: src/Schemas/Productscml/Receiver.php:770
 msgid "File for import is not exists."
 msgstr ""
 
 #: src/Schemas/Productscleanercml/Receiver.php:632
-#: src/Schemas/Productscml/Receiver.php:750
+#: src/Schemas/Productscml/Receiver.php:782
 msgid "Import of data from file completed successfully."
 msgstr ""
 
 #: src/Schemas/Productscleanercml/Receiver.php:640
-#: src/Schemas/Productscml/Receiver.php:758
+#: src/Schemas/Productscml/Receiver.php:790
 msgid "Importing data from a file ended with an error:"
 msgstr ""
 
 #: src/Schemas/Productscleanercml/Receiver.php:646
-#: src/Schemas/Productscml/Receiver.php:764
+#: src/Schemas/Productscml/Receiver.php:797
 msgid "Importing data from a file ended with an error."
 msgstr ""
 
@@ -2233,7 +2407,7 @@ msgstr ""
 #: src/Schemas/Productscml/Admin.php:1105
 #: src/Schemas/Productscml/Admin.php:1207
 #: src/Schemas/Productscml/Admin.php:1275
-#: src/Schemas/Productscml/Admin.php:1849
+#: src/Schemas/Productscml/Admin.php:1937
 msgid "The setting works when creating and updating products (goods)."
 msgstr ""
 
@@ -2265,8 +2439,8 @@ msgstr ""
 #: src/Schemas/Productscml/Admin.php:1323
 #: src/Schemas/Productscml/Admin.php:1451
 #: src/Schemas/Productscml/Admin.php:1493
-#: src/Schemas/Productscml/Admin.php:1696
-#: src/Schemas/Productscml/Admin.php:1797
+#: src/Schemas/Productscml/Admin.php:1784
+#: src/Schemas/Productscml/Admin.php:1885
 msgid "Check the box to enable this feature. Enabled by default."
 msgstr ""
 
@@ -2305,12 +2479,17 @@ msgstr ""
 #: src/Schemas/Productscml/Admin.php:1365
 #: src/Schemas/Productscml/Admin.php:1462
 #: src/Schemas/Productscml/Admin.php:1476
-#: src/Schemas/Productscml/Admin.php:1557
-#: src/Schemas/Productscml/Admin.php:1573
-#: src/Schemas/Productscml/Admin.php:1581
-#: src/Schemas/Productscml/Admin.php:1742
-#: src/Schemas/Productscml/Admin.php:1809
-#: src/Schemas/Productscml/Admin.php:1823
+#: src/Schemas/Productscml/Admin.php:1520
+#: src/Schemas/Productscml/Admin.php:1534
+#: src/Schemas/Productscml/Admin.php:1554
+#: src/Schemas/Productscml/Admin.php:1574
+#: src/Schemas/Productscml/Admin.php:1594
+#: src/Schemas/Productscml/Admin.php:1645
+#: src/Schemas/Productscml/Admin.php:1661
+#: src/Schemas/Productscml/Admin.php:1669
+#: src/Schemas/Productscml/Admin.php:1830
+#: src/Schemas/Productscml/Admin.php:1897
+#: src/Schemas/Productscml/Admin.php:1911
 msgid "Do not update"
 msgstr ""
 
@@ -2321,8 +2500,8 @@ msgstr ""
 #: src/Schemas/Productscml/Admin.php:1257
 #: src/Schemas/Productscml/Admin.php:1463
 #: src/Schemas/Productscml/Admin.php:1478
-#: src/Schemas/Productscml/Admin.php:1810
-#: src/Schemas/Productscml/Admin.php:1825
+#: src/Schemas/Productscml/Admin.php:1898
+#: src/Schemas/Productscml/Admin.php:1913
 msgid "Update in any case"
 msgstr ""
 
@@ -2331,7 +2510,7 @@ msgstr ""
 #: src/Schemas/Productscml/Admin.php:1166
 #: src/Schemas/Productscml/Admin.php:1182
 #: src/Schemas/Productscml/Admin.php:1259
-#: src/Schemas/Productscml/Admin.php:1811
+#: src/Schemas/Productscml/Admin.php:1899
 msgid "Add if not on the site and available in 1C"
 msgstr ""
 
@@ -2342,8 +2521,8 @@ msgstr ""
 #: src/Schemas/Productscml/Admin.php:1261
 #: src/Schemas/Productscml/Admin.php:1465
 #: src/Schemas/Productscml/Admin.php:1482
-#: src/Schemas/Productscml/Admin.php:1812
-#: src/Schemas/Productscml/Admin.php:1829
+#: src/Schemas/Productscml/Admin.php:1900
+#: src/Schemas/Productscml/Admin.php:1917
 msgid "Update if present on the site and in 1C"
 msgstr ""
 
@@ -2379,8 +2558,8 @@ msgstr ""
 #: src/Schemas/Productscml/Admin.php:1392
 #: src/Schemas/Productscml/Admin.php:1422
 #: src/Schemas/Productscml/Admin.php:1484
-#: src/Schemas/Productscml/Admin.php:1587
-#: src/Schemas/Productscml/Admin.php:1831
+#: src/Schemas/Productscml/Admin.php:1675
+#: src/Schemas/Productscml/Admin.php:1919
 msgid "The setting works when updating products (goods)."
 msgstr ""
 
@@ -2663,13 +2842,13 @@ msgstr ""
 
 #: src/Schemas/Productscml/Admin.php:980
 msgid ""
-"The product SKU will be added according to data from 1C. It is recommended "
-"to enable this feature."
+"Product SKUs will be filled according to the data from 1C on the selected "
+"source for SKUs. It is recommended to enable this feature."
 msgstr ""
 
 #: src/Schemas/Productscml/Admin.php:981 src/Schemas/Productscml/Admin.php:1378
 #: src/Schemas/Productscml/Admin.php:1406
-#: src/Schemas/Productscml/Admin.php:1802
+#: src/Schemas/Productscml/Admin.php:1890
 msgid "The setting works when creating products (goods)."
 msgstr ""
 
@@ -2721,8 +2900,8 @@ msgstr ""
 #: src/Schemas/Productscml/Admin.php:1196
 #: src/Schemas/Productscml/Admin.php:1214
 #: src/Schemas/Productscml/Admin.php:1282
-#: src/Schemas/Productscml/Admin.php:1839
-#: src/Schemas/Productscml/Admin.php:1852
+#: src/Schemas/Productscml/Admin.php:1927
+#: src/Schemas/Productscml/Admin.php:1940
 msgid "From requisite with the specified name"
 msgstr ""
 
@@ -3132,7 +3311,7 @@ msgstr ""
 
 #: src/Schemas/Productscml/Admin.php:1464
 #: src/Schemas/Productscml/Admin.php:1480
-#: src/Schemas/Productscml/Admin.php:1827
+#: src/Schemas/Productscml/Admin.php:1915
 msgid "Add if not on the site, but available in 1C"
 msgstr ""
 
@@ -3200,190 +3379,265 @@ msgid ""
 "the rest to the product gallery."
 msgstr ""
 
-#: src/Schemas/Productscml/Admin.php:1532
+#: src/Schemas/Productscml/Admin.php:1521
+#: src/Schemas/Productscml/Admin.php:1536
+#: src/Schemas/Productscml/Admin.php:1556
+#: src/Schemas/Productscml/Admin.php:1576
+#: src/Schemas/Productscml/Admin.php:1596
+msgid "При создании и обновлении продуктов"
+msgstr ""
+
+#: src/Schemas/Productscml/Admin.php:1522
+#: src/Schemas/Productscml/Admin.php:1538
+#: src/Schemas/Productscml/Admin.php:1558
+#: src/Schemas/Productscml/Admin.php:1578
+#: src/Schemas/Productscml/Admin.php:1598
+msgid "При создании продуктов"
+msgstr ""
+
+#: src/Schemas/Productscml/Admin.php:1523
+#: src/Schemas/Productscml/Admin.php:1540
+#: src/Schemas/Productscml/Admin.php:1560
+#: src/Schemas/Productscml/Admin.php:1580
+#: src/Schemas/Productscml/Admin.php:1600
+msgid "При обновлении продуктов"
+msgstr ""
+
+#: src/Schemas/Productscml/Admin.php:1528
+msgid "Обновление наименования изображений по наименованию продуктов"
+msgstr ""
+
+#: src/Schemas/Productscml/Admin.php:1535
+#: src/Schemas/Productscml/Admin.php:1555
+#: src/Schemas/Productscml/Admin.php:1575
+#: src/Schemas/Productscml/Admin.php:1595
+msgid "Обновление будет пропущено в любом случае."
+msgstr ""
+
+#: src/Schemas/Productscml/Admin.php:1537
+#: src/Schemas/Productscml/Admin.php:1557
+#: src/Schemas/Productscml/Admin.php:1577
+#: src/Schemas/Productscml/Admin.php:1597
+msgid ""
+"Обновление произойдет как при создании продукта, так и при его обновлении."
+msgstr ""
+
+#: src/Schemas/Productscml/Admin.php:1539
+#: src/Schemas/Productscml/Admin.php:1579
+msgid "Наименование будет обновлено только при создании продуктов."
+msgstr ""
+
+#: src/Schemas/Productscml/Admin.php:1541
+#: src/Schemas/Productscml/Admin.php:1581
+msgid "Наименование будет обновлено только при обновлении продуктов."
+msgstr ""
+
+#: src/Schemas/Productscml/Admin.php:1548
+msgid "Обновление атрибута ALT изображений по наименованию продуктов"
+msgstr ""
+
+#: src/Schemas/Productscml/Admin.php:1559
+#: src/Schemas/Productscml/Admin.php:1599
+msgid "Атрибут ALT будет обновлен только при создании продуктов."
+msgstr ""
+
+#: src/Schemas/Productscml/Admin.php:1561
+#: src/Schemas/Productscml/Admin.php:1601
+msgid "Атрибут ALT будет обновлен только при обновлении продуктов."
+msgstr ""
+
+#: src/Schemas/Productscml/Admin.php:1568
+msgid "Обновление наименования изображений из описания файла"
+msgstr ""
+
+#: src/Schemas/Productscml/Admin.php:1588
+msgid "Обновление атрибута ALT у изображений из описания файла"
+msgstr ""
+
+#: src/Schemas/Productscml/Admin.php:1620
 msgid "Products (goods): other"
 msgstr ""
 
-#: src/Schemas/Productscml/Admin.php:1534
+#: src/Schemas/Productscml/Admin.php:1622
 msgid "Regulation of other algorithms for working with products (goods)."
 msgstr ""
 
-#: src/Schemas/Productscml/Admin.php:1542
+#: src/Schemas/Productscml/Admin.php:1630
 msgid "Status of the created product"
 msgstr ""
 
-#: src/Schemas/Productscml/Admin.php:1547
+#: src/Schemas/Productscml/Admin.php:1635
 msgid ""
 "Newly created products will have selected status. It is recommended to "
 "select the status: Draft."
 msgstr ""
 
-#: src/Schemas/Productscml/Admin.php:1548
+#: src/Schemas/Productscml/Admin.php:1636
 msgid ""
 "The product catalog comes without prices and balances. Publication is best "
 "done at the stage of filling in this data."
 msgstr ""
 
-#: src/Schemas/Productscml/Admin.php:1549
+#: src/Schemas/Productscml/Admin.php:1637
 msgid ""
 "If a product is marked for deletion in 1C, it will be placed in the trash, "
 "regardless of the current setting."
 msgstr ""
 
-#: src/Schemas/Productscml/Admin.php:1564
+#: src/Schemas/Productscml/Admin.php:1652
 msgid "Product status update when requesting product updates"
 msgstr ""
 
-#: src/Schemas/Productscml/Admin.php:1566
+#: src/Schemas/Productscml/Admin.php:1654
 msgid ""
 "The selected status will be assigned to all upgraded products when "
 "requesting product upgrades."
 msgstr ""
 
-#: src/Schemas/Productscml/Admin.php:1574
-#: src/Schemas/Productscml/Admin.php:1583
+#: src/Schemas/Productscml/Admin.php:1662
+#: src/Schemas/Productscml/Admin.php:1671
 msgid "Check"
 msgstr ""
 
-#: src/Schemas/Productscml/Admin.php:1575
-#: src/Schemas/Productscml/Admin.php:1585
+#: src/Schemas/Productscml/Admin.php:1663
+#: src/Schemas/Productscml/Admin.php:1673
 msgid "Uncheck"
 msgstr ""
 
-#: src/Schemas/Productscml/Admin.php:1582
+#: src/Schemas/Productscml/Admin.php:1670
 msgid "The current value of the option will remain."
 msgstr ""
 
-#: src/Schemas/Productscml/Admin.php:1584
+#: src/Schemas/Productscml/Admin.php:1672
 msgid "The mark will be set."
 msgstr ""
 
-#: src/Schemas/Productscml/Admin.php:1586
+#: src/Schemas/Productscml/Admin.php:1674
 msgid "The mark will be removed."
 msgstr ""
 
-#: src/Schemas/Productscml/Admin.php:1592
+#: src/Schemas/Productscml/Admin.php:1680
 msgid "Featured on create products"
 msgstr ""
 
-#: src/Schemas/Productscml/Admin.php:1595
+#: src/Schemas/Productscml/Admin.php:1683
 msgid "The created product will be marked as featured."
 msgstr ""
 
-#: src/Schemas/Productscml/Admin.php:1601
+#: src/Schemas/Productscml/Admin.php:1689
 msgid "Featured on update products"
 msgstr ""
 
-#: src/Schemas/Productscml/Admin.php:1610
+#: src/Schemas/Productscml/Admin.php:1698
 msgid "Individual sale on create products"
 msgstr ""
 
-#: src/Schemas/Productscml/Admin.php:1613
+#: src/Schemas/Productscml/Admin.php:1701
 msgid ""
 "Enable to have the product sold individually in one order. Two units of a "
 "product in one order will be impossible to order."
 msgstr ""
 
-#: src/Schemas/Productscml/Admin.php:1619
+#: src/Schemas/Productscml/Admin.php:1707
 msgid "Individual sale on update products"
 msgstr ""
 
-#: src/Schemas/Productscml/Admin.php:1630
+#: src/Schemas/Productscml/Admin.php:1718
 msgid "Product visibility on create products"
 msgstr ""
 
-#: src/Schemas/Productscml/Admin.php:1632
-#: src/Schemas/Productscml/Admin.php:1641
+#: src/Schemas/Productscml/Admin.php:1720
+#: src/Schemas/Productscml/Admin.php:1729
 msgid "This setting determines which pages products will be displayed on."
 msgstr ""
 
-#: src/Schemas/Productscml/Admin.php:1639
+#: src/Schemas/Productscml/Admin.php:1727
 msgid "Product visibility on update products"
 msgstr ""
 
-#: src/Schemas/Productscml/Admin.php:1648
+#: src/Schemas/Productscml/Admin.php:1736
 msgid "Allow reviews on create products"
 msgstr ""
 
-#: src/Schemas/Productscml/Admin.php:1651
+#: src/Schemas/Productscml/Admin.php:1739
 msgid "It will be allowed to leave reviews for created products."
 msgstr ""
 
-#: src/Schemas/Productscml/Admin.php:1657
+#: src/Schemas/Productscml/Admin.php:1745
 msgid "Allow reviews on update products"
 msgstr ""
 
-#: src/Schemas/Productscml/Admin.php:1678
+#: src/Schemas/Productscml/Admin.php:1766
 msgid "Media library"
 msgstr ""
 
-#: src/Schemas/Productscml/Admin.php:1680
+#: src/Schemas/Productscml/Admin.php:1768
 msgid "Regulation of algorithms for working with WordPress media library."
 msgstr ""
 
-#: src/Schemas/Productscml/Admin.php:1685
+#: src/Schemas/Productscml/Admin.php:1773
 msgid "Using the media library"
 msgstr ""
 
-#: src/Schemas/Productscml/Admin.php:1688
+#: src/Schemas/Productscml/Admin.php:1776
 msgid ""
 "All file handling capabilities available to the library will be enabled. If "
 "disabled, no actions will be performed on files in the library through the "
 "schema."
 msgstr ""
 
-#: src/Schemas/Productscml/Admin.php:1694
+#: src/Schemas/Productscml/Admin.php:1782
 msgid "Images based on Receiver"
 msgstr ""
 
-#: src/Schemas/Productscml/Admin.php:1700
+#: src/Schemas/Productscml/Admin.php:1788
 msgid ""
 "All image files sent to Receiver files will be added to the WordPress media "
 "library."
 msgstr ""
 
-#: src/Schemas/Productscml/Admin.php:1701
+#: src/Schemas/Productscml/Admin.php:1789
 msgid "These images can later be used to populate product images."
 msgstr ""
 
-#: src/Schemas/Productscml/Admin.php:1702
+#: src/Schemas/Productscml/Admin.php:1790
 msgid ""
 "When adding an image, it will be assigned the identifier of the current "
 "configuration, as well as the identifier of the scheme and the path of being "
 "in 1C."
 msgstr ""
 
-#: src/Schemas/Productscml/Admin.php:1721
+#: src/Schemas/Productscml/Admin.php:1809
 msgid "Products (goods): inventories"
 msgstr ""
 
-#: src/Schemas/Productscml/Admin.php:1723
+#: src/Schemas/Productscml/Admin.php:1811
 msgid ""
 "Comprehensive settings for updating inventories based on data from the offer "
 "package."
 msgstr ""
 
-#: src/Schemas/Productscml/Admin.php:1728
+#: src/Schemas/Productscml/Admin.php:1816
 msgid "The stock status of product created"
 msgstr ""
 
-#: src/Schemas/Productscml/Admin.php:1733
+#: src/Schemas/Productscml/Admin.php:1821
 msgid ""
 "Newly created products will have the selected stock status. It is "
 "recommended to select the status: Out of stock."
 msgstr ""
 
-#: src/Schemas/Productscml/Admin.php:1734
+#: src/Schemas/Productscml/Admin.php:1822
 msgid ""
 "The product catalog comes without quantities. When creating new products, it "
 "is better not to expose their availability."
 msgstr ""
 
-#: src/Schemas/Productscml/Admin.php:1749
+#: src/Schemas/Productscml/Admin.php:1837
 msgid "Product stock status update when requesting product updates"
 msgstr ""
 
-#: src/Schemas/Productscml/Admin.php:1751
+#: src/Schemas/Productscml/Admin.php:1839
 msgid ""
 "Upgradable products will change the balance status to the selected option "
 "from the list. It is recommended to select the status: Out of stock. "
@@ -3391,146 +3645,146 @@ msgid ""
 "residues."
 msgstr ""
 
-#: src/Schemas/Productscml/Admin.php:1758
+#: src/Schemas/Productscml/Admin.php:1846
 msgid "Filling inventories based on quantity from offers"
 msgstr ""
 
-#: src/Schemas/Productscml/Admin.php:1761
+#: src/Schemas/Productscml/Admin.php:1849
 msgid ""
 "It will be allowed to fill in the quantity of product stocks in WooCommerce "
 "based on the quantity received in 1C offers."
 msgstr ""
 
-#: src/Schemas/Productscml/Admin.php:1767
+#: src/Schemas/Productscml/Admin.php:1855
 msgid "Minimum quantity for availability on the site"
 msgstr ""
 
-#: src/Schemas/Productscml/Admin.php:1769
+#: src/Schemas/Productscml/Admin.php:1857
 msgid ""
 "Specify the minimum quantity of goods in 1C to calculate the availability on "
 "the site. If there are fewer balances in 1C, then the product will be on the "
 "site with a balance of 0, i.e. with the status not available."
 msgstr ""
 
-#: src/Schemas/Productscml/Admin.php:1788
+#: src/Schemas/Productscml/Admin.php:1876
 msgid "Products (goods): dimensions"
 msgstr ""
 
-#: src/Schemas/Productscml/Admin.php:1790
+#: src/Schemas/Productscml/Admin.php:1878
 msgid ""
 "The main settings for filling in the dimensions of products (goods) "
 "according to data from 1C. Dimensions include: weight, length, width, height."
 msgstr ""
 
-#: src/Schemas/Productscml/Admin.php:1795
+#: src/Schemas/Productscml/Admin.php:1883
 msgid "Filling the dimensions of the created product"
 msgstr ""
 
-#: src/Schemas/Productscml/Admin.php:1801
+#: src/Schemas/Productscml/Admin.php:1889
 msgid ""
 "The product dimensions will be added according to data from 1C. It is "
 "recommended to enable this feature."
 msgstr ""
 
-#: src/Schemas/Productscml/Admin.php:1817
+#: src/Schemas/Productscml/Admin.php:1905
 msgid "Dimensions update when products updates"
 msgstr ""
 
-#: src/Schemas/Productscml/Admin.php:1824
+#: src/Schemas/Productscml/Admin.php:1912
 msgid "Dimensions updates will be skipped in any case."
 msgstr ""
 
-#: src/Schemas/Productscml/Admin.php:1826
+#: src/Schemas/Productscml/Admin.php:1914
 msgid ""
 "Dimensions will be updated in any case. The same value will always be on the "
 "site and in 1C."
 msgstr ""
 
-#: src/Schemas/Productscml/Admin.php:1828
+#: src/Schemas/Productscml/Admin.php:1916
 msgid ""
 "Existing dimensions will not be affected. There will be a filling of those "
 "missing on the site if they are available in 1C."
 msgstr ""
 
-#: src/Schemas/Productscml/Admin.php:1830
+#: src/Schemas/Productscml/Admin.php:1918
 msgid ""
 "Dimensions will be updated only if they are filled in 1C and on the site at "
 "the same time."
 msgstr ""
 
-#: src/Schemas/Productscml/Admin.php:1844
+#: src/Schemas/Productscml/Admin.php:1932
 msgid "Source for dimensions"
 msgstr ""
 
-#: src/Schemas/Productscml/Admin.php:1851
+#: src/Schemas/Productscml/Admin.php:1939
 msgid ""
 "Populating the dimensions data from CommerceML data will be skipped. If a "
 "product is updating, then its current dimensions will not be updated."
 msgstr ""
 
-#: src/Schemas/Productscml/Admin.php:1853
+#: src/Schemas/Productscml/Admin.php:1941
 msgid ""
 "The dimensions data will be filled in based on the completed name of the "
 "requisite of the products (goods)."
 msgstr ""
 
-#: src/Schemas/Productscml/Admin.php:1861
+#: src/Schemas/Productscml/Admin.php:1949
 msgid "Dimensions based on requisites: weight"
 msgstr ""
 
-#: src/Schemas/Productscml/Admin.php:1863
+#: src/Schemas/Productscml/Admin.php:1951
 msgid ""
 "Specify the requisite name of the weight in 1C, which is used for filling to "
 "WooCommerce as the weight."
 msgstr ""
 
-#: src/Schemas/Productscml/Admin.php:1864
+#: src/Schemas/Productscml/Admin.php:1952
 msgid "Weight"
 msgstr ""
 
-#: src/Schemas/Productscml/Admin.php:1870
+#: src/Schemas/Productscml/Admin.php:1958
 msgid "Dimensions based on requisites: length"
 msgstr ""
 
-#: src/Schemas/Productscml/Admin.php:1872
+#: src/Schemas/Productscml/Admin.php:1960
 msgid ""
 "Specify the requisite name of the length in 1C, which is used for filling to "
 "WooCommerce as the length."
 msgstr ""
 
-#: src/Schemas/Productscml/Admin.php:1873
+#: src/Schemas/Productscml/Admin.php:1961
 msgid "Length"
 msgstr ""
 
-#: src/Schemas/Productscml/Admin.php:1879
+#: src/Schemas/Productscml/Admin.php:1967
 msgid "Dimensions based on requisites: width"
 msgstr ""
 
-#: src/Schemas/Productscml/Admin.php:1881
+#: src/Schemas/Productscml/Admin.php:1969
 msgid ""
 "Specify the requisite name of the width in 1C, which is used for filling to "
 "WooCommerce as the width."
 msgstr ""
 
-#: src/Schemas/Productscml/Admin.php:1882
+#: src/Schemas/Productscml/Admin.php:1970
 msgid "Width"
 msgstr ""
 
-#: src/Schemas/Productscml/Admin.php:1888
+#: src/Schemas/Productscml/Admin.php:1976
 msgid "Dimensions based on requisites: height"
 msgstr ""
 
-#: src/Schemas/Productscml/Admin.php:1890
+#: src/Schemas/Productscml/Admin.php:1978
 msgid ""
 "Specify the requisite name of the height in 1C, which is used for filling to "
 "WooCommerce as the height."
 msgstr ""
 
-#: src/Schemas/Productscml/Admin.php:1891
+#: src/Schemas/Productscml/Admin.php:1979
 msgid "Height"
 msgstr ""
 
-#: src/Schemas/Productscml/Admin.php:1935
+#: src/Schemas/Productscml/Admin.php:2023
 msgid ""
 "Log files created daily. This option on the maximum number of stored files. "
 "By default saved of the logs are for the last 10 days."
@@ -3542,1124 +3796,1259 @@ msgstr ""
 
 #: src/Schemas/Productscml/Core.php:65
 msgid ""
-"Creation and updating of products (goods) in WooCommerce according to data "
-"from 1C using the CommerceML protocol of various versions."
+"Creating and updating products (goods) in WooCommerce according to data from "
+"1C using the CommerceML protocol of different versions."
 msgstr ""
 
-#: src/Schemas/Productscml/Core.php:197
+#: src/Schemas/Productscml/Core.php:212
 msgid "DecoderCML has been overridden by external algorithms."
 msgstr ""
 
-#: src/Schemas/Productscml/Core.php:215
+#: src/Schemas/Productscml/Core.php:238
 msgid "ReaderCML has been overridden by external algorithms."
 msgstr ""
 
-#: src/Schemas/Productscml/Core.php:260
+#: src/Schemas/Productscml/Core.php:283
 msgid "Clearing the output buffer."
 msgstr ""
 
-#: src/Schemas/Productscml/Core.php:275
+#: src/Schemas/Productscml/Core.php:298
 msgid "Cleaned up data."
 msgstr ""
 
-#: src/Schemas/Productscml/Core.php:358
-msgid "DecoderCML threw an exception while converting the classifier."
+#: src/Schemas/Productscml/Core.php:304
+msgid "Clearing the output buffer as completed."
 msgstr ""
 
-#: src/Schemas/Productscml/Core.php:378
+#: src/Schemas/Productscml/Core.php:368
+msgid "Processing a commercial info."
+msgstr ""
+
+#: src/Schemas/Productscml/Core.php:389
+msgid "Processing a classifier."
+msgstr ""
+
+#: src/Schemas/Productscml/Core.php:403
+msgid "SimpleXMLElement threw an exception when converting the classifier."
+msgstr ""
+
+#: src/Schemas/Productscml/Core.php:413
+msgid "DecoderCML threw an exception when converting the classifier."
+msgstr ""
+
+#: src/Schemas/Productscml/Core.php:435
 msgid "Classifier !instanceof ClassifierDataContract. Processing skipped."
 msgstr ""
 
-#: src/Schemas/Productscml/Core.php:415
+#: src/Schemas/Productscml/Core.php:457
+msgid "Processing a classifier an completed."
+msgstr ""
+
+#: src/Schemas/Productscml/Core.php:476
 msgid "Classifier groups is empty."
 msgstr ""
 
-#: src/Schemas/Productscml/Core.php:456
+#: src/Schemas/Productscml/Core.php:517
 msgid "Classifier group processing."
 msgstr ""
 
-#: src/Schemas/Productscml/Core.php:471
+#: src/Schemas/Productscml/Core.php:532
 msgid "Category search by external algorithms."
 msgstr ""
 
-#: src/Schemas/Productscml/Core.php:477
+#: src/Schemas/Productscml/Core.php:538
 msgid "Category search result by external algorithms."
 msgstr ""
 
-#: src/Schemas/Productscml/Core.php:486
+#: src/Schemas/Productscml/Core.php:547
 msgid "Category search by group ID from 1C."
 msgstr ""
 
-#: src/Schemas/Productscml/Core.php:492
+#: src/Schemas/Productscml/Core.php:553
 msgid "Category search result by group ID from 1C."
 msgstr ""
 
-#: src/Schemas/Productscml/Core.php:509
+#: src/Schemas/Productscml/Core.php:570
 msgid ""
 "More than one category found by ID from 1C. Assigning the first available."
 msgstr ""
 
-#: src/Schemas/Productscml/Core.php:517
+#: src/Schemas/Productscml/Core.php:578
 msgid "Category not found. Trying to use existing categories."
 msgstr ""
 
-#: src/Schemas/Productscml/Core.php:526
+#: src/Schemas/Productscml/Core.php:587
 msgid "No category found for the specified name."
 msgstr ""
 
-#: src/Schemas/Productscml/Core.php:546
+#: src/Schemas/Productscml/Core.php:607
 msgid "Category found by name without nesting."
 msgstr ""
 
-#: src/Schemas/Productscml/Core.php:558
+#: src/Schemas/Productscml/Core.php:619
 msgid "Category search taking into account nesting."
 msgstr ""
 
-#: src/Schemas/Productscml/Core.php:565
+#: src/Schemas/Productscml/Core.php:626
 msgid "Category found. The parent is absent both in 1C and on the site."
 msgstr ""
 
-#: src/Schemas/Productscml/Core.php:598
+#: src/Schemas/Productscml/Core.php:659
 msgid ""
 "Assigning a category identifier according to 1C data for an existing "
 "category."
 msgstr ""
 
-#: src/Schemas/Productscml/Core.php:606
+#: src/Schemas/Productscml/Core.php:667
 msgid "Assigning a parent category ID from 1C to an existing category."
 msgstr ""
 
-#: src/Schemas/Productscml/Core.php:614
+#: src/Schemas/Productscml/Core.php:675
 msgid "Saving a category."
 msgstr ""
 
-#: src/Schemas/Productscml/Core.php:626
+#: src/Schemas/Productscml/Core.php:687
 msgid "The category exists. Started updating the data of an existing category."
 msgstr ""
 
-#: src/Schemas/Productscml/Core.php:630
+#: src/Schemas/Productscml/Core.php:691
 msgid ""
 "Category data update is skipped, it is disabled in the configuration "
 "settings."
 msgstr ""
 
-#: src/Schemas/Productscml/Core.php:639
+#: src/Schemas/Productscml/Core.php:700
 msgid ""
 "Category update skipped. The category was created from a different "
 "configuration."
 msgstr ""
 
-#: src/Schemas/Productscml/Core.php:648
+#: src/Schemas/Productscml/Core.php:709
 msgid "Category name update."
 msgstr ""
 
-#: src/Schemas/Productscml/Core.php:652
+#: src/Schemas/Productscml/Core.php:713
 msgid "The name of the category has not changed, skipping the name update."
 msgstr ""
 
-#: src/Schemas/Productscml/Core.php:656
+#: src/Schemas/Productscml/Core.php:717
 msgid "A new category name has been set."
 msgstr ""
 
-#: src/Schemas/Productscml/Core.php:677 src/Schemas/Productscml/Core.php:690
+#: src/Schemas/Productscml/Core.php:738 src/Schemas/Productscml/Core.php:751
 msgid ""
 "The image updating for the category is missing. It is not found in the media "
 "library."
 msgstr ""
 
-#: src/Schemas/Productscml/Core.php:703
+#: src/Schemas/Productscml/Core.php:764
 msgid "Category description update."
 msgstr ""
 
-#: src/Schemas/Productscml/Core.php:707
+#: src/Schemas/Productscml/Core.php:768
 msgid ""
 "The description of the category has not changed, skipping the description "
 "update."
 msgstr ""
 
-#: src/Schemas/Productscml/Core.php:711
+#: src/Schemas/Productscml/Core.php:772
 msgid "A new category description has been set."
 msgstr ""
 
-#: src/Schemas/Productscml/Core.php:722
+#: src/Schemas/Productscml/Core.php:783
 msgid "Update the parent for the category."
 msgstr ""
 
-#: src/Schemas/Productscml/Core.php:726
+#: src/Schemas/Productscml/Core.php:787
 msgid "The parent is absent in 1C."
 msgstr ""
 
-#: src/Schemas/Productscml/Core.php:732 src/Schemas/Productscml/Core.php:786
+#: src/Schemas/Productscml/Core.php:793 src/Schemas/Productscml/Core.php:847
 msgid "Search for a parent category by ID from 1C."
 msgstr ""
 
-#: src/Schemas/Productscml/Core.php:741 src/Schemas/Productscml/Core.php:795
+#: src/Schemas/Productscml/Core.php:802 src/Schemas/Productscml/Core.php:856
 msgid ""
 "More than one parent category found by ID from 1C. Assigning the first "
 "available."
 msgstr ""
 
-#: src/Schemas/Productscml/Core.php:747 src/Schemas/Productscml/Core.php:801
+#: src/Schemas/Productscml/Core.php:808 src/Schemas/Productscml/Core.php:862
 msgid "Assigning parent IDs to a category."
 msgstr ""
 
-#: src/Schemas/Productscml/Core.php:757
+#: src/Schemas/Productscml/Core.php:818
 msgid "Update data of existing category completed successfully."
 msgstr ""
 
-#: src/Schemas/Productscml/Core.php:766
+#: src/Schemas/Productscml/Core.php:827
 msgid "The category does not exist. Category creation started."
 msgstr ""
 
-#: src/Schemas/Productscml/Core.php:818
+#: src/Schemas/Productscml/Core.php:879
 msgid "Assign a description to a category."
 msgstr ""
 
-#: src/Schemas/Productscml/Core.php:825
+#: src/Schemas/Productscml/Core.php:886
 msgid "Assign a image to a category."
 msgstr ""
 
-#: src/Schemas/Productscml/Core.php:837 src/Schemas/Productscml/Core.php:850
+#: src/Schemas/Productscml/Core.php:898 src/Schemas/Productscml/Core.php:911
 msgid ""
 "The image assignment for the category is missing. It is not found in the "
 "media library."
 msgstr ""
 
-#: src/Schemas/Productscml/Core.php:860
+#: src/Schemas/Productscml/Core.php:921
 msgid "Category creation completed successfully."
 msgstr ""
 
-#: src/Schemas/Productscml/Core.php:867
+#: src/Schemas/Productscml/Core.php:928
 msgid "Creating, updating and using categories is disabled."
 msgstr ""
 
-#: src/Schemas/Productscml/Core.php:888
+#: src/Schemas/Productscml/Core.php:944
 msgid "Classifier properties is empty."
 msgstr ""
 
-#: src/Schemas/Productscml/Core.php:904
+#: src/Schemas/Productscml/Core.php:960
 msgid "Creating and updating attributes based on classifier properties."
 msgstr ""
 
-#: src/Schemas/Productscml/Core.php:913
+#: src/Schemas/Productscml/Core.php:969
 msgid "Classifier properties processing."
 msgstr ""
 
-#: src/Schemas/Productscml/Core.php:926
+#: src/Schemas/Productscml/Core.php:982
 msgid "Attribute search by external algorithms for the classifier property."
 msgstr ""
 
-#: src/Schemas/Productscml/Core.php:931
+#: src/Schemas/Productscml/Core.php:987
 msgid "An existing attribute was found when searching by external algorithms."
 msgstr ""
 
-#: src/Schemas/Productscml/Core.php:940
+#: src/Schemas/Productscml/Core.php:996
 msgid "Search for an attribute by name for a classifier property."
 msgstr ""
 
-#: src/Schemas/Productscml/Core.php:946
+#: src/Schemas/Productscml/Core.php:1002
 msgid "An existing attribute was found when searching by name."
 msgstr ""
 
-#: src/Schemas/Productscml/Core.php:957
+#: src/Schemas/Productscml/Core.php:1013
 msgid "The attribute was not found. Creating."
 msgstr ""
 
-#: src/Schemas/Productscml/Core.php:966
+#: src/Schemas/Productscml/Core.php:1022
+msgid "The attribute was not created. Creating error."
+msgstr ""
+
+#: src/Schemas/Productscml/Core.php:1029
 msgid "The attribute was not found. Creating disabled."
 msgstr ""
 
-#: src/Schemas/Productscml/Core.php:975
+#: src/Schemas/Productscml/Core.php:1038
 msgid ""
 "Values for the attribute were found in the classifier properties. Processing."
 msgstr ""
 
-#: src/Schemas/Productscml/Core.php:981
+#: src/Schemas/Productscml/Core.php:1044
 msgid "Assigning a value for an attribute."
 msgstr ""
 
-#: src/Schemas/Productscml/Core.php:987
+#: src/Schemas/Productscml/Core.php:1050
 msgid "Value for attribute not found. Adding value."
 msgstr ""
 
-#: src/Schemas/Productscml/Core.php:991
+#: src/Schemas/Productscml/Core.php:1054
 msgid "Failed to add value for attribute."
 msgstr ""
 
-#: src/Schemas/Productscml/Core.php:996
+#: src/Schemas/Productscml/Core.php:1059
 msgid "The value for the attribute was added earlier. Skip adding value."
 msgstr ""
 
-#: src/Schemas/Productscml/Core.php:1002
+#: src/Schemas/Productscml/Core.php:1065
 msgid ""
 "Adding values for attributes based on classifier properties is disabled."
 msgstr ""
 
-#: src/Schemas/Productscml/Core.php:1007
+#: src/Schemas/Productscml/Core.php:1070
 msgid ""
 "The creation and updates of attributes based on the classifier properties "
 "has been successfully completed."
 msgstr ""
 
-#: src/Schemas/Productscml/Core.php:1011
+#: src/Schemas/Productscml/Core.php:1074
 msgid "Creating, updating and using attributes is disabled."
 msgstr ""
 
-#: src/Schemas/Productscml/Core.php:1024
-msgid "Classifier processing."
+#: src/Schemas/Productscml/Core.php:1087
+msgid "Saving classifier data."
 msgstr ""
 
-#: src/Schemas/Productscml/Core.php:1031
+#: src/Schemas/Productscml/Core.php:1094
 msgid "Found existing classifiers. Search in existing ones by ID."
 msgstr ""
 
-#: src/Schemas/Productscml/Core.php:1040
+#: src/Schemas/Productscml/Core.php:1103
 msgid "The processed classifier is found in the existing ones."
 msgstr ""
 
-#: src/Schemas/Productscml/Core.php:1048
+#: src/Schemas/Productscml/Core.php:1111
 msgid "Classifier not found. Adding a classifier to existing ones."
 msgstr ""
 
-#: src/Schemas/Productscml/Core.php:1067
+#: src/Schemas/Productscml/Core.php:1130
 msgid "Updating the data of an existing classifier."
 msgstr ""
 
-#: src/Schemas/Productscml/Core.php:1071
+#: src/Schemas/Productscml/Core.php:1134
 msgid "Update the properties of an existing classifier."
 msgstr ""
 
-#: src/Schemas/Productscml/Core.php:1078
+#: src/Schemas/Productscml/Core.php:1141
 msgid "Update the groups of an existing classifier."
 msgstr ""
 
-#: src/Schemas/Productscml/Core.php:1085
+#: src/Schemas/Productscml/Core.php:1148
 msgid "Update the units of an existing classifier."
 msgstr ""
 
-#: src/Schemas/Productscml/Core.php:1092
+#: src/Schemas/Productscml/Core.php:1155
 msgid "Update the warehouses of an existing classifier."
 msgstr ""
 
-#: src/Schemas/Productscml/Core.php:1099
+#: src/Schemas/Productscml/Core.php:1162
 msgid "Update the price types of an existing classifier."
 msgstr ""
 
-#: src/Schemas/Productscml/Core.php:1106
+#: src/Schemas/Productscml/Core.php:1169
 msgid "Saving classifier data in its entirety."
 msgstr ""
 
-#: src/Schemas/Productscml/Core.php:1114
+#: src/Schemas/Productscml/Core.php:1177
 msgid "Saving classifier data in terms of groups."
 msgstr ""
 
-#: src/Schemas/Productscml/Core.php:1122
+#: src/Schemas/Productscml/Core.php:1185
 msgid "Saving classifier data in terms of categories."
 msgstr ""
 
-#: src/Schemas/Productscml/Core.php:1130
+#: src/Schemas/Productscml/Core.php:1193
 msgid "Saving classifier data in terms of properties."
 msgstr ""
 
-#: src/Schemas/Productscml/Core.php:1138
+#: src/Schemas/Productscml/Core.php:1201
 msgid "Saving classifier data in terms of price types."
 msgstr ""
 
-#: src/Schemas/Productscml/Core.php:1146
+#: src/Schemas/Productscml/Core.php:1209
 msgid "Saving classifier data in terms of units."
 msgstr ""
 
-#: src/Schemas/Productscml/Core.php:1154
+#: src/Schemas/Productscml/Core.php:1217
 msgid "Saving classifier data in terms of warehouses."
 msgstr ""
 
-#: src/Schemas/Productscml/Core.php:1182
-msgid "Processing of the product catalog is completed."
+#: src/Schemas/Productscml/Core.php:1224
+msgid "Saving classifier data as completed."
 msgstr ""
 
-#: src/Schemas/Productscml/Core.php:1187
+#: src/Schemas/Productscml/Core.php:1245
+msgid ""
+"The catalog with products contains full data. The time of the last full "
+"exchange has been set."
+msgstr ""
+
+#: src/Schemas/Productscml/Core.php:1270
+msgid "Processing a catalog with products as completed."
+msgstr ""
+
+#: src/Schemas/Productscml/Core.php:1275
 msgid "Saving a catalog to meta configuration data."
 msgstr ""
 
-#: src/Schemas/Productscml/Core.php:1201
+#: src/Schemas/Productscml/Core.php:1287
+msgid "Processing a catalog with products."
+msgstr ""
+
+#: src/Schemas/Productscml/Core.php:1291
 msgid "The catalog object has not been previously initialized. Initialization."
 msgstr ""
 
-#: src/Schemas/Productscml/Core.php:1217
-#: src/Schemas/Productscml/Receiver.php:130
-msgid "The time of the last full exchange has been set."
-msgstr ""
-
-#: src/Schemas/Productscml/Core.php:1230
+#: src/Schemas/Productscml/Core.php:1310
 msgid "The catalog object has been assigned an ID."
 msgstr ""
 
-#: src/Schemas/Productscml/Core.php:1234
+#: src/Schemas/Productscml/Core.php:1314
 msgid "The catalog object has been assigned a classifier ID."
 msgstr ""
 
-#: src/Schemas/Productscml/Core.php:1238
+#: src/Schemas/Productscml/Core.php:1318
 msgid "A name has been assigned to the catalog object."
 msgstr ""
 
-#: src/Schemas/Productscml/Core.php:1243
+#: src/Schemas/Productscml/Core.php:1323
 msgid "The catalog object has been assigned an owner."
 msgstr ""
 
-#: src/Schemas/Productscml/Core.php:1247
+#: src/Schemas/Productscml/Core.php:1327
 msgid "A description has been assigned to the catalog object."
 msgstr ""
 
-#: src/Schemas/Productscml/Core.php:1252
+#: src/Schemas/Productscml/Core.php:1332
 msgid "A warehouses has been assigned to the catalog object."
 msgstr ""
 
-#: src/Schemas/Productscml/Core.php:1266
+#: src/Schemas/Productscml/Core.php:1346
 msgid ""
 "Products creation and updating is disabled. The processing of goods was "
 "skipped."
 msgstr ""
 
-#: src/Schemas/Productscml/Core.php:1291
+#: src/Schemas/Productscml/Core.php:1358
+msgid "An exception was thrown from SimpleXMLElement."
+msgstr ""
+
+#: src/Schemas/Productscml/Core.php:1371
+msgid "An exception was thrown while decoding the product."
+msgstr ""
+
+#: src/Schemas/Productscml/Core.php:1387
 msgid "The product is modified according to external algorithms."
 msgstr ""
 
-#: src/Schemas/Productscml/Core.php:1296
+#: src/Schemas/Productscml/Core.php:1392
 msgid "Product !instanceof ProductDataContract. Processing skipped."
 msgstr ""
 
-#: src/Schemas/Productscml/Core.php:1305 src/Schemas/Productscml/Core.php:4514
+#: src/Schemas/Productscml/Core.php:1401 src/Schemas/Productscml/Core.php:4737
 msgid ""
 "The use of products with characteristics is disabled. Processing skipped."
 msgstr ""
 
-#: src/Schemas/Productscml/Core.php:1349
+#: src/Schemas/Productscml/Core.php:1421
+msgid "An exception was thrown while processing the product."
+msgstr ""
+
+#: src/Schemas/Productscml/Core.php:1445
 msgid "Move on to the next product."
 msgstr ""
 
-#: src/Schemas/Productscml/Core.php:1367
+#: src/Schemas/Productscml/Core.php:1463
 msgid "Assign a name to the product."
 msgstr ""
 
-#: src/Schemas/Productscml/Core.php:1371
+#: src/Schemas/Productscml/Core.php:1467
 msgid "The product is a variation. Name assignment omitted."
 msgstr ""
 
-#: src/Schemas/Productscml/Core.php:1380
+#: src/Schemas/Productscml/Core.php:1476
 msgid "The source for assigning the product name has not been selected."
 msgstr ""
 
-#: src/Schemas/Productscml/Core.php:1387
+#: src/Schemas/Productscml/Core.php:1483
 msgid "Product name update skipped because its disabled in the settings."
 msgstr ""
 
-#: src/Schemas/Productscml/Core.php:1429
+#: src/Schemas/Productscml/Core.php:1525
 msgid "Assign name of the product has been successfully completed."
 msgstr ""
 
-#: src/Schemas/Productscml/Core.php:1433
+#: src/Schemas/Productscml/Core.php:1529
 msgid "The name assignment for the product is skipping. Name is not changed."
 msgstr ""
 
-#: src/Schemas/Productscml/Core.php:1497
-msgid "Assign a SKU to a product."
+#: src/Schemas/Productscml/Core.php:1593
+msgid "Assigning a SKU to a product."
 msgstr ""
 
-#: src/Schemas/Productscml/Core.php:1501
-msgid "SKU update during product update is disabled in the settings."
+#: src/Schemas/Productscml/Core.php:1597
+msgid ""
+"SKU update during product update is disabled in the configuration settings."
 msgstr ""
 
-#: src/Schemas/Productscml/Core.php:1508
-msgid "Adding a SKU when adding a product is disabled in the settings."
+#: src/Schemas/Productscml/Core.php:1604
+msgid ""
+"Adding a SKU when adding a product is disabled in the configuration settings."
 msgstr ""
 
-#: src/Schemas/Productscml/Core.php:1517
-msgid "The source for the article is not specified."
+#: src/Schemas/Productscml/Core.php:1613
+msgid "The source of the SKUs is not specified."
 msgstr ""
 
-#: src/Schemas/Productscml/Core.php:1559
+#: src/Schemas/Productscml/Core.php:1655
 msgid ""
 "SKU update skipped. The mode of adding SKU is enabled for products that do "
 "not have them."
 msgstr ""
 
-#: src/Schemas/Productscml/Core.php:1566
+#: src/Schemas/Productscml/Core.php:1662
 msgid ""
 "SKU update skipped. The mode for adding SKUs is enabled for products that "
 "have them on the site and in 1C."
 msgstr ""
 
-#: src/Schemas/Productscml/Core.php:1575
-msgid "The SKU assignment for the product has been successfully completed."
+#: src/Schemas/Productscml/Core.php:1669
+msgid "SKU update skipped. A new SKU is equal to an already filled SKU."
 msgstr ""
 
-#: src/Schemas/Productscml/Core.php:1579
+#: src/Schemas/Productscml/Core.php:1676
+msgid "Assigning a SKU to a product as completed."
+msgstr ""
+
+#: src/Schemas/Productscml/Core.php:1682
 msgid "Failed to set SKU for product."
 msgstr ""
 
-#: src/Schemas/Productscml/Core.php:1864
+#: src/Schemas/Productscml/Core.php:1967
 msgid "Assign a description to the product."
 msgstr ""
 
-#: src/Schemas/Productscml/Core.php:1868
+#: src/Schemas/Productscml/Core.php:1971
 msgid ""
 "Assigning a description to the created product is disabled. Assigning "
 "description skipped."
 msgstr ""
 
-#: src/Schemas/Productscml/Core.php:1875
+#: src/Schemas/Productscml/Core.php:1978
 msgid ""
 "Assigning a description to the updated product is disabled. Assigning "
 "description skipped."
 msgstr ""
 
-#: src/Schemas/Productscml/Core.php:1921
+#: src/Schemas/Productscml/Core.php:2024
 msgid ""
 "When updating products, it is allowed to add descriptions only to products "
 "without a description on the site if there is a description in 1C. Assigning "
 "skipped."
 msgstr ""
 
-#: src/Schemas/Productscml/Core.php:1928
+#: src/Schemas/Productscml/Core.php:2031
 msgid ""
 "When updating products, it is allowed to add descriptions only to products "
 "with a description on the site if there is a description in 1C. Assigning "
 "skipped."
 msgstr ""
 
-#: src/Schemas/Productscml/Core.php:1939
+#: src/Schemas/Productscml/Core.php:2042
 msgid "Assign description of the product has been successfully completed."
 msgstr ""
 
-#: src/Schemas/Productscml/Core.php:1943
+#: src/Schemas/Productscml/Core.php:2046
 msgid ""
 "The description assignment for the product is skipping. Description is not "
 "changed."
 msgstr ""
 
-#: src/Schemas/Productscml/Core.php:1961
+#: src/Schemas/Productscml/Core.php:2064
 msgid "Assign a full description to the product."
 msgstr ""
 
-#: src/Schemas/Productscml/Core.php:1965
+#: src/Schemas/Productscml/Core.php:2068
 msgid ""
 "Assigning a full description to the created product is disabled. Assigning "
 "description skipped."
 msgstr ""
 
-#: src/Schemas/Productscml/Core.php:1972
+#: src/Schemas/Productscml/Core.php:2075
 msgid ""
 "Assigning a full description to the updated product is disabled. Assigning "
 "description skipped."
 msgstr ""
 
-#: src/Schemas/Productscml/Core.php:2017
+#: src/Schemas/Productscml/Core.php:2120
 msgid ""
 "When updating products, it is allowed to add full descriptions only to "
 "products without a description on the site if there is a description in 1C. "
 "Assigning skipped."
 msgstr ""
 
-#: src/Schemas/Productscml/Core.php:2024
+#: src/Schemas/Productscml/Core.php:2127
 msgid ""
 "When updating products, it is allowed to add full descriptions only to "
 "products with a description on the site if there is a description in 1C. "
 "Assigning skipped."
 msgstr ""
 
-#: src/Schemas/Productscml/Core.php:2035
+#: src/Schemas/Productscml/Core.php:2138
 msgid "Assign full description of the product has been successfully completed."
 msgstr ""
 
-#: src/Schemas/Productscml/Core.php:2039
+#: src/Schemas/Productscml/Core.php:2142
 msgid ""
 "The full description assignment for the product is skipping. Description is "
 "not changed."
 msgstr ""
 
-#: src/Schemas/Productscml/Core.php:2058
+#: src/Schemas/Productscml/Core.php:2161
 msgid "Assign categories to a product."
 msgstr ""
 
-#: src/Schemas/Productscml/Core.php:2062
+#: src/Schemas/Productscml/Core.php:2165
 msgid ""
 "Assigning categories when creating products is disabled in the settings."
 msgstr ""
 
-#: src/Schemas/Productscml/Core.php:2069
+#: src/Schemas/Productscml/Core.php:2172
 msgid ""
 "The assignment of categories when creating products is enabled, but in 1C "
 "the product does not have groups."
 msgstr ""
 
-#: src/Schemas/Productscml/Core.php:2076
+#: src/Schemas/Productscml/Core.php:2179
 msgid "Update categories when updating products is disabled in the settings."
 msgstr ""
 
-#: src/Schemas/Productscml/Core.php:2083
+#: src/Schemas/Productscml/Core.php:2186
 msgid "Variations cannot be categorized. Skip assigning categories."
 msgstr ""
 
-#: src/Schemas/Productscml/Core.php:2092
+#: src/Schemas/Productscml/Core.php:2195
 msgid ""
 "The source for assigning categories was not specified. Skip assigning "
 "categories."
 msgstr ""
 
-#: src/Schemas/Productscml/Core.php:2106
+#: src/Schemas/Productscml/Core.php:2209
 msgid "Filling in product categories based on classifier groups."
 msgstr ""
 
-#: src/Schemas/Productscml/Core.php:2110
+#: src/Schemas/Productscml/Core.php:2213
 msgid "Processing of the classifier group."
 msgstr ""
 
-#: src/Schemas/Productscml/Core.php:2116
+#: src/Schemas/Productscml/Core.php:2219
 msgid "The category was found by the external group ID from 1C."
 msgstr ""
 
-#: src/Schemas/Productscml/Core.php:2122
+#: src/Schemas/Productscml/Core.php:2225
 msgid "Category not found by external group ID from 1C."
 msgstr ""
 
-#: src/Schemas/Productscml/Core.php:2128
+#: src/Schemas/Productscml/Core.php:2231
 msgid ""
 "Categories update skipped. The mode of adding categories is enabled for "
 "products that do not have them."
 msgstr ""
 
-#: src/Schemas/Productscml/Core.php:2135
+#: src/Schemas/Productscml/Core.php:2238
 msgid ""
 "Categories update skipped. The mode for adding categories is enabled for "
 "products that have them on the site and in 1C."
 msgstr ""
 
-#: src/Schemas/Productscml/Core.php:2147
+#: src/Schemas/Productscml/Core.php:2250
 msgid "Filling parent categories according to the WordPress structure."
 msgstr ""
 
-#: src/Schemas/Productscml/Core.php:2151
+#: src/Schemas/Productscml/Core.php:2254
 msgid "Filling result."
 msgstr ""
 
-#: src/Schemas/Productscml/Core.php:2156
+#: src/Schemas/Productscml/Core.php:2259
 msgid "Category assignment completed successfully."
 msgstr ""
 
-#: src/Schemas/Productscml/Core.php:2286
+#: src/Schemas/Productscml/Core.php:2389
 msgid "Assigning images to a product by offers."
 msgstr ""
 
-#: src/Schemas/Productscml/Core.php:2290
+#: src/Schemas/Productscml/Core.php:2393
 msgid ""
-"Assignment of images based on offer package is only possible for "
-"variations.. Assigning skipped"
+"Assigning of images based on offer package is only possible for variations. "
+"Assignment skipped."
 msgstr ""
 
-#: src/Schemas/Productscml/Core.php:2297 src/Schemas/Productscml/Core.php:2421
+#: src/Schemas/Productscml/Core.php:2400
 msgid ""
 "Image assignments for CommerceML data are disabled in the settings. "
-"Assigning skipped."
+"Assignment skipped."
 msgstr ""
 
-#: src/Schemas/Productscml/Core.php:2304
-msgid "There are no images for the product. Assigning skipped."
+#: src/Schemas/Productscml/Core.php:2407
+msgid "There are no images for the product. Assignment skipped."
 msgstr ""
 
-#: src/Schemas/Productscml/Core.php:2311 src/Schemas/Productscml/Core.php:2449
+#: src/Schemas/Productscml/Core.php:2414
 msgid ""
-"Image assignment for the product being updated is disabled. Assigning "
+"Image assigning for the product being updated is disabled. Assignment "
 "skipped."
 msgstr ""
 
-#: src/Schemas/Productscml/Core.php:2322 src/Schemas/Productscml/Core.php:2460
+#: src/Schemas/Productscml/Core.php:2425
 msgid ""
 "The product being updated contains images. Adding images is allowed only if "
-"there are none. Assigning skipped."
+"there are none. Assignment skipped."
 msgstr ""
 
-#: src/Schemas/Productscml/Core.php:2329 src/Schemas/Productscml/Core.php:2467
+#: src/Schemas/Productscml/Core.php:2432
 msgid ""
 "The product being updated does not contain an image. Updating images is "
-"allowed only if they are present on the site and in 1C. Assigning skipped."
+"allowed only if they are present on the site and in 1C. Assignment skipped."
 msgstr ""
 
-#: src/Schemas/Productscml/Core.php:2348 src/Schemas/Productscml/Core.php:2483
+#: src/Schemas/Productscml/Core.php:2451 src/Schemas/Productscml/Core.php:2586
 msgid ""
 "The maximum possible number of images has been processed. The rest of the "
 "images are skip."
 msgstr ""
 
-#: src/Schemas/Productscml/Core.php:2358 src/Schemas/Productscml/Core.php:2371
-#: src/Schemas/Productscml/Core.php:2493 src/Schemas/Productscml/Core.php:2506
+#: src/Schemas/Productscml/Core.php:2461 src/Schemas/Productscml/Core.php:2474
+#: src/Schemas/Productscml/Core.php:2596 src/Schemas/Productscml/Core.php:2609
 msgid ""
 "The image assignment for the product is missing. Image is not found in the "
 "media library."
 msgstr ""
 
-#: src/Schemas/Productscml/Core.php:2391
+#: src/Schemas/Productscml/Core.php:2494
 msgid "Assigning a main image for a product variation."
 msgstr ""
 
-#: src/Schemas/Productscml/Core.php:2399 src/Schemas/Productscml/Core.php:2528
-msgid "Product images assign completed successfully."
+#: src/Schemas/Productscml/Core.php:2502
+msgid "Assigning images to a product by offers as completed."
 msgstr ""
 
-#: src/Schemas/Productscml/Core.php:2417
+#: src/Schemas/Productscml/Core.php:2520
 msgid "Assign images to a product."
 msgstr ""
 
-#: src/Schemas/Productscml/Core.php:2428
+#: src/Schemas/Productscml/Core.php:2524
+msgid ""
+"Image assignments for CommerceML data are disabled in the settings. "
+"Assigning skipped."
+msgstr ""
+
+#: src/Schemas/Productscml/Core.php:2531
 msgid "There are no images for the product being created. Assigning skipped."
 msgstr ""
 
-#: src/Schemas/Productscml/Core.php:2435
+#: src/Schemas/Productscml/Core.php:2538
 msgid ""
 "Assigning images to a product variation is not possible. Assigning skipped"
 msgstr ""
 
-#: src/Schemas/Productscml/Core.php:2442
+#: src/Schemas/Productscml/Core.php:2545
 msgid "Assigning images to the created product is disabled. Assigning skipped."
 msgstr ""
 
-#: src/Schemas/Productscml/Core.php:2517
+#: src/Schemas/Productscml/Core.php:2552
+msgid ""
+"Image assignment for the product being updated is disabled. Assigning "
+"skipped."
+msgstr ""
+
+#: src/Schemas/Productscml/Core.php:2563
+msgid ""
+"The product being updated contains images. Adding images is allowed only if "
+"there are none. Assigning skipped."
+msgstr ""
+
+#: src/Schemas/Productscml/Core.php:2570
+msgid ""
+"The product being updated does not contain an image. Updating images is "
+"allowed only if they are present on the site and in 1C. Assigning skipped."
+msgstr ""
+
+#: src/Schemas/Productscml/Core.php:2691
 msgid "Assigning a main image for a product."
 msgstr ""
 
-#: src/Schemas/Productscml/Core.php:2736
+#: src/Schemas/Productscml/Core.php:2702
+msgid "Assign images to a product as completed."
+msgstr ""
+
+#: src/Schemas/Productscml/Core.php:2910
 msgid "Assigning attributes for product."
 msgstr ""
 
-#: src/Schemas/Productscml/Core.php:2852
+#: src/Schemas/Productscml/Core.php:3026
 msgid "Adding attributes to the product is successfully."
 msgstr ""
 
-#: src/Schemas/Productscml/Core.php:2858
+#: src/Schemas/Productscml/Core.php:3032
 msgid "Adding default attributes to the variable product is successfully."
 msgstr ""
 
-#: src/Schemas/Productscml/Core.php:2876
+#: src/Schemas/Productscml/Core.php:3050
 msgid "Assigning attributes for variation."
 msgstr ""
 
-#: src/Schemas/Productscml/Core.php:2886
+#: src/Schemas/Productscml/Core.php:3060
 msgid "The parent product was not found. Skipped."
 msgstr ""
 
-#: src/Schemas/Productscml/Core.php:2893
+#: src/Schemas/Productscml/Core.php:3067
 msgid "The parent product is variation. Skipped."
 msgstr ""
 
-#: src/Schemas/Productscml/Core.php:2902
+#: src/Schemas/Productscml/Core.php:3076
 msgid "The parent product attributes."
 msgstr ""
 
-#: src/Schemas/Productscml/Core.php:2919
+#: src/Schemas/Productscml/Core.php:3093
 msgid "The attribute was not found in the parent product."
 msgstr ""
 
-#: src/Schemas/Productscml/Core.php:2925
+#: src/Schemas/Productscml/Core.php:3099
 msgid "The attribute is not for variations."
 msgstr ""
 
-#: src/Schemas/Productscml/Core.php:2952
+#: src/Schemas/Productscml/Core.php:3126
 msgid "Adding attributes to the variation is successfully."
 msgstr ""
 
-#: src/Schemas/Productscml/Core.php:2969
+#: src/Schemas/Productscml/Core.php:3143
 msgid "Getting to variation parent attributes."
 msgstr ""
 
-#: src/Schemas/Productscml/Core.php:2993
+#: src/Schemas/Productscml/Core.php:3167
 msgid "The attribute is not for variations. Save required."
 msgstr ""
 
-#: src/Schemas/Productscml/Core.php:3006
+#: src/Schemas/Productscml/Core.php:3180
 msgid "Preserve parent attributes for accessibility in variations."
 msgstr ""
 
-#: src/Schemas/Productscml/Core.php:3028
+#: src/Schemas/Productscml/Core.php:3202
 msgid "Processing of product attributes."
 msgstr ""
 
-#: src/Schemas/Productscml/Core.php:3032
+#: src/Schemas/Productscml/Core.php:3206
 msgid ""
 "Assigning attributes when creating products is disabled. Attribute "
 "assignment skipped."
 msgstr ""
 
-#: src/Schemas/Productscml/Core.php:3039
+#: src/Schemas/Productscml/Core.php:3213
 msgid ""
 "Assigning attributes when updating products is disabled. Attribute "
 "assignment skipped."
 msgstr ""
 
-#: src/Schemas/Productscml/Core.php:3044
+#: src/Schemas/Productscml/Core.php:3218
 msgid ""
 "Assigning attributes to a product based on the properties of the product "
 "catalog."
 msgstr ""
 
-#: src/Schemas/Productscml/Core.php:3048
+#: src/Schemas/Productscml/Core.php:3222
 msgid "Zeroing the characteristics of a variable product."
 msgstr ""
 
-#: src/Schemas/Productscml/Core.php:3063 src/Schemas/Productscml/Core.php:3294
+#: src/Schemas/Productscml/Core.php:3237 src/Schemas/Productscml/Core.php:3468
 msgid "Processing of product properties."
 msgstr ""
 
-#: src/Schemas/Productscml/Core.php:3071 src/Schemas/Productscml/Core.php:3308
+#: src/Schemas/Productscml/Core.php:3245 src/Schemas/Productscml/Core.php:3482
 msgid "The attribute has an empty value."
 msgstr ""
 
-#: src/Schemas/Productscml/Core.php:3077 src/Schemas/Productscml/Core.php:3314
+#: src/Schemas/Productscml/Core.php:3251 src/Schemas/Productscml/Core.php:3488
 msgid "The attribute was not found in the classifier properties."
 msgstr ""
 
-#: src/Schemas/Productscml/Core.php:3091 src/Schemas/Productscml/Core.php:3328
+#: src/Schemas/Productscml/Core.php:3265 src/Schemas/Productscml/Core.php:3502
 msgid "The attribute contains an empty value identifier."
 msgstr ""
 
-#: src/Schemas/Productscml/Core.php:3114 src/Schemas/Productscml/Core.php:3358
+#: src/Schemas/Productscml/Core.php:3288 src/Schemas/Productscml/Core.php:3532
 msgid ""
 "Adding values from product properties is disabled and the value is missing "
 "from the classifier properties directory. Adding a value is skipped."
 msgstr ""
 
-#: src/Schemas/Productscml/Core.php:3141 src/Schemas/Productscml/Core.php:3381
+#: src/Schemas/Productscml/Core.php:3315 src/Schemas/Productscml/Core.php:3555
 msgid "Processing of product characteristics."
 msgstr ""
 
-#: src/Schemas/Productscml/Core.php:3165 src/Schemas/Productscml/Core.php:3404
-#: src/Schemas/Productscml/Core.php:3482
+#: src/Schemas/Productscml/Core.php:3339 src/Schemas/Productscml/Core.php:3578
+#: src/Schemas/Productscml/Core.php:3656
 msgid "The characteristic has an empty value."
 msgstr ""
 
-#: src/Schemas/Productscml/Core.php:3175 src/Schemas/Productscml/Core.php:3414
-#: src/Schemas/Productscml/Core.php:3490
+#: src/Schemas/Productscml/Core.php:3349 src/Schemas/Productscml/Core.php:3588
+#: src/Schemas/Productscml/Core.php:3664
 msgid "The attribute was not found. Creating by characteristic."
 msgstr ""
 
-#: src/Schemas/Productscml/Core.php:3199 src/Schemas/Productscml/Core.php:3445
-#: src/Schemas/Productscml/Core.php:3514
+#: src/Schemas/Productscml/Core.php:3373 src/Schemas/Productscml/Core.php:3619
+#: src/Schemas/Productscml/Core.php:3688
 msgid ""
 "Adding values from product characteristics is disabled and the value is "
 "missing in global attributes. Adding a value is skipped."
 msgstr ""
 
-#: src/Schemas/Productscml/Core.php:3243 src/Schemas/Productscml/Core.php:3557
+#: src/Schemas/Productscml/Core.php:3417 src/Schemas/Productscml/Core.php:3731
 msgid "Attributes before processing."
 msgstr ""
 
-#: src/Schemas/Productscml/Core.php:3269
+#: src/Schemas/Productscml/Core.php:3443
 msgid ""
 "Assigning attributes to a product based on the properties of the offers "
 "package."
 msgstr ""
 
-#: src/Schemas/Productscml/Core.php:3273
+#: src/Schemas/Productscml/Core.php:3447
 msgid ""
 "The file type is not an offer package. Skip assigning attributes on offer "
 "data."
 msgstr ""
 
-#: src/Schemas/Productscml/Core.php:3335
+#: src/Schemas/Productscml/Core.php:3509
 msgid "The attribute contains in products characteristics."
 msgstr ""
 
-#: src/Schemas/Productscml/Core.php:3561
+#: src/Schemas/Productscml/Core.php:3735
 msgid "Attributes not found. Skipped."
 msgstr ""
 
-#: src/Schemas/Productscml/Core.php:3593
+#: src/Schemas/Productscml/Core.php:3767
 msgid "Prices processing."
 msgstr ""
 
-#: src/Schemas/Productscml/Core.php:3597
+#: src/Schemas/Productscml/Core.php:3771
 msgid "Prices is not found. Update skipping."
 msgstr ""
 
-#: src/Schemas/Productscml/Core.php:3603
+#: src/Schemas/Productscml/Core.php:3777
 msgid "Prices before processing."
 msgstr ""
 
-#: src/Schemas/Productscml/Core.php:3641
+#: src/Schemas/Productscml/Core.php:3815
 msgid "Assign the regular price."
 msgstr ""
 
-#: src/Schemas/Productscml/Core.php:3674
+#: src/Schemas/Productscml/Core.php:3848
 msgid "Assign the sale price."
 msgstr ""
 
-#: src/Schemas/Productscml/Core.php:3682
+#: src/Schemas/Productscml/Core.php:3856
 msgid "Assign the current price from sale price."
 msgstr ""
 
-#: src/Schemas/Productscml/Core.php:3687
+#: src/Schemas/Productscml/Core.php:3861
 msgid "Assign the current price from regular price."
 msgstr ""
 
-#: src/Schemas/Productscml/Core.php:3694
+#: src/Schemas/Productscml/Core.php:3868
 msgid "Prices processing is off. Assigning is skip."
 msgstr ""
 
-#: src/Schemas/Productscml/Core.php:3698
+#: src/Schemas/Productscml/Core.php:3872
 msgid "Prices processing is successful."
 msgstr ""
 
-#: src/Schemas/Productscml/Core.php:3720
+#: src/Schemas/Productscml/Core.php:3894
 msgid "Inventories processing."
 msgstr ""
 
-#: src/Schemas/Productscml/Core.php:3724
+#: src/Schemas/Productscml/Core.php:3898
 msgid ""
 "Product inventories update by offers quantity is disabled. Update skipping."
 msgstr ""
 
-#: src/Schemas/Productscml/Core.php:3728
+#: src/Schemas/Productscml/Core.php:3902
 msgid "Set inventories by offers quantity: start."
 msgstr ""
 
-#: src/Schemas/Productscml/Core.php:3744
+#: src/Schemas/Productscml/Core.php:3918
 msgid ""
 "Product inventories stored in parent product. Update variation skipping."
 msgstr ""
 
-#: src/Schemas/Productscml/Core.php:3778
+#: src/Schemas/Productscml/Core.php:3952
 msgid "Set inventories by offers quantity: end."
 msgstr ""
 
-#: src/Schemas/Productscml/Core.php:3804 src/Schemas/Productscml/Core.php:4184
+#: src/Schemas/Productscml/Core.php:3978 src/Schemas/Productscml/Core.php:4376
 msgid "Product search by external ID from 1C."
 msgstr ""
 
-#: src/Schemas/Productscml/Core.php:3814 src/Schemas/Productscml/Core.php:4194
+#: src/Schemas/Productscml/Core.php:3988 src/Schemas/Productscml/Core.php:4386
 msgid "Product search result by external ID from 1C."
 msgstr ""
 
-#: src/Schemas/Productscml/Core.php:3829
+#: src/Schemas/Productscml/Core.php:4003
 msgid "Product search by external algorithms."
 msgstr ""
 
-#: src/Schemas/Productscml/Core.php:3854
+#: src/Schemas/Productscml/Core.php:4028
 msgid "Products create is disabled. Product create skipped."
 msgstr ""
 
-#: src/Schemas/Productscml/Core.php:3863
+#: src/Schemas/Productscml/Core.php:4037
 msgid "The use of products delete mark is disabled. Product create skipped."
 msgstr ""
 
-#: src/Schemas/Productscml/Core.php:3876 src/Schemas/Productscml/Core.php:4237
+#: src/Schemas/Productscml/Core.php:4050 src/Schemas/Productscml/Core.php:4429
 msgid "The product contains the characteristics."
 msgstr ""
 
-#: src/Schemas/Productscml/Core.php:3885
+#: src/Schemas/Productscml/Core.php:4059
 msgid "Parent product search by external ID from 1C."
 msgstr ""
 
-#: src/Schemas/Productscml/Core.php:3891 src/Schemas/Productscml/Core.php:3916
-#: src/Schemas/Productscml/Core.php:4252
+#: src/Schemas/Productscml/Core.php:4065 src/Schemas/Productscml/Core.php:4090
+#: src/Schemas/Productscml/Core.php:4444
 msgid ""
 "Several identical parent products were found. The first one is selected."
 msgstr ""
 
-#: src/Schemas/Productscml/Core.php:3895
+#: src/Schemas/Productscml/Core.php:4069
 msgid "Parent product search result by external ID from 1C."
 msgstr ""
 
-#: src/Schemas/Productscml/Core.php:3910
+#: src/Schemas/Productscml/Core.php:4084
 msgid "Parent product search by external algorithms."
 msgstr ""
 
-#: src/Schemas/Productscml/Core.php:3920 src/Schemas/Productscml/Core.php:4271
+#: src/Schemas/Productscml/Core.php:4094 src/Schemas/Productscml/Core.php:4463
 msgid "Parent product search result by external algorithms."
 msgstr ""
 
-#: src/Schemas/Productscml/Core.php:3927 src/Schemas/Productscml/Core.php:4278
+#: src/Schemas/Productscml/Core.php:4101 src/Schemas/Productscml/Core.php:4470
 msgid "Parent product is not found."
 msgstr ""
 
-#: src/Schemas/Productscml/Core.php:3928
+#: src/Schemas/Productscml/Core.php:4102
 msgid ""
 "Creating simple products by characteristics is disabled in the settings. "
 "Product create skipped."
 msgstr ""
 
-#: src/Schemas/Productscml/Core.php:3932 src/Schemas/Productscml/Core.php:4283
+#: src/Schemas/Productscml/Core.php:4106 src/Schemas/Productscml/Core.php:4475
 msgid ""
 "Creating simple products by characteristics is enabled in the settings. "
 "Parent product is not found. Creating simple product by characteristic."
 msgstr ""
 
-#: src/Schemas/Productscml/Core.php:3943 src/Schemas/Productscml/Core.php:4294
+#: src/Schemas/Productscml/Core.php:4117 src/Schemas/Productscml/Core.php:4486
 msgid "Changing the parent product type to variable."
 msgstr ""
 
-#: src/Schemas/Productscml/Core.php:3950 src/Schemas/Productscml/Core.php:4301
+#: src/Schemas/Productscml/Core.php:4124 src/Schemas/Productscml/Core.php:4493
 msgid "Variation is not found. Creating."
 msgstr ""
 
-#: src/Schemas/Productscml/Core.php:3964 src/Schemas/Productscml/Core.php:4315
+#: src/Schemas/Productscml/Core.php:4138 src/Schemas/Productscml/Core.php:4507
 msgid "The creation of the variation is completed."
 msgstr ""
 
-#: src/Schemas/Productscml/Core.php:3969
+#: src/Schemas/Productscml/Core.php:4143
 msgid "The product is simple. Creating."
 msgstr ""
 
-#: src/Schemas/Productscml/Core.php:4003
+#: src/Schemas/Productscml/Core.php:4177
 msgid ""
 "Assignment of data for the created product according to external algorithms."
 msgstr ""
 
-#: src/Schemas/Productscml/Core.php:4016
+#: src/Schemas/Productscml/Core.php:4190
 msgid "The product is created."
 msgstr ""
 
-#: src/Schemas/Productscml/Core.php:4035
+#: src/Schemas/Productscml/Core.php:4209
 msgid ""
 "Assignment of data for the created product according to external algorithms "
 "after saving."
 msgstr ""
 
-#: src/Schemas/Productscml/Core.php:4043
+#: src/Schemas/Productscml/Core.php:4217
 msgid "The product has been updated using external algorithms."
 msgstr ""
 
-#: src/Schemas/Productscml/Core.php:4054
+#: src/Schemas/Productscml/Core.php:4228
 msgid "Product is found. Updating."
 msgstr ""
 
-#: src/Schemas/Productscml/Core.php:4061
+#: src/Schemas/Productscml/Core.php:4235
 msgid "Products update is disabled in settings. Product update skipped."
 msgstr ""
 
-#: src/Schemas/Productscml/Core.php:4075 src/Schemas/Productscml/Core.php:4338
+#: src/Schemas/Productscml/Core.php:4249 src/Schemas/Productscml/Core.php:4530
 msgid "The product is created from a different configuration. Update skipped."
 msgstr ""
 
-#: src/Schemas/Productscml/Core.php:4084 src/Schemas/Productscml/Core.php:4347
+#: src/Schemas/Productscml/Core.php:4258 src/Schemas/Productscml/Core.php:4539
 msgid "The product is created from a different schema. Update skipped."
 msgstr ""
 
-#: src/Schemas/Productscml/Core.php:4098
+#: src/Schemas/Productscml/Core.php:4272
 msgid "The use of products from trash is disabled. Updating skipped."
 msgstr ""
 
-#: src/Schemas/Productscml/Core.php:4114
+#: src/Schemas/Productscml/Core.php:4288
 msgid ""
 "Assignment of data for the updated product according to external algorithms."
 msgstr ""
 
-#: src/Schemas/Productscml/Core.php:4127
-msgid "Product update has been successfully completed."
+#: src/Schemas/Productscml/Core.php:4311
+msgid "Product is found. Product data is changed. Saving changes is completed."
 msgstr ""
 
-#: src/Schemas/Productscml/Core.php:4146
+#: src/Schemas/Productscml/Core.php:4315
+msgid "Product is found. Product data is not changed. Updating is completed."
+msgstr ""
+
+#: src/Schemas/Productscml/Core.php:4335
 msgid ""
 "Assignment of data for the updated product according to external algorithms "
 "after saving."
 msgstr ""
 
-#: src/Schemas/Productscml/Core.php:4154
+#: src/Schemas/Productscml/Core.php:4345
 msgid ""
 "Product update after assigning data using external algorithms has been "
 "successfully completed."
 msgstr ""
 
-#: src/Schemas/Productscml/Core.php:4174
+#: src/Schemas/Productscml/Core.php:4366
 msgid "Processing an offer from a package of offers."
 msgstr ""
 
-#: src/Schemas/Productscml/Core.php:4208
+#: src/Schemas/Productscml/Core.php:4400
 msgid "Product not found. Search by external algorithms."
 msgstr ""
 
-#: src/Schemas/Productscml/Core.php:4226
+#: src/Schemas/Productscml/Core.php:4418
 msgid "Product not found."
 msgstr ""
 
-#: src/Schemas/Productscml/Core.php:4248
+#: src/Schemas/Productscml/Core.php:4440
 msgid "Parent product search result by external code from 1C."
 msgstr ""
 
-#: src/Schemas/Productscml/Core.php:4279
+#: src/Schemas/Productscml/Core.php:4471
 msgid ""
 "Creating simple products by characteristics is disabled in the settings. "
 "Processing skipped."
 msgstr ""
 
-#: src/Schemas/Productscml/Core.php:4320
+#: src/Schemas/Productscml/Core.php:4512
 msgid "Offer update skipped."
 msgstr ""
 
-#: src/Schemas/Productscml/Core.php:4408 src/Schemas/Productscml/Core.php:4413
+#: src/Schemas/Productscml/Core.php:4589
+msgid "Processing a the offers from offers package as completed."
+msgstr ""
+
+#: src/Schemas/Productscml/Core.php:4594
+msgid "Processing a offers package as completed."
+msgstr ""
+
+#: src/Schemas/Productscml/Core.php:4607
+msgid "Processing a offers package."
+msgstr ""
+
+#: src/Schemas/Productscml/Core.php:4621 src/Schemas/Productscml/Core.php:4626
 msgid "The offer package object contains only the changes."
 msgstr ""
 
-#: src/Schemas/Productscml/Core.php:4458
+#: src/Schemas/Productscml/Core.php:4669
+msgid "Processing a the offers from offers package."
+msgstr ""
+
+#: src/Schemas/Productscml/Core.php:4673
 msgid "Saving the offer package to configuration meta data."
 msgstr ""
 
-#: src/Schemas/Productscml/Core.php:4484
-msgid "An exception was thrown decode the offer."
+#: src/Schemas/Productscml/Core.php:4697
+msgid "SimpleXMLElement threw an exception when converting the offer."
 msgstr ""
 
-#: src/Schemas/Productscml/Core.php:4500
+#: src/Schemas/Productscml/Core.php:4707
+msgid "DecoderCML threw an exception when converting the offer."
+msgstr ""
+
+#: src/Schemas/Productscml/Core.php:4723
 msgid "The offer has been changed according to external algorithms."
 msgstr ""
 
-#: src/Schemas/Productscml/Core.php:4505
+#: src/Schemas/Productscml/Core.php:4728
 msgid "Offer !instanceof ProductDataContract. Processing skipped."
 msgstr ""
 
-#: src/Schemas/Productscml/Core.php:4524
+#: src/Schemas/Productscml/Core.php:4754
 msgid "An exception was thrown while processing the offer."
+msgstr ""
+
+#: src/Schemas/Productscml/Core.php:4778
+msgid "Move on to the next offer."
+msgstr ""
+
+#: src/Schemas/Productscml/Receiver.php:52
+msgid "Received new request from 1C for Receiver."
+msgstr ""
+
+#: src/Schemas/Productscml/Receiver.php:58
+msgid "The resulting query parameters."
 msgstr ""
 
 #: src/Schemas/Productscml/Receiver.php:101
 msgid "Action is not found in schema."
 msgstr ""
 
-#: src/Schemas/Productscml/Receiver.php:114
+#: src/Schemas/Productscml/Receiver.php:115
 msgid "Sending a successful completion of the exchange in 1C."
 msgstr ""
 
-#: src/Schemas/Productscml/Receiver.php:414
+#: src/Schemas/Productscml/Receiver.php:127
+msgid "The time of the last full exchange has been set."
+msgstr ""
+
+#: src/Schemas/Productscml/Receiver.php:320
+msgid "1C authorization has been successfully passed."
+msgstr ""
+
+#: src/Schemas/Productscml/Receiver.php:427
 msgid "PHP session none, restart last PHP session."
 msgstr ""
 
-#: src/Schemas/Productscml/Receiver.php:457
+#: src/Schemas/Productscml/Receiver.php:449
+msgid "Cleaning the directory for temporary files as completed."
+msgstr ""
+
+#: src/Schemas/Productscml/Receiver.php:453
+msgid "Cleaning the directory for temporary files as failed."
+msgstr ""
+
+#: src/Schemas/Productscml/Receiver.php:472
 msgid "Session for receiving requests is changed by external algorithms."
 msgstr ""
 
-#: src/Schemas/Productscml/Receiver.php:461
+#: src/Schemas/Productscml/Receiver.php:477
 msgid "Check the directory for temporary files."
 msgstr ""
 
-#: src/Schemas/Productscml/Receiver.php:467
+#: src/Schemas/Productscml/Receiver.php:483
 msgid "Failed to check the temp directory."
 msgstr ""
 
-#: src/Schemas/Productscml/Receiver.php:622
+#: src/Schemas/Productscml/Receiver.php:585
+msgid "Writing data to a file named:"
+msgstr ""
+
+#: src/Schemas/Productscml/Receiver.php:641
 msgid ""
 "The file was not saved to the media library. Adding is disabled in the "
 "settings."
 msgstr ""
 
-#: src/Schemas/Productscml/Receiver.php:671
+#: src/Schemas/Productscml/Receiver.php:697
 msgid "No name"
 msgstr ""
 
-#: src/Schemas/Productscml/Receiver.php:688
+#: src/Schemas/Productscml/Receiver.php:719
 msgid "The image has not been added to the media library."
 msgstr ""
 
-#: src/Schemas/Productscml/Receiver.php:692
+#: src/Schemas/Productscml/Receiver.php:723
 msgid "Image added to media library, id:"
 msgstr ""
 
-#: src/Schemas/Productscml/Receiver.php:700
+#: src/Schemas/Productscml/Receiver.php:731
 msgid ""
 "The image has not been added to the media library. It was added earlier, id:"
 msgstr ""
@@ -5068,39 +5457,39 @@ msgstr ""
 msgid "The code can be obtained from the plugin website."
 msgstr ""
 
-#: views/activation/form.php:34 views/configurations/create_form.php:40
+#: views/activation/form.php:34 views/configurations/create_form.php:39
 msgid "Site:"
 msgstr ""
 
-#: views/activation/form.php:38 views/promo/activation.php:61
+#: views/activation/form.php:38 views/promo/activation.php:63
 msgid "No financial opportunity?"
 msgstr ""
 
-#: views/activation/form.php:39 views/promo/activation.php:62
+#: views/activation/form.php:39 views/promo/activation.php:64
 msgid "Take part in the development of the solution you use."
 msgstr ""
 
-#: views/activation/form.php:41 views/promo/activation.php:64
+#: views/activation/form.php:41 views/promo/activation.php:66
 msgid ""
 "Information on how to participate is available in the official documentation "
 "on the official website."
 msgstr ""
 
-#: views/activation/form.php:43 views/promo/activation.php:66
+#: views/activation/form.php:43 views/promo/activation.php:68
 msgid "Docs:"
 msgstr ""
 
-#: views/activation/form.php:47 views/promo/activation.php:70
+#: views/activation/form.php:47 views/promo/activation.php:72
 msgid "Every activation counts!"
 msgstr ""
 
-#: views/activation/form.php:48 views/promo/activation.php:71
+#: views/activation/form.php:48 views/promo/activation.php:73
 msgid ""
 "By activating your project, you let the WC1C team know that the plugin is in "
 "active use."
 msgstr ""
 
-#: views/activation/form.php:50 views/promo/activation.php:73
+#: views/activation/form.php:50 views/promo/activation.php:75
 msgid ""
 "Also, you give a financial opportunity to release compatibility updates and "
 "add new features!"
@@ -5121,14 +5510,10 @@ msgid "Create configuration"
 msgstr ""
 
 #: views/configurations/create_form.php:35
-msgid "More schemas for configurations"
-msgstr ""
-
-#: views/configurations/create_form.php:36
 msgid "Additional schemes are available in extensions on the official website."
 msgstr ""
 
-#: views/configurations/create_form.php:38
+#: views/configurations/create_form.php:37
 msgid ""
 "Each exchange scheme has a unique algorithm of operation and purpose. You "
 "need to choose only the scheme you need."
@@ -5154,15 +5539,38 @@ msgstr ""
 msgid "Delete"
 msgstr ""
 
-#: views/configurations/empty.php:7
+#: views/configurations/empty.php:8
+msgid ""
+"To exchange data, at least one configuration must be created and configured."
+msgstr ""
+
+#: views/configurations/empty.php:9
+msgid ""
+"The number of settings and method of data exchange in the configuration "
+"depends on the scheme selected for exchange during creation."
+msgstr ""
+
+#: views/configurations/empty.php:22
 msgid "Configurations by query is not found, query:"
 msgstr ""
 
-#: views/configurations/empty.php:11
-msgid "Configurations not found."
+#: views/configurations/empty.php:26
+msgid "Configurations not found"
 msgstr ""
 
-#: views/configurations/empty.php:16 views/header.php:6
+#: views/configurations/empty.php:36
+msgid ""
+"For flexible exchange distribution, an unlimited number of configurations "
+"can be created."
+msgstr ""
+
+#: views/configurations/empty.php:37
+msgid ""
+"It is recommended to create at least two configurations: 1. To exchange "
+"nomenclature data, 2. To exchange orders data."
+msgstr ""
+
+#: views/configurations/empty.php:40 views/header.php:6
 msgid "New configuration"
 msgstr ""
 
@@ -5186,7 +5594,7 @@ msgstr ""
 msgid "Warning"
 msgstr ""
 
-#: views/configurations/update_schema_error.php:5
+#: views/configurations/update_schema_error.php:6
 msgid "Update is not available."
 msgstr ""
 
@@ -5363,92 +5771,92 @@ msgstr ""
 msgid "Documentation"
 msgstr ""
 
-#: views/promo/activation.php:6
+#: views/promo/activation.php:8
 msgid "Your copy of the free software has not been activated."
 msgstr ""
 
-#: views/promo/activation.php:7
+#: views/promo/activation.php:9
 msgid ""
 "We recommend that you activate your copy of the free software for stable "
 "updates and better performance."
 msgstr ""
 
-#: views/promo/activation.php:8
+#: views/promo/activation.php:10
 msgid ""
 "After activation, this section will disappear and will no longer be shown."
 msgstr ""
 
-#: views/promo/activation.php:19
+#: views/promo/activation.php:22
 msgid "How to activate?"
 msgstr ""
 
-#: views/promo/activation.php:21
+#: views/promo/activation.php:24
 msgid ""
 "Get an activation code in any available way. For example, on the official "
 "website."
 msgstr ""
 
-#: views/promo/activation.php:22
+#: views/promo/activation.php:25
 msgid "Enter the activation code in the plugin settings."
 msgstr ""
 
-#: views/promo/activation.php:27
+#: views/promo/activation.php:30
 msgid "Why is activation required?"
 msgstr ""
 
-#: views/promo/activation.php:29
+#: views/promo/activation.php:32
 msgid ""
 "You received a copy of the software completely free of charge and you can "
 "use it as is without any activation."
 msgstr ""
 
-#: views/promo/activation.php:30
+#: views/promo/activation.php:33
 msgid ""
 "However, in order to receive timely, as well as necessary updates and "
 "improvements, it is necessary to activate the current environment."
 msgstr ""
 
-#: views/promo/activation.php:33
+#: views/promo/activation.php:36
 msgid ""
 "Activation is vital for the performance of the plugin and its further active "
 "development. Dont ignore activation."
 msgstr ""
 
-#: views/promo/activation.php:34
+#: views/promo/activation.php:37
 msgid "Each activation triggers a mechanism to improve the software you use."
 msgstr ""
 
-#: views/promo/activation.php:37
+#: views/promo/activation.php:40
 msgid ""
 "In addition to supporting the software you use, additional features will be "
 "added."
 msgstr ""
 
-#: views/promo/activation.php:40
+#: views/promo/activation.php:43
 msgid "ATTENTION! Activation does not add the possibility of extensions."
 msgstr ""
 
-#: views/promo/activation.php:42
+#: views/promo/activation.php:45
 msgid ""
 "Additional features are implemented in extensions! After activation, "
 "features from extensions are not activated."
 msgstr ""
 
-#: views/promo/activation.php:43
+#: views/promo/activation.php:46
 msgid ""
 "To add features, you need to install extensions. They are supplied by "
 "separate plugins, after activation of which the necessary features are added."
 msgstr ""
 
-#: views/promo/activation.php:54
+#: views/promo/activation.php:56
 msgid "Do not wait until something breaks!"
 msgstr ""
 
-#: views/promo/activation.php:55
+#: views/promo/activation.php:57
 msgid "Activate your current copy of the software."
 msgstr ""
 
-#: views/promo/activation.php:57
+#: views/promo/activation.php:59
 msgid "Buy code:"
 msgstr ""
 
@@ -5484,6 +5892,10 @@ msgstr ""
 
 #: views/tools/empty.php:5
 msgid "As soon as the tools are installed, they will appear in this section."
+msgstr ""
+
+#: views/tools/item.php:14
+msgid "Open tool"
 msgstr ""
 
 #: views/wizards/error.php:3
@@ -5570,8 +5982,8 @@ msgstr ""
 
 #. Description of the plugin/theme
 msgid ""
-"Implementation of a mechanism for flexible exchange of various data between "
-"1C products and the WooCommerce plugin."
+"Implementing a flexible mechanism for exchanging various data between 1C "
+"Company products and the WooCommerce plugin."
 msgstr ""
 
 #. Author of the plugin/theme
