@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: WC1C\n"
-"POT-Creation-Date: 2023-08-14 12:47+0300\n"
-"PO-Revision-Date: 2023-08-14 12:58+0300\n"
+"POT-Creation-Date: 2024-04-18 05:38+0300\n"
+"PO-Revision-Date: 2024-04-18 05:40+0300\n"
 "Last-Translator: Frescoref\n"
 "Language-Team: \n"
 "Language: ru_RU\n"
@@ -32,8 +32,8 @@ msgstr ""
 
 #: src/Activation.php:28
 msgid ""
-"The basic plugin setup has not been done yet, so you can proceed to the "
-"setup, which takes no more than 5 minutes."
+"The basic plugin setup has not been done yet, so can proceed to the setup, "
+"which takes no more than 5 minutes."
 msgstr ""
 "Базовая настройка плагина еще не сделана, поэтому можно переходить к "
 "настройке, которая занимает не более 5 минут."
@@ -46,16 +46,16 @@ msgstr "Перейти к настройке."
 msgid "Integration with 1C"
 msgstr "Интеграция с 1С"
 
-#: src/Admin.php:121 src/Admin/Settings/LogsForm.php:133
+#: src/Admin.php:121 src/Admin/Settings/LogsForm.php:152
 #: src/Admin/Settings/MainForm.php:43
 msgid "Configurations"
 msgstr "Конфигурации"
 
-#: src/Admin.php:128 src/Admin/Settings/LogsForm.php:99
+#: src/Admin.php:128 src/Admin/Settings/LogsForm.php:108
 msgid "Tools"
 msgstr "Инструменты"
 
-#: src/Admin.php:137
+#: src/Admin.php:137 src/Admin/Configurations/Update.php:35
 msgid "Settings"
 msgstr "Настройки"
 
@@ -88,7 +88,7 @@ msgid "not activated"
 msgstr "активации нет"
 
 #: src/Admin/Columns/WooCommerce/Categories.php:38
-#: src/Admin/Columns/WooCommerce/Orders.php:38
+#: src/Admin/Columns/WooCommerce/Orders.php:40
 #: src/Admin/Columns/WooCommerce/Products.php:38
 #: src/Admin/Columns/WordPress/MediaLibrary.php:38
 msgid "1C information"
@@ -103,19 +103,20 @@ msgid "Configuration ID: "
 msgstr "Конфигурация (ID): "
 
 #: src/Admin/Columns/WooCommerce/Categories.php:90
-#: src/Admin/Columns/WooCommerce/Orders.php:63
+#: src/Admin/Columns/WooCommerce/Orders.php:67
+#: src/Admin/Columns/WooCommerce/Orders.php:93
 #: src/Admin/Columns/WooCommerce/Products.php:63
 #: src/Admin/Columns/WordPress/MediaLibrary.php:63
 msgid "Not found"
 msgstr "Не найдена"
 
-#: src/Admin/Columns/WooCommerce/Orders.php:85
+#: src/Admin/Columns/WooCommerce/Orders.php:115
 #: src/Admin/Columns/WooCommerce/Products.php:85
 #: src/Admin/Columns/WordPress/MediaLibrary.php:85
 msgid "Activity:"
 msgstr "Активность:"
 
-#: src/Admin/Columns/WooCommerce/Orders.php:86
+#: src/Admin/Columns/WooCommerce/Orders.php:116
 #: src/Admin/Columns/WooCommerce/Products.php:86
 #: src/Admin/Columns/WordPress/MediaLibrary.php:86
 #, php-format
@@ -123,14 +124,14 @@ msgctxt "%s = human-readable time difference"
 msgid "%s ago."
 msgstr "%s назад."
 
-#: src/Admin/Columns/WooCommerce/Orders.php:92
+#: src/Admin/Columns/WooCommerce/Orders.php:122
 #: src/Admin/Columns/WooCommerce/Products.php:92
 #: src/Admin/Columns/WordPress/MediaLibrary.php:92
-#: src/Admin/Configurations/MainUpdate.php:144
+#: src/Admin/Configurations/MainUpdate.php:146
 msgid "Schema ID:"
 msgstr "Схема (ID):"
 
-#: src/Admin/Columns/WooCommerce/Orders.php:97
+#: src/Admin/Columns/WooCommerce/Orders.php:127
 #: src/Admin/Columns/WooCommerce/Products.php:97
 #: src/Admin/Columns/WordPress/MediaLibrary.php:97
 msgid "Configuration ID:"
@@ -151,36 +152,46 @@ msgid "No activity"
 msgstr "Не было"
 
 #: src/Admin/Configurations/AllTable.php:144
-msgid "An initial setup is required."
-msgstr "Требуется первоначальная настройка."
+msgid "An initial configuration setup is required."
+msgstr "Требуется первоначальная настройка конфигурации."
 
 #: src/Admin/Configurations/AllTable.php:149
 msgid "All configuration algorithms are active."
 msgstr "Все алгоритмы конфигурации активны."
 
 #: src/Admin/Configurations/AllTable.php:154
-msgid "All configuration algorithms are disabled."
-msgstr "Все алгоритмы конфигурации отключены."
+msgid ""
+"All configuration algorithms are disabled. Configuration is switched off in "
+"the settings."
+msgstr ""
+"Все алгоритмы конфигурации отключены. Конфигурация отключена в настройках."
 
 #: src/Admin/Configurations/AllTable.php:159
-msgid "Data is being exchanged. Changing settings is not recommended."
-msgstr "Идет обмен данными. Менять настройки не рекомендуется."
+msgid ""
+"Data is being exchanged. Changing configuration settings is not recommended."
+msgstr "Идет обмен данными. Изменять настройки конфигурации не рекомендуется."
 
 #: src/Admin/Configurations/AllTable.php:164
 msgid ""
-"An error has occurred. You need to look at the event logs, they contain "
-"detailed information."
+"An error has occurred. Should review the event logs for the configuration, "
+"they contain detailed information about the error."
 msgstr ""
-"Произошла ошибка. Нужно смотреть журналы событий, в них есть подробная "
-"информация."
+"Произошла ошибка. Следует просмотреть журналы событий для конфигурации, в "
+"них содержится подробная информация об ошибке."
 
 #: src/Admin/Configurations/AllTable.php:169
-msgid "Awaiting final removal. All algorithms are disabled."
-msgstr "Ожидает окончательного удаления. Все алгоритмы отключены."
+msgid "Awaiting final configuration removal. All algorithms are disabled."
+msgstr ""
+"Конфигурация ожидает окончательного удаления. Все алгоритмы конфигурации "
+"отключены."
 
-#: src/Admin/Configurations/AllTable.php:195 views/tools/item.php:14
-msgid "Open"
-msgstr "Открыть"
+#: src/Admin/Configurations/AllTable.php:172
+msgid "Status description"
+msgstr "Описание состояния"
+
+#: src/Admin/Configurations/AllTable.php:195
+msgid "Open configuration"
+msgstr "Открыть конфигурацию"
 
 #: src/Admin/Configurations/AllTable.php:196
 msgid "Mark as deleted"
@@ -191,13 +202,13 @@ msgid "Remove forever"
 msgstr "Удалить окончательно"
 
 #: src/Admin/Configurations/AllTable.php:214
-msgid "User: "
-msgstr "Пользователь: "
+#: src/Admin/Configurations/AllTable.php:218
+msgid "User:"
+msgstr "Пользователь:"
 
 #: src/Admin/Configurations/AllTable.php:218
-#: src/Admin/Configurations/MainUpdate.php:160
-msgid "User is not exists."
-msgstr "Пользователь не существует."
+msgid "user is not exists."
+msgstr "пользователь не существует."
 
 #: src/Admin/Configurations/AllTable.php:224
 #: src/Admin/Configurations/AllTable.php:257
@@ -216,7 +227,7 @@ msgid "%s ago"
 msgstr "%s назад"
 
 #: src/Admin/Configurations/AllTable.php:240
-msgid "in"
+msgid "at"
 msgstr "в"
 
 #: src/Admin/Configurations/AllTable.php:250
@@ -236,7 +247,7 @@ msgid "Base information"
 msgstr "Базовая информация"
 
 #: src/Admin/Configurations/AllTable.php:311
-#: src/Admin/Configurations/MainUpdate.php:148
+#: src/Admin/Configurations/MainUpdate.php:150
 #: src/Admin/Configurations/UpdateForm.php:42
 #: src/Admin/Settings/ActivationForm.php:159
 msgid "Status"
@@ -259,74 +270,88 @@ msgid "Search"
 msgstr "Найти"
 
 #: src/Admin/Configurations/CreateForm.php:42
-#: src/Admin/Configurations/Update.php:136
-msgid "Configuration name"
-msgstr "Название конфигурации"
+msgid "Name of the configuration"
+msgstr "Наименование конфигурации"
 
-#: src/Admin/Configurations/CreateForm.php:44
+#: src/Admin/Configurations/CreateForm.php:47
 msgid "Enter any data up to 255 characters."
 msgstr "Введите любые данные до 255 символов."
 
-#: src/Admin/Configurations/CreateForm.php:72
+#: src/Admin/Configurations/CreateForm.php:48
+msgid ""
+"The name is used to quickly distinguish between multiple configurations that "
+"have been created."
+msgstr ""
+"Наименование используется для быстрого различения нескольких созданных "
+"конфигураций."
+
+#: src/Admin/Configurations/CreateForm.php:49
+msgid ""
+"Some examples: 1. Exchange data on products, 2. Exchange data on orders, 3. "
+"Update prices and stocks, etc."
+msgstr ""
+"Некоторые примеры: 1. Обмен данными о продуктах, 2. Обмен данными о заказах, "
+"3. Обновление цен и запасов и т. д."
+
+#: src/Admin/Configurations/CreateForm.php:78
 msgid "Configuration schema"
 msgstr "Схема конфигурации"
 
-#: src/Admin/Configurations/CreateForm.php:137
+#: src/Admin/Configurations/CreateForm.php:143
 msgid "Identifier:"
 msgstr "Идентификатор:"
 
 #: src/Admin/Configurations/CreateForm.php:187
-msgid "Configuration create error. Please retry."
-msgstr "Конфигурация не создана. Пожалуйста повторите."
+msgid "Configuration creating error. Please retry."
+msgstr "Ошибка создания конфигурации. Пожалуйста, повторите попытку."
 
-#: src/Admin/Configurations/CreateForm.php:227
-msgid "Configuration create error. Name is required."
-msgstr "Конфигурация не создана. Название конфигурации не заполнено."
+#: src/Admin/Configurations/CreateForm.php:235
+msgid "Configuration creating error. Name is required."
+msgstr "Ошибка создания конфигурации. Название конфигурации не заполнено."
 
-#: src/Admin/Configurations/CreateForm.php:240
-msgid "Configuration create error. Schema is required."
-msgstr "Конфигурация не создана. Не выбрана схема."
+#: src/Admin/Configurations/CreateForm.php:252
+msgid "Configuration creating error. Schema select is required."
+msgstr "Ошибка создания конфигурации. Требуется выбор схемы."
 
-#: src/Admin/Configurations/CreateForm.php:257
-msgid "Configuration create error. Name is exists."
-msgstr ""
-"Конфигурация не создана. Конфигурация с таким названием уже существует."
+#: src/Admin/Configurations/CreateForm.php:273
+msgid "Configuration creating error. Name is exists."
+msgstr "Ошибка создания конфигурации. Конфигурация с таким именем существует."
 
-#: src/Admin/Configurations/CreateForm.php:274
-msgid "Configuration create success. Configuration id: "
-msgstr "Конфигурация успешно создана. Идентификатор конфигурации: "
+#: src/Admin/Configurations/CreateForm.php:294
+msgid "Configuration creating is complete. Configuration ID:"
+msgstr "Создание конфигурации завершено. Идентификатор конфигурации:"
 
-#: src/Admin/Configurations/CreateForm.php:275
+#: src/Admin/Configurations/CreateForm.php:300
 msgid "edit configuration"
 msgstr "редактировать конфигурацию"
 
-#: src/Admin/Configurations/CreateForm.php:287
-msgid "Configuration create error. Please retry saving or change fields."
+#: src/Admin/Configurations/CreateForm.php:310
+msgid "Configuration creating error. Please try saving again or change fields."
 msgstr ""
-"Создание конфигурации не удалось. Пожалуйста повторите процедуру или смените "
-"поля."
+"Ошибка создания конфигурации. Пожалуйста, попробуйте сохранить еще раз или "
+"измените поля."
 
-#: src/Admin/Configurations/Delete.php:55
+#: src/Admin/Configurations/Delete.php:56
 msgid "Error. The configuration to be deleted is active and cannot be deleted."
 msgstr "Ошибка. Удаляемая конфигурация активна и не может быть удалена."
 
-#: src/Admin/Configurations/Delete.php:108
+#: src/Admin/Configurations/Delete.php:109
 msgid "The configuration has been marked as deleted."
 msgstr "Конфигурация помечена как удаленная."
 
-#: src/Admin/Configurations/Delete.php:118
+#: src/Admin/Configurations/Delete.php:119
 msgid "The configuration has been successfully deleted."
 msgstr "Конфигурация успешно удалена."
 
-#: src/Admin/Configurations/Delete.php:125
-msgid "Deleting error. Please retry again."
-msgstr "Ошибка при удалении. Пожалуйста, попробуйте еще раз."
+#: src/Admin/Configurations/Delete.php:126
+msgid "Configuration deleting error. Please retry again."
+msgstr "Ошибка удаления конфигурации. Пожалуйста, повторите попытку."
 
-#: src/Admin/Configurations/DeleteForm.php:38
+#: src/Admin/Configurations/DeleteForm.php:37
 msgid "Delete confirmation"
 msgstr "Подтверждение удаления"
 
-#: src/Admin/Configurations/DeleteForm.php:42
+#: src/Admin/Configurations/DeleteForm.php:41
 msgid ""
 "I confirm that Configuration will be permanently and irrevocably deleted "
 "from WooCommerce."
@@ -334,7 +359,7 @@ msgstr ""
 "Я подтверждаю, что Конфигурация будет окончательно и безвозвратно удалена из "
 "WooCommerce."
 
-#: src/Admin/Configurations/DeleteForm.php:43
+#: src/Admin/Configurations/DeleteForm.php:42
 msgid ""
 "The directory with files for configuration from the FILE system will be "
 "completely removed."
@@ -342,13 +367,16 @@ msgstr ""
 "Каталог с файлами для конфигурации из ФАЙЛОВОЙ системы будет полностью "
 "удален."
 
-#: src/Admin/Configurations/DeleteForm.php:84
-msgid "Delete error. Please retry."
-msgstr "Ошибка при удалении. Пожалуйста повторите."
+#: src/Admin/Configurations/DeleteForm.php:77
+msgid "Configuration deleting error. Please retry."
+msgstr "Ошибка удаления конфигурации. Пожалуйста, повторите попытку."
 
-#: src/Admin/Configurations/DeleteForm.php:126
-msgid "Delete error. Confirmation of final deletion is required."
-msgstr "Ошибка удаления. Требуется подтверждение окончательного удаления."
+#: src/Admin/Configurations/DeleteForm.php:125
+msgid ""
+"Configuration deleting error. Confirmation of final deletion is required."
+msgstr ""
+"Ошибка удаления конфигурации. Требуется подтверждение окончательного "
+"удаления."
 
 #: src/Admin/Configurations/MainUpdate.php:74
 msgid "Configuration update success."
@@ -360,11 +388,11 @@ msgstr ""
 "Ошибка обновления конфигурации. Повторите попытку сохранения или изменения "
 "полей."
 
-#: src/Admin/Configurations/MainUpdate.php:110
+#: src/Admin/Configurations/MainUpdate.php:112
 msgid "Debug is enabled!"
 msgstr "Отладка включена!"
 
-#: src/Admin/Configurations/MainUpdate.php:112
+#: src/Admin/Configurations/MainUpdate.php:114
 msgid ""
 "The current configuration has debug mode enabled. You must disable this mode "
 "after debugging is complete."
@@ -372,11 +400,11 @@ msgstr ""
 "В текущей конфигурации включен режим отладки. Отключите этот режим после "
 "завершения отладки."
 
-#: src/Admin/Configurations/MainUpdate.php:121
+#: src/Admin/Configurations/MainUpdate.php:123
 msgid "Info is enabled!"
 msgstr "Информация включена!"
 
-#: src/Admin/Configurations/MainUpdate.php:123
+#: src/Admin/Configurations/MainUpdate.php:125
 msgid ""
 "The extended information recording mode is enabled for the current "
 "configuration. It is recommended to disable this mode after debugging is "
@@ -385,57 +413,57 @@ msgstr ""
 "Для текущей конфигурации включен режим записи расширенной информации. "
 "Рекомендуется отключать этот режим после завершения отладки."
 
-#: src/Admin/Configurations/MainUpdate.php:135
+#: src/Admin/Configurations/MainUpdate.php:137
 msgid "About configuration"
 msgstr "О конфигурации"
 
-#: src/Admin/Configurations/MainUpdate.php:141 views/extensions/item.php:20
+#: src/Admin/Configurations/MainUpdate.php:143 views/extensions/item.php:20
 msgid "ID:"
 msgstr "ID:"
 
-#: src/Admin/Configurations/MainUpdate.php:156
+#: src/Admin/Configurations/MainUpdate.php:158
 msgid "Owner:"
 msgstr "Владелец:"
 
-#: src/Admin/Configurations/MainUpdate.php:165
+#: src/Admin/Configurations/MainUpdate.php:162
+msgid "User is not exists."
+msgstr "Пользователь не существует."
+
+#: src/Admin/Configurations/MainUpdate.php:167
 msgid "Date active:"
 msgstr "Последняя активность:"
 
-#: src/Admin/Configurations/MainUpdate.php:169
-#: src/Admin/Configurations/MainUpdate.php:179
-#: src/Admin/Configurations/MainUpdate.php:188
+#: src/Admin/Configurations/MainUpdate.php:171
+#: src/Admin/Configurations/MainUpdate.php:181
+#: src/Admin/Configurations/MainUpdate.php:190
 #, php-format
 msgctxt "%s = human-readable time difference"
 msgid " (%s ago)."
 msgstr " (%s назад)."
 
-#: src/Admin/Configurations/MainUpdate.php:175
+#: src/Admin/Configurations/MainUpdate.php:177
 msgid "Date create:"
 msgstr "Дата создания:"
 
-#: src/Admin/Configurations/MainUpdate.php:184
+#: src/Admin/Configurations/MainUpdate.php:186
 msgid "Date modify:"
 msgstr "Дата изменения:"
 
-#: src/Admin/Configurations/MainUpdate.php:194
+#: src/Admin/Configurations/MainUpdate.php:196
 msgid "Directory:"
 msgstr "Директория:"
 
-#: src/Admin/Configurations/MainUpdate.php:206
+#: src/Admin/Configurations/MainUpdate.php:208
 msgid "Directory size:"
 msgstr "Размер директории:"
 
-#: src/Admin/Configurations/MainUpdate.php:218
+#: src/Admin/Configurations/MainUpdate.php:220
 msgid "Logs directory size:"
 msgstr "Размер директории журналов:"
 
-#: src/Admin/Configurations/MainUpdate.php:233
+#: src/Admin/Configurations/MainUpdate.php:235
 msgid "About schema"
 msgstr "О схеме"
-
-#: src/Admin/Configurations/Update.php:35 src/Admin/Settings.php:48
-msgid "Main"
-msgstr "Основное"
 
 #: src/Admin/Configurations/Update.php:42
 msgid "Logs"
@@ -443,31 +471,35 @@ msgstr "Журналы"
 
 #: src/Admin/Configurations/Update.php:93
 msgid ""
-"The exchange scheme on the basis of which created configuration is "
-"unavailable ."
+"The exchange schema based on which the configuration was created is not "
+"available."
 msgstr "Схема обмена на основании которой создана конфигурация, недоступна."
 
 #: src/Admin/Configurations/Update.php:95
 msgid ""
 "Install the missing schema to work this configuration, change the status and "
-"name, or delete the configuration."
+"name or delete the configuration."
 msgstr ""
 "Установите отсутствующую схему для работы с этой конфигурацией, измените "
 "состояние и имя или удалите конфигурацию."
+
+#: src/Admin/Configurations/Update.php:136
+msgid "Configuration name"
+msgstr "Название конфигурации"
 
 #: src/Admin/Configurations/Update.php:138
 msgid "Used for convenient distribution of multiple configurations."
 msgstr "Используется для удобного распределения нескольких конфигураций."
 
-#: src/Admin/Configurations/Update.php:141
+#: src/Admin/Configurations/Update.php:142
 msgid "Rename"
 msgstr "Переименовать"
 
-#: src/Admin/Configurations/Update.php:170
+#: src/Admin/Configurations/Update.php:171
 msgid "Configuration name update success."
 msgstr "Название конфигурации успешно обновлено."
 
-#: src/Admin/Configurations/Update.php:180
+#: src/Admin/Configurations/Update.php:181
 msgid "Configuration name update error. Please retry saving or change fields."
 msgstr ""
 "Ошибка обновления названия конфигурации. Повторите попытку сохранения или "
@@ -508,8 +540,12 @@ msgstr "Нашли ошибку?"
 msgid "Not a feature?"
 msgstr "Нет возможности?"
 
+#: src/Admin/Settings.php:48
+msgid "Main"
+msgstr "Основное"
+
 #: src/Admin/Settings.php:62 src/Schemas/Productscleanercml/Admin.php:291
-#: src/Schemas/Productscml/Admin.php:1909
+#: src/Schemas/Productscml/Admin.php:1997
 msgid "Event logs"
 msgstr "Журналы событий"
 
@@ -521,7 +557,7 @@ msgstr "Интерфейс"
 msgid "Connection to the WC1C"
 msgstr "Подключение к WC1C"
 
-#: src/Admin/Settings/ActivationForm.php:50 src/Admin/Settings/Form.php:75
+#: src/Admin/Settings/ActivationForm.php:50
 msgid "Save error. Please retry."
 msgstr "Ошибка при сохранении. Пожалуйста повторите."
 
@@ -569,7 +605,7 @@ msgstr "Доменное имя"
 msgid "Activate"
 msgstr "Активировать"
 
-#: src/Admin/Settings/ConnectionForm.php:106
+#: src/Admin/Settings/ConnectionForm.php:107
 #, php-format
 msgid ""
 "The user with the login %s on the site %s successfully connected to the "
@@ -577,7 +613,7 @@ msgid ""
 msgstr ""
 "Пользователь с логином %s на сайте %s успешно подключен к текущему сайту."
 
-#: src/Admin/Settings/ConnectionForm.php:128
+#: src/Admin/Settings/ConnectionForm.php:129
 #, php-format
 msgid ""
 "Error connecting user with login %s on site %s to the current site. Please "
@@ -586,35 +622,37 @@ msgstr ""
 "Ошибка подключения пользователя с логином %s на сайте %s к текущему сайту. "
 "Пожалуйста, повторите попытку позже."
 
-#: src/Admin/Settings/ConnectionForm.php:160
+#: src/Admin/Settings/ConnectionForm.php:161
 msgid "Connection error. Please retry."
 msgstr "Ошибка подключения. Пожалуйста повторите."
 
-#: src/Admin/Settings/ConnectionForm.php:182
+#: src/Admin/Settings/ConnectionForm.php:183
 msgid "Disconnect successful. Reconnect is available"
 msgstr "Отключение успешно. Доступно повторное подключение"
 
-#: src/Admin/Settings/ConnectionForm.php:208
+#: src/Admin/Settings/ConnectionForm.php:209
 msgid "Site is connected to WC1C"
 msgstr "Сайт подключен к WC1C"
 
-#: src/Admin/Settings/ConnectionForm.php:210
+#: src/Admin/Settings/ConnectionForm.php:211
 msgid "To create a new connection, need to disconnect the current connection."
 msgstr "Для создания нового подключения, необходимо отключить текущее."
 
-#: src/Admin/Settings/ConnectionForm.php:215
-msgid "Login"
-msgstr "Логин"
+#: src/Admin/Settings/ConnectionForm.php:216
+#: src/Schemas/Productscleanercml/Admin.php:95
+#: src/Schemas/Productscml/Admin.php:98
+msgid "Username"
+msgstr "Имя пользователя"
 
-#: src/Admin/Settings/ConnectionForm.php:217
+#: src/Admin/Settings/ConnectionForm.php:218
 msgid "Connected login from the WC1C website."
 msgstr "Подключенный логин с сайта WC1C."
 
-#: src/Admin/Settings/ConnectionForm.php:225
+#: src/Admin/Settings/ConnectionForm.php:226
 msgid "App token"
 msgstr "Токен приложения"
 
-#: src/Admin/Settings/ConnectionForm.php:227
+#: src/Admin/Settings/ConnectionForm.php:228
 msgid ""
 "The current application token for the user. This token can be revoked in "
 "your personal account on the WC1C website, as well as by clicking the "
@@ -623,9 +661,17 @@ msgstr ""
 "Текущий токен приложения для пользователя. Этот токен можно отозвать в "
 "личном кабинете на сайте WC1C, а также нажав кнопку «Отключить»."
 
-#: src/Admin/Settings/Form.php:130
-msgid "Save success."
-msgstr "Успешное сохранение."
+#: src/Admin/Settings/Form.php:69
+msgid "Saving settings."
+msgstr "Сохранение настроек."
+
+#: src/Admin/Settings/Form.php:71
+msgid "The settings have not been saved."
+msgstr "Настройки не были сохранены."
+
+#: src/Admin/Settings/Form.php:138
+msgid "The settings have been successfully saved."
+msgstr "Настройки были успешно сохранены."
 
 #: src/Admin/Settings/InterfaceForm.php:40
 msgid "Changing the interface"
@@ -732,63 +778,123 @@ msgstr "Вывод колонки с информацией из 1С в спис
 msgid "Level for main events"
 msgstr "Уровень для основных событий"
 
-#: src/Admin/Settings/LogsForm.php:43
-#: src/Schemas/Productscleanercml/Admin.php:300
-#: src/Schemas/Productscml/Admin.php:1918
+#: src/Admin/Settings/LogsForm.php:46
 msgid ""
-"All events of the selected level will be recorded in the log file. The "
-"higher the level, the less data is recorded."
+"Events of the selected level will be recorded in the log file. The bigger "
+"the level (numbers), the less data is recorded."
 msgstr ""
-"Все события выбранного уровня будут записаны в файл журнала. Чем выше "
-"уровень, тем меньше записывается данных."
+"События выбранного уровня будут записаны в файлы журналов. Чем больше "
+"уровень (цифры), тем меньше данных записывается."
 
-#: src/Admin/Settings/LogsForm.php:47 src/Admin/Settings/LogsForm.php:89
-#: src/Admin/Settings/LogsForm.php:106 src/Admin/Settings/LogsForm.php:123
-#: src/Admin/Settings/LogsForm.php:140
+#: src/Admin/Settings/LogsForm.php:47
+msgid ""
+"If the plugin is stable, you will need to use at least the NOTICE level "
+"(250), otherwise the event logs will become very large."
+msgstr ""
+"Если плагин работает стабильно, необходимо использовать хотя бы уровень "
+"NOTICE (250), иначе журналы событий станут очень большими."
+
+#: src/Admin/Settings/LogsForm.php:48 src/Admin/Settings/LogsForm.php:63
+#: src/Admin/Settings/LogsForm.php:120 src/Admin/Settings/LogsForm.php:142
+#: src/Admin/Settings/LogsForm.php:164
 #: src/Schemas/Productscleanercml/Admin.php:305
-#: src/Schemas/Productscml/Admin.php:1923
+#: src/Schemas/Productscml/Admin.php:2011
 msgid "DEBUG (100)"
 msgstr "Отладка — DEBUG (100)"
 
-#: src/Admin/Settings/LogsForm.php:48 src/Admin/Settings/LogsForm.php:90
-#: src/Admin/Settings/LogsForm.php:107 src/Admin/Settings/LogsForm.php:124
-#: src/Admin/Settings/LogsForm.php:141
+#: src/Admin/Settings/LogsForm.php:49
+msgid ""
+"Data from the algorithm development process with debugging information. It "
+"is used by administrators in case of some unclear errors in the process of "
+"plugin operation."
+msgstr ""
+"Данные из процесса отработки алгоритмов с отладочной информацией. "
+"Используется администраторами в случае возникновения непонятных ошибок в "
+"процессе работы плагина."
+
+#: src/Admin/Settings/LogsForm.php:50 src/Admin/Settings/LogsForm.php:64
+#: src/Admin/Settings/LogsForm.php:121 src/Admin/Settings/LogsForm.php:143
+#: src/Admin/Settings/LogsForm.php:165
 #: src/Schemas/Productscleanercml/Admin.php:306
-#: src/Schemas/Productscml/Admin.php:1924
+#: src/Schemas/Productscml/Admin.php:2012
 msgid "INFO (200)"
 msgstr "Информация — INFO (200)"
 
-#: src/Admin/Settings/LogsForm.php:49 src/Admin/Settings/LogsForm.php:91
-#: src/Admin/Settings/LogsForm.php:108 src/Admin/Settings/LogsForm.php:125
-#: src/Admin/Settings/LogsForm.php:142
-#: src/Schemas/Productscleanercml/Admin.php:307
-#: src/Schemas/Productscml/Admin.php:1925
-msgid "NOTICE (250)"
-msgstr "Замечание — NOTICE (250)"
+#: src/Admin/Settings/LogsForm.php:51
+msgid ""
+"Data from the algorithm development process, but without debugging "
+"information. In this mode, less data is written than in debugging mode, but "
+"still a lot."
+msgstr ""
+"Данные из процесса отработки алгоритмов, но без отладочной информации. В "
+"этом режиме записывается меньше данных, чем в режиме отладки, но все равно "
+"много."
 
-#: src/Admin/Settings/LogsForm.php:50 src/Admin/Settings/LogsForm.php:92
-#: src/Admin/Settings/LogsForm.php:109 src/Admin/Settings/LogsForm.php:126
-#: src/Admin/Settings/LogsForm.php:143
+#: src/Admin/Settings/LogsForm.php:52 src/Admin/Settings/LogsForm.php:65
+#: src/Admin/Settings/LogsForm.php:122 src/Admin/Settings/LogsForm.php:144
+#: src/Admin/Settings/LogsForm.php:166
+#: src/Schemas/Productscleanercml/Admin.php:307
+#: src/Schemas/Productscml/Admin.php:2013
+msgid "NOTICE (250)"
+msgstr "Уведомление — NOTICE (250)"
+
+#: src/Admin/Settings/LogsForm.php:53
+msgid ""
+"This mode records events that notify of situations that you need to be aware "
+"of. For example, when changing settings or renaming a product during data "
+"exchange."
+msgstr ""
+"В этом режиме записываются события, уведомляющие о ситуациях, на которые "
+"необходимо обратить внимание. Например, при изменении настроек или "
+"переименовании продукта во время обмена данными."
+
+#: src/Admin/Settings/LogsForm.php:54 src/Admin/Settings/LogsForm.php:66
+#: src/Admin/Settings/LogsForm.php:123 src/Admin/Settings/LogsForm.php:145
+#: src/Admin/Settings/LogsForm.php:167
 #: src/Schemas/Productscleanercml/Admin.php:308
-#: src/Schemas/Productscml/Admin.php:1926
+#: src/Schemas/Productscml/Admin.php:2014
 msgid "WARNING (300)"
 msgstr "Предупреждение — WARNING (300)"
 
-#: src/Admin/Settings/LogsForm.php:51 src/Admin/Settings/LogsForm.php:93
-#: src/Admin/Settings/LogsForm.php:110 src/Admin/Settings/LogsForm.php:127
-#: src/Admin/Settings/LogsForm.php:144
+#: src/Admin/Settings/LogsForm.php:55
+msgid ""
+"Recording warnings that occur during operation. Warnings are worth "
+"investigating and taking into account, but they are not errors."
+msgstr ""
+"Запись предупреждений, возникающих во время работы. Предупреждения стоит "
+"изучить и принять во внимание, но они не являются ошибками."
+
+#: src/Admin/Settings/LogsForm.php:56 src/Admin/Settings/LogsForm.php:67
+#: src/Admin/Settings/LogsForm.php:124 src/Admin/Settings/LogsForm.php:146
+#: src/Admin/Settings/LogsForm.php:168
 #: src/Schemas/Productscleanercml/Admin.php:309
-#: src/Schemas/Productscml/Admin.php:1927
+#: src/Schemas/Productscml/Admin.php:2015
 msgid "ERROR (400)"
 msgstr "Ошибка — ERROR (400)"
 
 #: src/Admin/Settings/LogsForm.php:57
+msgid ""
+"Will be recorded only data on errors occurring during the processing of "
+"plugin algorithms."
+msgstr ""
+"Будут записываться только данные об ошибках, возникающих при обработке "
+"алгоритмов плагина."
+
+#: src/Admin/Settings/LogsForm.php:58
+msgid ""
+"Event logs always record data about critical errors in the code, regardless "
+"of the level configured."
+msgstr ""
+"В журналы событий всегда записываются данные о критических ошибках в коде, "
+"независимо от настроенного уровня."
+
+#: src/Admin/Settings/LogsForm.php:73
 #: src/Schemas/Productscleanercml/Admin.php:315
-#: src/Schemas/Productscml/Admin.php:1933
+#: src/Schemas/Productscml/Admin.php:2021
 msgid "Maximum files"
 msgstr "Максимальное количество файлов"
 
-#: src/Admin/Settings/LogsForm.php:59
+#: src/Admin/Settings/LogsForm.php:75
 #: src/Schemas/Productscleanercml/Admin.php:317
 msgid ""
 "Log files created daily. This option on the maximum number of stored files. "
@@ -798,11 +904,11 @@ msgstr ""
 "количество хранимых файлов. По умолчанию сохраняются журналы за последние 30 "
 "дней."
 
-#: src/Admin/Settings/LogsForm.php:66
+#: src/Admin/Settings/LogsForm.php:82
 msgid "Output on display"
 msgstr "Вывод на экран"
 
-#: src/Admin/Settings/LogsForm.php:68
+#: src/Admin/Settings/LogsForm.php:84
 #: src/Schemas/Productscleanercml/Admin.php:170
 #: src/Schemas/Productscml/Admin.php:173 src/Schemas/Productscml/Admin.php:210
 #: src/Schemas/Productscml/Admin.php:291 src/Schemas/Productscml/Admin.php:305
@@ -823,64 +929,91 @@ msgid "Check the box if you want to enable this feature. Disabled by default."
 msgstr ""
 "Установите флажок, если хотите включить эту функцию. Отключено по умолчанию."
 
-#: src/Admin/Settings/LogsForm.php:69
-msgid "All entries in the event logs will be displayed."
-msgstr "Будут отображены все записи журналов событий."
+#: src/Admin/Settings/LogsForm.php:88
+msgid "All entries event logs will be displayed on the screen."
+msgstr "На экране появятся все записи журналов событий."
 
-#: src/Admin/Settings/LogsForm.php:75
+#: src/Admin/Settings/LogsForm.php:89
+msgid ""
+"It is used only by developers. If enable this setting just for fun, 1C will "
+"not be able to connect to the site."
+msgstr ""
+"Она используется только разработчиками. Если включить эту настройку просто "
+"для развлечения, 1С не сможет подключиться к сайту."
+
+#: src/Admin/Settings/LogsForm.php:96
 msgid "Levels by context"
 msgstr "Уровни по контексту"
 
-#: src/Admin/Settings/LogsForm.php:77
+#: src/Admin/Settings/LogsForm.php:101
 msgid "Event log settings based on context."
 msgstr "Настройки журнала событий исходя из контекста."
 
-#: src/Admin/Settings/LogsForm.php:82 src/Admin/Settings/MainForm.php:140
-msgid "Receiver"
-msgstr "Получатель"
-
-#: src/Admin/Settings/LogsForm.php:84
-msgid ""
-"All events of the selected level will be recorded the Receiver events in the "
-"log file. The higher the level, the less data is recorded."
+#: src/Admin/Settings/LogsForm.php:102
+msgid "Logical distribution of event logs into contexts for flexible analysis."
 msgstr ""
-"Все события выбранного уровня будут записаны как события приемника в файл "
-"журнала. Чем выше уровень, тем меньше данных записывается."
+"Логическое распределение журналов событий по контекстам для гибкого анализа."
 
-#: src/Admin/Settings/LogsForm.php:88 src/Admin/Settings/LogsForm.php:105
-#: src/Admin/Settings/LogsForm.php:122 src/Admin/Settings/LogsForm.php:139
+#: src/Admin/Settings/LogsForm.php:113
+msgid ""
+"All events of the selected level are recorded in the tools events log file. "
+"The higher the level, the less data is logged."
+msgstr ""
+"Все события выбранного уровня записываются в файлы журналов событий для "
+"инструментов. Чем выше уровень, тем меньше данных записывается в журнал."
+
+#: src/Admin/Settings/LogsForm.php:114
+msgid ""
+"In this context, events are recorded when users work with tools, both global "
+"and for a specific configuration."
+msgstr ""
+"В этом контексте события записываются когда пользователи работают с "
+"инструментами как глобальными, так и для конкретной конфигурации."
+
+#: src/Admin/Settings/LogsForm.php:119 src/Admin/Settings/LogsForm.php:141
+#: src/Admin/Settings/LogsForm.php:163
 #: src/Schemas/Productscleanercml/Admin.php:304
-#: src/Schemas/Productscml/Admin.php:1922
+#: src/Schemas/Productscml/Admin.php:2010
 msgid "Use level for main events"
 msgstr "Использовать уровень для основных событий"
 
-#: src/Admin/Settings/LogsForm.php:101
-msgid ""
-"All events of the selected level will be recorded the tools events in the "
-"log file. The higher the level, the less data is recorded."
-msgstr ""
-"Все события выбранного уровня будут записываться как события инструментов в "
-"файл журнала. Чем выше уровень, тем меньше данных записывается."
-
-#: src/Admin/Settings/LogsForm.php:116
+#: src/Admin/Settings/LogsForm.php:130
 msgid "Schemas"
 msgstr "Схемы"
 
-#: src/Admin/Settings/LogsForm.php:118
-msgid ""
-"All events of the selected level will be recorded the schemas events in the "
-"log file. The higher the level, the less data is recorded."
-msgstr ""
-"Все события выбранного уровня будут записаны как события схемам в файл "
-"журнала. Чем выше уровень, тем меньше данных записывается."
-
 #: src/Admin/Settings/LogsForm.php:135
+msgid ""
+"All events of the selected level are recorded in the events log files for "
+"schemas. The higher the level, the less data is logged."
+msgstr ""
+"Все события выбранного уровня записываются в файлы журнала событий для схем. "
+"Чем выше уровень, тем меньше данных записывается в журнал."
+
+#: src/Admin/Settings/LogsForm.php:136
+msgid ""
+"Only events that are processed in the schema algorithms are recorded. If the "
+"events are related to the user configuration, they are not written to schema "
+"events."
+msgstr ""
+"Записываются только те события, которые обрабатываются алгоритмами схемы. "
+"Если события относятся к пользовательской конфигурации, они не записываются "
+"в события схемы."
+
+#: src/Admin/Settings/LogsForm.php:157
 msgid ""
 "All events of the selected level will be recorded the configurations events "
 "in the log file. The higher the level, the less data is recorded."
 msgstr ""
 "Все события выбранного уровня будут записываться как события конфигурации в "
 "файл журнала. Чем выше уровень, тем меньше данных записывается."
+
+#: src/Admin/Settings/LogsForm.php:158
+msgid ""
+"A personalized event log level can be set on the level of each "
+"configuration. The current value is taken for creating new configurations."
+msgstr ""
+"На уровне каждой конфигурации можно установить персональный уровень журнала "
+"событий. При создании новых конфигураций принимается текущее значение."
 
 #: src/Admin/Settings/MainForm.php:45
 msgid "Some settings for the configurations."
@@ -981,6 +1114,10 @@ msgstr ""
 "Можно только уменьшить значение, потому что оно не должно выходить за "
 "пределы из лимита сервера."
 
+#: src/Admin/Settings/MainForm.php:140
+msgid "Receiver"
+msgstr "Получатель"
+
 #: src/Admin/Settings/MainForm.php:142
 msgid "Enable data Receiver: background requests?"
 msgstr "Включить получателя данных: фоновые запросы?"
@@ -1014,12 +1151,16 @@ msgid "Completing"
 msgstr "Завершение"
 
 #: src/Core.php:81
-msgid "Timer is not loaded."
-msgstr "Таймер не загружен."
+msgid ""
+"Timer is not loaded. Further execution of algorithms without a timer is "
+"impossible."
+msgstr ""
+"Таймер не загружен. Дальнейшее выполнение алгоритмов без таймера невозможно."
 
 #: src/Core.php:91
-msgid "Extensions is not loaded."
-msgstr "Расширения не загружены."
+msgid "Extensions is not loaded. Execution continued, but without all plugins."
+msgstr ""
+"Расширения не загружены. Выполнение продолжилось, но без всех плагинов."
 
 #: src/Core.php:100
 msgid "Extensions is not initialized."
@@ -1041,35 +1182,35 @@ msgstr "Инструменты не инициализированы."
 msgid "Receiver is not loaded."
 msgstr "Получатель не загружен."
 
-#: src/Core.php:406
+#: src/Core.php:417
 msgid "This activation code is active."
 msgstr "Этот код активации активен."
 
-#: src/Core.php:407
+#: src/Core.php:418
 msgid "Error: This activation code has expired."
 msgstr "Ошибка: Срок действия этого кода активации истек."
 
-#: src/Core.php:408
+#: src/Core.php:419
 msgid "Activation code republished. Awaiting reactivation."
 msgstr "Код активации опубликован повторно. Ожидание повторной активации."
 
-#: src/Core.php:409
+#: src/Core.php:420
 msgid "Error: This activation code has been suspended."
 msgstr "Ошибка: Этот код активации был приостановлен."
 
-#: src/Core.php:410
+#: src/Core.php:421
 msgid "This activation code is not found."
 msgstr "Указанный код активации не найден."
 
-#: src/Core.php:411
+#: src/Core.php:422
 msgid "This activation code is active (localhost)."
 msgstr "Этот код активации активен (localhost)."
 
-#: src/Core.php:412
+#: src/Core.php:423
 msgid "Error: This activation code is pending review."
 msgstr "Ошибка: этот код активации ожидает рассмотрения."
 
-#: src/Core.php:413
+#: src/Core.php:424
 msgid ""
 "Error: This version of the software was released after your download access "
 "expired. Please downgrade software or contact support for more information."
@@ -1079,27 +1220,27 @@ msgstr ""
 "обеспечения или обратитесь в службу поддержки для получения дополнительной "
 "информации."
 
-#: src/Core.php:414
+#: src/Core.php:425
 msgid "Error: The activation code variable is empty."
 msgstr "Ошибка: переменная кода активации пуста."
 
-#: src/Core.php:415
+#: src/Core.php:426
 msgid "Error: I could not obtain a new local code."
 msgstr "Ошибка: не удалось получить новый локальный код."
 
-#: src/Core.php:416
+#: src/Core.php:427
 msgid "Error: The maximum local code delay period has expired."
 msgstr "Ошибка: Максимальный период задержки локального кода истек."
 
-#: src/Core.php:417
+#: src/Core.php:428
 msgid "Error: The local key has been tampered with or is invalid."
 msgstr "Ошибка: локальный код был изменен или недействителен."
 
-#: src/Core.php:418
+#: src/Core.php:429
 msgid "Error: The local code is invalid for this location."
 msgstr "Ошибка: локальный код недействителен для этого местоположения."
 
-#: src/Core.php:419
+#: src/Core.php:430
 msgid ""
 "Error: Please create the following file (and directories if they dont exist "
 "already): "
@@ -1107,43 +1248,55 @@ msgstr ""
 "Ошибка: Пожалуйста, создайте следующий файл (и каталоги, если они еще не "
 "существуют): "
 
-#: src/Core.php:420
+#: src/Core.php:431
 msgid "Error: Please make the following path writable: "
 msgstr "Ошибка: сделайте следующий путь доступным для записи: "
 
-#: src/Core.php:421
+#: src/Core.php:432
 msgid "Error: I could not determine the local key storage on clear."
 msgstr "Ошибка: не удалось определить локальное хранилище ключей при очистке."
 
-#: src/Core.php:422
+#: src/Core.php:433
 msgid "Error: I could not save the local key."
 msgstr "Ошибка: не удалось сохранить локальный ключ."
 
-#: src/Core.php:423
+#: src/Core.php:434
 msgid "Error: The local code is invalid for this activation code."
 msgstr "Ошибка: локальный код недействителен для этого кода активации."
 
-#: src/Core.php:424
+#: src/Core.php:435
 msgid "Error: This activation code has been deleted."
 msgstr "Ошибка: Указанный код активации был удален."
 
-#: src/Core.php:425
+#: src/Core.php:436
 msgid "Error: This activation code has draft."
 msgstr "Ошибка: код активации в состоянии черновик."
 
-#: src/Core.php:426
+#: src/Core.php:437
 msgid "Error: This activation code has available."
 msgstr "Ошибка: код активации в состоянии - доступный."
 
-#: src/Core.php:427
+#: src/Core.php:438
 msgid "Error: This activation code has been blocked."
 msgstr "Ошибка: код активации в состоянии заблокирован."
 
-#: src/Core.php:474
+#: src/Core.php:479
+msgid "Receiver loading."
+msgstr "Загрузка получателя."
+
+#: src/Core.php:487
 msgid "Receiver loading: class is not exists, use is default."
 msgstr "Загрузка получателя: класс не найден, используется класс по умолчанию."
 
-#: src/Core.php:501
+#: src/Core.php:498
+msgid "Receiver loading is completed."
+msgstr "Загрузка получателя завершена."
+
+#: src/Core.php:506
+msgid "Localization loading."
+msgstr "Загрузка локализации."
+
+#: src/Core.php:518
 msgid "Localization loaded."
 msgstr "Локализация загружена."
 
@@ -1155,34 +1308,74 @@ msgstr "Не удалось вставить в базу данных"
 msgid "Meta value by name is not available."
 msgstr "Мета-значение по имени недоступно."
 
-#: src/Extensions/Core.php:55
-msgid "Extension not found by id."
-msgstr "Расширение по идентификатору не найдено."
+#: src/Extensions/Core.php:52 src/Extensions/Core.php:84
+msgid "Initialization of the extension by identifier"
+msgstr "Инициализация расширения по идентификатору"
 
-#: src/Extensions/Core.php:60
-msgid "Extension is not implementation ExtensionContract. Skipped init."
+#: src/Extensions/Core.php:56
+msgid "Extension not found by identifier."
+msgstr "Расширение не найдено по идентификатору."
+
+#: src/Extensions/Core.php:62
+msgid ""
+"Extension is not implementation ExtensionContract. Initialization skipped."
 msgstr ""
 "Расширение не является реализацией ExtensionContract. Инициализация "
 "пропущена."
 
-#: src/Extensions/Core.php:75
-msgid "Init extension exception:"
-msgstr "Исключение инициализации расширения:"
+#: src/Extensions/Core.php:68
+msgid ""
+"The extension has already been initialized previously. Re-initialization is "
+"skipped."
+msgstr ""
+"Расширение уже было инициализировано ранее. Повторная инициализация "
+"пропущена."
 
-#: src/Extensions/Core.php:116
+#: src/Extensions/Core.php:79
+msgid "The extension threw an exception on initialization"
+msgstr "Расширение выбросило исключение при инициализации"
+
+#: src/Extensions/Core.php:84
+msgid "is completed."
+msgstr "завершена."
+
+#: src/Extensions/Core.php:89
+msgid "Initialization of available extensions."
+msgstr "Инициализация доступных расширений."
+
+#: src/Extensions/Core.php:106
+msgid "Initialization of available extensions is completed."
+msgstr "Инициализация доступных расширений завершена."
+
+#: src/Extensions/Core.php:126
 msgid "Get extension by id is unavailable."
 msgstr "Не удалось получить расширение по его идентификатору."
 
 #: src/Extensions/Core.php:140
+msgid "Extensions loading."
+msgstr "Загрузка расширений."
+
+#: src/Extensions/Core.php:144
+msgid ""
+"Extension loading is turned off in global settings. Extension loading is "
+"skipped."
+msgstr ""
+"Загрузка расширений отключена в глобальных настройках. Загрузка расширений "
+"пропускается."
+
+#: src/Extensions/Core.php:158
 msgid "Extensions load error:"
 msgstr "Ошибка загрузки расширения:"
 
-#: src/Extensions/Core.php:144
+#: src/Extensions/Core.php:162
 msgid "Extensions load exception:"
 msgstr "Исключение загрузки расширений:"
 
+#: src/Extensions/Core.php:168
+msgid "Extensions loading is completed."
+msgstr "Загрузка расширений завершена."
+
 #: src/Receiver.php:46 src/Schemas/Productscleanercml/Receiver.php:64
-#: src/Schemas/Productscml/Receiver.php:52
 msgid "Received new request for Receiver."
 msgstr "Получен новый запрос для Получателя."
 
@@ -1206,82 +1399,109 @@ msgstr "Конфигурация для Получателя недоступн�
 msgid "Schema for configuration is not initialized."
 msgstr "Схема для конфигурации не инициализирована."
 
-#: src/Receiver.php:81 src/Receiver.php:115
+#: src/Receiver.php:84
 msgid ""
 "The request was successfully submitted for processing in the schema for the "
 "selected configuration."
 msgstr ""
 "Запрос успешно отправлен на обработку в схему для выбранной конфигурации."
 
-#: src/Receiver.php:90 src/Receiver.php:91
+#: src/Receiver.php:93 src/Receiver.php:94
 msgid "Selected configuration is offline."
 msgstr "Выбранная конфигурация выключена."
 
-#: src/Receiver.php:102 src/Schemas/Productscleanercml/Core.php:127
-#: src/Schemas/Productscml/Core.php:299
+#: src/Receiver.php:105 src/Schemas/Productscleanercml/Core.php:127
+#: src/Schemas/Productscml/Core.php:324
 msgid "Error saving configuration."
 msgstr "Ошибка сохранения конфигурации."
 
-#: src/Receiver.php:123
+#: src/Receiver.php:121
+msgid ""
+"The request for processing actions for the selected configuration has been "
+"successfully submitted."
+msgstr ""
+"Запрос на обработку действий для выбранной конфигурации успешно отправлен."
+
+#: src/Receiver.php:134
 msgid ""
 "Receiver request is very bad! Action not found in selected configuration."
 msgstr ""
 "Запрос получателя очень плохой! Действие не найдено в выбранной конфигурации."
 
-#: src/Receiver.php:124 src/Schemas/Productscleanercml/Core.php:148
-#: src/Schemas/Productscml/Core.php:320
+#: src/Receiver.php:135 src/Schemas/Productscleanercml/Core.php:148
+#: src/Schemas/Productscml/Core.php:345
 msgid "Receiver request is very bad! Action not found."
 msgstr "Запрос получателя очень плохой! Действие не найдено."
 
-#: src/Schemas/Core.php:51
+#: src/Schemas/Core.php:49
+msgid "Initializing the schema for configuration."
+msgstr "Инициализация схемы для конфигурации."
+
+#: src/Schemas/Core.php:53
 msgid "$configuration is false"
 msgstr "$configuration is false"
 
-#: src/Schemas/Core.php:61
+#: src/Schemas/Core.php:63
 msgid "$configuration is not exists"
 msgstr "$configuration не существует"
 
-#: src/Schemas/Core.php:69
+#: src/Schemas/Core.php:71
 msgid "$configuration is not instanceof Configuration"
 msgstr "$configuration не реализует Configuration"
 
-#: src/Schemas/Core.php:76
+#: src/Schemas/Core.php:78
 msgid "$schemas is not array."
 msgstr "$schemas не является массивом."
 
-#: src/Schemas/Core.php:83
+#: src/Schemas/Core.php:85
 msgid "Schema not found by id:"
 msgstr "Схема не найдена по ИД:"
 
-#: src/Schemas/Core.php:88
+#: src/Schemas/Core.php:90
 msgid "$schemas[$schema_id] is not object"
 msgstr "$schemas[$schema_id] не является объектом"
 
-#: src/Schemas/Core.php:95
+#: src/Schemas/Core.php:97
 msgid "Old initialized, $schema_id:"
 msgstr "Уже инициализирована, $schema_id:"
 
-#: src/Schemas/Core.php:100
+#: src/Schemas/Core.php:102
 msgid "Method init not found in schema, $schema_id:"
 msgstr "Метод для инициализации не найден в схеме, $schema_id:"
 
-#: src/Schemas/Core.php:120
+#: src/Schemas/Core.php:122
 msgid "Schema is not initialized."
 msgstr "Схема не инициализирована."
 
-#: src/Schemas/Core.php:147
+#: src/Schemas/Core.php:127
+msgid "Initializing the schema for configuration is completed."
+msgstr "Инициализация схемы для конфигурации завершена."
+
+#: src/Schemas/Core.php:151
 msgid "Schema by ID is unavailable."
 msgstr "Схема по идентификатору недоступна."
 
-#: src/Schemas/Core.php:170
-msgid "Schemas loaded."
-msgstr "Схема загружена."
+#: src/Schemas/Core.php:164
+msgid "Schemas loading."
+msgstr "Загрузка схем."
 
-#: src/Schemas/Core.php:197
+#: src/Schemas/Core.php:177
+msgid ""
+"Loading of external schemes is disabled through the settings. Only standard "
+"schemas are loaded."
+msgstr ""
+"Загрузка внешних схем отключена в настройках. Загружаются только стандартные "
+"схемы."
+
+#: src/Schemas/Core.php:180
+msgid "Schemas loading is completed."
+msgstr "Загрузка схем завершена."
+
+#: src/Schemas/Core.php:207
 msgid "Schema ProductsCML is not loaded."
 msgstr "Схема ProductsCML не загружена."
 
-#: src/Schemas/Core.php:221
+#: src/Schemas/Core.php:231
 msgid "Schema ProductsCleanerCML is not loaded."
 msgstr "Схема ProductsCleanerCML не загружена."
 
@@ -1321,11 +1541,6 @@ msgid ""
 msgstr ""
 "При копировании нужно избавиться от пробельных символов, если они "
 "присутствуют."
-
-#: src/Schemas/Productscleanercml/Admin.php:95
-#: src/Schemas/Productscml/Admin.php:98
-msgid "Username"
-msgstr "Имя пользователя"
 
 #: src/Schemas/Productscleanercml/Admin.php:99
 #: src/Schemas/Productscml/Admin.php:102
@@ -1452,8 +1667,8 @@ msgstr "Используется только в режиме отладки."
 #: src/Schemas/Productscml/Admin.php:1193
 #: src/Schemas/Productscml/Admin.php:1208
 #: src/Schemas/Productscml/Admin.php:1276
-#: src/Schemas/Productscml/Admin.php:1838
-#: src/Schemas/Productscml/Admin.php:1850
+#: src/Schemas/Productscml/Admin.php:1926
+#: src/Schemas/Productscml/Admin.php:1938
 msgid "Do not use"
 msgstr "Не использовать"
 
@@ -1546,11 +1761,11 @@ msgstr "Комплексные настройки параметров очис�
 #: src/Schemas/Productscleanercml/Admin.php:272
 #: src/Schemas/Productscml/Admin.php:663 src/Schemas/Productscml/Admin.php:1151
 #: src/Schemas/Productscml/Admin.php:1236
-#: src/Schemas/Productscml/Admin.php:1594
-#: src/Schemas/Productscml/Admin.php:1612
-#: src/Schemas/Productscml/Admin.php:1650
-#: src/Schemas/Productscml/Admin.php:1687
-#: src/Schemas/Productscml/Admin.php:1760
+#: src/Schemas/Productscml/Admin.php:1682
+#: src/Schemas/Productscml/Admin.php:1700
+#: src/Schemas/Productscml/Admin.php:1738
+#: src/Schemas/Productscml/Admin.php:1775
+#: src/Schemas/Productscml/Admin.php:1848
 msgid "Check the box to enable this feature. Disabled by default."
 msgstr "Установите флажок, чтобы включить эту функцию. Отключено по умолчанию."
 
@@ -1575,7 +1790,7 @@ msgstr ""
 "для синхронизации будут безвозвратно удалены из Корзины."
 
 #: src/Schemas/Productscleanercml/Admin.php:293
-#: src/Schemas/Productscml/Admin.php:1911
+#: src/Schemas/Productscml/Admin.php:1999
 msgid ""
 "Maintaining event logs for the current configuration. You can view the logs "
 "through the extension or via FTP."
@@ -1584,9 +1799,18 @@ msgstr ""
 "журналы через расширение или через FTP."
 
 #: src/Schemas/Productscleanercml/Admin.php:298
-#: src/Schemas/Productscml/Admin.php:1916
+#: src/Schemas/Productscml/Admin.php:2004
 msgid "Level for events"
 msgstr "Уровень для событий"
+
+#: src/Schemas/Productscleanercml/Admin.php:300
+#: src/Schemas/Productscml/Admin.php:2006
+msgid ""
+"All events of the selected level will be recorded in the log file. The "
+"higher the level, the less data is recorded."
+msgstr ""
+"Все события выбранного уровня будут записаны в файл журнала. Чем выше "
+"уровень, тем меньше записывается данных."
 
 #: src/Schemas/Productscleanercml/Core.php:45
 msgid "Cleaning of products via CommerceML"
@@ -1601,32 +1825,32 @@ msgstr ""
 "использованием протокола CommerceML."
 
 #: src/Schemas/Productscleanercml/Core.php:114
-#: src/Schemas/Productscml/Core.php:284
+#: src/Schemas/Productscml/Core.php:309
 msgid "Configuration is offline."
 msgstr "Конфигурация выключена."
 
 #: src/Schemas/Productscleanercml/Core.php:186
-#: src/Schemas/Productscml/Core.php:191
+#: src/Schemas/Productscml/Core.php:198
 msgid "The file cannot be processed. DecoderCML threw an exception."
 msgstr "Файл не может быть обработан. DecoderCML выдал исключение."
 
 #: src/Schemas/Productscleanercml/Core.php:201
-#: src/Schemas/Productscml/Core.php:207
+#: src/Schemas/Productscml/Core.php:222
 msgid "The file cannot be processed. ReaderCML threw an exception."
 msgstr "Файл не может быть обработан. ReaderCML выдал исключение."
 
 #: src/Schemas/Productscleanercml/Core.php:205
-#: src/Schemas/Productscml/Core.php:211
+#: src/Schemas/Productscml/Core.php:226
 msgid "Filetype:"
 msgstr "Тип файла:"
 
 #: src/Schemas/Productscleanercml/Core.php:220
-#: src/Schemas/Productscml/Core.php:227
+#: src/Schemas/Productscml/Core.php:250
 msgid "Import file processing not completed. ReaderCML threw an exception."
 msgstr "Обработка файла импорта не завершена. ReaderCML выдал исключение."
 
 #: src/Schemas/Productscleanercml/Core.php:240
-#: src/Schemas/Productscml/Core.php:247
+#: src/Schemas/Productscml/Core.php:270
 msgid "There was not enough time to load all the data."
 msgstr "Не хватило времени загрузить все данные."
 
@@ -1637,7 +1861,7 @@ msgstr ""
 "пропущена."
 
 #: src/Schemas/Productscleanercml/Core.php:291
-#: src/Schemas/Productscml/Core.php:390
+#: src/Schemas/Productscml/Core.php:454
 msgid "An exception was thrown while saving the classifier."
 msgstr "Возникло исключение при сохранении классификатора."
 
@@ -1647,12 +1871,11 @@ msgstr ""
 "Продукт не является экземпляром ProductDataContract. Обработка пропущена."
 
 #: src/Schemas/Productscleanercml/Core.php:382
-#: src/Schemas/Productscml/Core.php:1325
 msgid "An exception was thrown while saving the product."
 msgstr "При сохранении продукта возникло исключение."
 
 #: src/Schemas/Productscleanercml/Core.php:400
-#: src/Schemas/Productscml/Core.php:3794
+#: src/Schemas/Productscml/Core.php:3968
 msgid "Processing a product from a catalog of products."
 msgstr "Обработка продукта из каталога продуктов."
 
@@ -1665,23 +1888,22 @@ msgid "Product search result by external code from 1C."
 msgstr "Результат поиска продукта по внешнему коду из 1С."
 
 #: src/Schemas/Productscleanercml/Core.php:422
-#: src/Schemas/Productscml/Core.php:3810 src/Schemas/Productscml/Core.php:3835
-#: src/Schemas/Productscml/Core.php:4190 src/Schemas/Productscml/Core.php:4214
+#: src/Schemas/Productscml/Core.php:3984 src/Schemas/Productscml/Core.php:4009
+#: src/Schemas/Productscml/Core.php:4382 src/Schemas/Productscml/Core.php:4406
 msgid "Several identical products were found. The first one is selected."
 msgstr "Было найдено несколько идентичных продуктов. Выбран первый из них."
 
 #: src/Schemas/Productscleanercml/Core.php:440
-#: src/Schemas/Productscml/Core.php:3839 src/Schemas/Productscml/Core.php:4218
+#: src/Schemas/Productscml/Core.php:4013 src/Schemas/Productscml/Core.php:4410
 msgid "Product search result by external algorithms."
 msgstr "Результат поиска товара с помощью внешних алгоритмов."
 
 #: src/Schemas/Productscleanercml/Core.php:448
-#: src/Schemas/Productscml/Core.php:3847
+#: src/Schemas/Productscml/Core.php:4021
 msgid "Product is not found."
 msgstr "Продукт не найден."
 
 #: src/Schemas/Productscleanercml/Receiver.php:102
-#: src/Schemas/Productscml/Receiver.php:58
 msgid "Received request params."
 msgstr "Полученные параметры запроса."
 
@@ -1695,17 +1917,17 @@ msgid "Schema: action not found."
 msgstr "Схема: действие не найдено."
 
 #: src/Schemas/Productscleanercml/Receiver.php:184
-#: src/Schemas/Productscml/Receiver.php:175
+#: src/Schemas/Productscml/Receiver.php:197
 msgid "In 1C was send a response of the type:"
-msgstr "В 1С был отправлен ответ вида:"
+msgstr "В 1С был отправлен ответ типа:"
 
 #: src/Schemas/Productscleanercml/Receiver.php:194
-#: src/Schemas/Productscml/Receiver.php:185
+#: src/Schemas/Productscml/Receiver.php:189
 msgid "Headers for response."
 msgstr "Заголовки для ответа."
 
 #: src/Schemas/Productscleanercml/Receiver.php:246
-#: src/Schemas/Productscml/Receiver.php:239
+#: src/Schemas/Productscml/Receiver.php:243
 msgid ""
 "Server in CGI mode. Not detected the presence of an entry in the root ."
 "htaccess file on the subject of the contents of the lines."
@@ -1719,35 +1941,34 @@ msgstr "Не указан пользователь. Проверьте наст�
 
 #: src/Schemas/Productscleanercml/Receiver.php:288
 #: src/Schemas/Productscleanercml/Receiver.php:289
-#: src/Schemas/Productscml/Receiver.php:282
+#: src/Schemas/Productscml/Receiver.php:286
 msgid "Not a valid username."
 msgstr "Неверное имя пользователя."
 
 #: src/Schemas/Productscleanercml/Receiver.php:294
 #: src/Schemas/Productscleanercml/Receiver.php:295
-#: src/Schemas/Productscml/Receiver.php:290
+#: src/Schemas/Productscml/Receiver.php:295
 msgid "Not a valid user password."
 msgstr "Неверный пароль пользователя."
 
 #: src/Schemas/Productscleanercml/Receiver.php:305
-#: src/Schemas/Productscml/Receiver.php:303
+#: src/Schemas/Productscml/Receiver.php:309
 msgid "PHP session none, start new PHP session."
 msgstr "Сессия PHP отсутствует, начало новой сессии PHP."
 
 #: src/Schemas/Productscleanercml/Receiver.php:315
-#: src/Schemas/Productscml/Receiver.php:313
 msgid "Request authorization from 1C successfully completed."
 msgstr "Запрос авторизации от 1С успешно выполнен."
 
 #: src/Schemas/Productscleanercml/Receiver.php:329
 #: src/Schemas/Productscleanercml/Receiver.php:490
-#: src/Schemas/Productscml/Receiver.php:327
-#: src/Schemas/Productscml/Receiver.php:513
+#: src/Schemas/Productscml/Receiver.php:334
+#: src/Schemas/Productscml/Receiver.php:530
 msgid "Print lines for 1C."
 msgstr "Печать строк для 1С."
 
 #: src/Schemas/Productscleanercml/Receiver.php:354
-#: src/Schemas/Productscml/Receiver.php:352
+#: src/Schemas/Productscml/Receiver.php:365
 msgid ""
 "Authorization key verification failed. 1C did not send the name of the lazy "
 "signature."
@@ -1755,19 +1976,19 @@ msgstr ""
 "Ошибка проверки ключа авторизации. 1С не отправила имя ленивой подписи."
 
 #: src/Schemas/Productscleanercml/Receiver.php:370
-#: src/Schemas/Productscml/Receiver.php:368
+#: src/Schemas/Productscml/Receiver.php:381
 msgid ""
 "Authorization key verification failed. 1C sent an incorrect lazy signature."
 msgstr ""
 "Ошибка проверки ключа авторизации. 1С прислала неверную ленивую подпись."
 
 #: src/Schemas/Productscleanercml/Receiver.php:385
-#: src/Schemas/Productscml/Receiver.php:383
+#: src/Schemas/Productscml/Receiver.php:396
 msgid "Authorization key verification failed. 1C sent an empty session name."
 msgstr "Ошибка проверки ключа авторизации. 1С прислала пустое имя сеанса."
 
 #: src/Schemas/Productscleanercml/Receiver.php:400
-#: src/Schemas/Productscml/Receiver.php:398
+#: src/Schemas/Productscml/Receiver.php:411
 msgid "Authorization check failed - session id differs from the original."
 msgstr ""
 "Ошибка проверки авторизации - идентификатор сеанса отличается от исходного."
@@ -1777,23 +1998,21 @@ msgid "PHP session none, restart PHP session."
 msgstr "Сессия PHP отсутствует, восстановление сессии PHP."
 
 #: src/Schemas/Productscleanercml/Receiver.php:432
-#: src/Schemas/Productscml/Receiver.php:430
+#: src/Schemas/Productscml/Receiver.php:443
 msgid "Cleaning the directory for temporary files."
 msgstr "Очистка каталога от временных файлов."
 
 #: src/Schemas/Productscleanercml/Receiver.php:438
-#: src/Schemas/Productscml/Receiver.php:436
 msgid ""
 "The directory for temporary files was successfully cleared of old files."
 msgstr "Каталог временных файлов успешно очищен от старых файлов."
 
 #: src/Schemas/Productscleanercml/Receiver.php:442
-#: src/Schemas/Productscml/Receiver.php:440
 msgid "Failed to clear the temp directory of old files."
 msgstr "Не удалось очистить временный каталог от старых файлов."
 
 #: src/Schemas/Productscleanercml/Receiver.php:454
-#: src/Schemas/Productscml/Receiver.php:452
+#: src/Schemas/Productscml/Receiver.php:466
 msgid "Initialization of receiving requests from 1C."
 msgstr "Инициализация приема запросов от 1С."
 
@@ -1802,12 +2021,12 @@ msgid "Session for receiving requests."
 msgstr "Сессия для приема запросов."
 
 #: src/Schemas/Productscleanercml/Receiver.php:469
-#: src/Schemas/Productscml/Receiver.php:492
+#: src/Schemas/Productscml/Receiver.php:509
 msgid "The maximum size of accepted files from 1C is assigned:"
-msgstr "Максимальный размер принимаемых файлов от 1С назначается:"
+msgstr "Максимальный размер принимаемых файлов от 1С назначен:"
 
 #: src/Schemas/Productscleanercml/Receiver.php:474
-#: src/Schemas/Productscml/Receiver.php:497
+#: src/Schemas/Productscml/Receiver.php:514
 msgid ""
 "Based on the global settings of WC1C, the size of received files has been "
 "reduced from 1C to:"
@@ -1816,7 +2035,7 @@ msgstr ""
 "до:"
 
 #: src/Schemas/Productscleanercml/Receiver.php:480
-#: src/Schemas/Productscml/Receiver.php:503
+#: src/Schemas/Productscml/Receiver.php:520
 msgid ""
 "Based on the configuration settings of WC1C, the size of received files has "
 "been reduced from 1C to:"
@@ -1825,72 +2044,71 @@ msgstr ""
 "до:"
 
 #: src/Schemas/Productscleanercml/Receiver.php:519
-#: src/Schemas/Productscml/Receiver.php:543
+#: src/Schemas/Productscml/Receiver.php:560
 msgid "Directory is unavailable:"
 msgstr "Каталог недоступен:"
 
 #: src/Schemas/Productscleanercml/Receiver.php:534
-#: src/Schemas/Productscml/Receiver.php:558
+#: src/Schemas/Productscml/Receiver.php:576
 msgid "Filename is empty."
 msgstr "Имя файла пустое."
 
 #: src/Schemas/Productscleanercml/Receiver.php:542
-#: src/Schemas/Productscml/Receiver.php:566
 msgid "Saving data to a file named:"
 msgstr "Сохранение данных в файл с именем:"
 
 #: src/Schemas/Productscleanercml/Receiver.php:551
-#: src/Schemas/Productscml/Receiver.php:575
+#: src/Schemas/Productscml/Receiver.php:594
 msgid "Directory is unavailable for write."
 msgstr "Каталог недоступен для записи."
 
 #: src/Schemas/Productscleanercml/Receiver.php:565
-#: src/Schemas/Productscml/Receiver.php:589
+#: src/Schemas/Productscml/Receiver.php:608
 msgid "The request contains no data to write to the file. Retry the upload."
 msgstr "Запрос не содержит данных для записи в файл. Повторите загрузку."
 
 #: src/Schemas/Productscleanercml/Receiver.php:573
-#: src/Schemas/Productscml/Receiver.php:597
+#: src/Schemas/Productscml/Receiver.php:616
 msgid "The file exists. Write a data to the end of an existing file."
 msgstr "Файл существует. Запись данных в конец существующего файла."
 
 #: src/Schemas/Productscleanercml/Receiver.php:586
-#: src/Schemas/Productscml/Receiver.php:613
+#: src/Schemas/Productscml/Receiver.php:632
 msgid "The data is successfully written to a file. Recorded data size:"
 msgstr "Данные успешно записаны в файл. Размер записанных данных:"
 
 #: src/Schemas/Productscleanercml/Receiver.php:593
-#: src/Schemas/Productscml/Receiver.php:711
+#: src/Schemas/Productscml/Receiver.php:743
 msgid "Failed to write data to file."
 msgstr "Не удалось записать данные в файл."
 
 #: src/Schemas/Productscleanercml/Receiver.php:604
-#: src/Schemas/Productscml/Receiver.php:722
+#: src/Schemas/Productscml/Receiver.php:756
 msgid "On request from 1C - started importing data from a file."
 msgstr "По запросу от 1С - запущен импорт данных из файла."
 
 #: src/Schemas/Productscleanercml/Receiver.php:610
-#: src/Schemas/Productscml/Receiver.php:728
+#: src/Schemas/Productscml/Receiver.php:760
 msgid "1C sent an empty file name for data import."
 msgstr "1С прислала пустое имя файла для импорта данных."
 
 #: src/Schemas/Productscleanercml/Receiver.php:620
-#: src/Schemas/Productscml/Receiver.php:738
+#: src/Schemas/Productscml/Receiver.php:770
 msgid "File for import is not exists."
 msgstr "Файл для импорта не существует."
 
 #: src/Schemas/Productscleanercml/Receiver.php:632
-#: src/Schemas/Productscml/Receiver.php:750
+#: src/Schemas/Productscml/Receiver.php:782
 msgid "Import of data from file completed successfully."
 msgstr "Импорт данных из файла успешно завершен."
 
 #: src/Schemas/Productscleanercml/Receiver.php:640
-#: src/Schemas/Productscml/Receiver.php:758
+#: src/Schemas/Productscml/Receiver.php:790
 msgid "Importing data from a file ended with an error:"
 msgstr "Импорт данных из файла завершился ошибкой:"
 
 #: src/Schemas/Productscleanercml/Receiver.php:646
-#: src/Schemas/Productscml/Receiver.php:764
+#: src/Schemas/Productscml/Receiver.php:797
 msgid "Importing data from a file ended with an error."
 msgstr "Импорт данных из файла завершился ошибкой."
 
@@ -2474,7 +2692,7 @@ msgstr "Источник для категорий"
 #: src/Schemas/Productscml/Admin.php:1105
 #: src/Schemas/Productscml/Admin.php:1207
 #: src/Schemas/Productscml/Admin.php:1275
-#: src/Schemas/Productscml/Admin.php:1849
+#: src/Schemas/Productscml/Admin.php:1937
 msgid "The setting works when creating and updating products (goods)."
 msgstr "Настройка работает при создании и обновлении продуктов (товаров)."
 
@@ -2512,8 +2730,8 @@ msgstr "Присвоение категорий создаваемым прод�
 #: src/Schemas/Productscml/Admin.php:1323
 #: src/Schemas/Productscml/Admin.php:1451
 #: src/Schemas/Productscml/Admin.php:1493
-#: src/Schemas/Productscml/Admin.php:1696
-#: src/Schemas/Productscml/Admin.php:1797
+#: src/Schemas/Productscml/Admin.php:1784
+#: src/Schemas/Productscml/Admin.php:1885
 msgid "Check the box to enable this feature. Enabled by default."
 msgstr "Установите флажок, чтобы включить эту функцию. Включено по умолчанию."
 
@@ -2559,12 +2777,17 @@ msgstr "Рекомендуется включить этот параметр."
 #: src/Schemas/Productscml/Admin.php:1365
 #: src/Schemas/Productscml/Admin.php:1462
 #: src/Schemas/Productscml/Admin.php:1476
-#: src/Schemas/Productscml/Admin.php:1557
-#: src/Schemas/Productscml/Admin.php:1573
-#: src/Schemas/Productscml/Admin.php:1581
-#: src/Schemas/Productscml/Admin.php:1742
-#: src/Schemas/Productscml/Admin.php:1809
-#: src/Schemas/Productscml/Admin.php:1823
+#: src/Schemas/Productscml/Admin.php:1520
+#: src/Schemas/Productscml/Admin.php:1534
+#: src/Schemas/Productscml/Admin.php:1554
+#: src/Schemas/Productscml/Admin.php:1574
+#: src/Schemas/Productscml/Admin.php:1594
+#: src/Schemas/Productscml/Admin.php:1645
+#: src/Schemas/Productscml/Admin.php:1661
+#: src/Schemas/Productscml/Admin.php:1669
+#: src/Schemas/Productscml/Admin.php:1830
+#: src/Schemas/Productscml/Admin.php:1897
+#: src/Schemas/Productscml/Admin.php:1911
 msgid "Do not update"
 msgstr "Не обновлять"
 
@@ -2575,8 +2798,8 @@ msgstr "Не обновлять"
 #: src/Schemas/Productscml/Admin.php:1257
 #: src/Schemas/Productscml/Admin.php:1463
 #: src/Schemas/Productscml/Admin.php:1478
-#: src/Schemas/Productscml/Admin.php:1810
-#: src/Schemas/Productscml/Admin.php:1825
+#: src/Schemas/Productscml/Admin.php:1898
+#: src/Schemas/Productscml/Admin.php:1913
 msgid "Update in any case"
 msgstr "Обновлять в любом случае"
 
@@ -2585,7 +2808,7 @@ msgstr "Обновлять в любом случае"
 #: src/Schemas/Productscml/Admin.php:1166
 #: src/Schemas/Productscml/Admin.php:1182
 #: src/Schemas/Productscml/Admin.php:1259
-#: src/Schemas/Productscml/Admin.php:1811
+#: src/Schemas/Productscml/Admin.php:1899
 msgid "Add if not on the site and available in 1C"
 msgstr "Добавлять если отсутствует на сайте, но присутствует в 1С"
 
@@ -2596,8 +2819,8 @@ msgstr "Добавлять если отсутствует на сайте, но
 #: src/Schemas/Productscml/Admin.php:1261
 #: src/Schemas/Productscml/Admin.php:1465
 #: src/Schemas/Productscml/Admin.php:1482
-#: src/Schemas/Productscml/Admin.php:1812
-#: src/Schemas/Productscml/Admin.php:1829
+#: src/Schemas/Productscml/Admin.php:1900
+#: src/Schemas/Productscml/Admin.php:1917
 msgid "Update if present on the site and in 1C"
 msgstr "Обновлять при наличии на сайте и в 1С"
 
@@ -2639,8 +2862,8 @@ msgstr ""
 #: src/Schemas/Productscml/Admin.php:1392
 #: src/Schemas/Productscml/Admin.php:1422
 #: src/Schemas/Productscml/Admin.php:1484
-#: src/Schemas/Productscml/Admin.php:1587
-#: src/Schemas/Productscml/Admin.php:1831
+#: src/Schemas/Productscml/Admin.php:1675
+#: src/Schemas/Productscml/Admin.php:1919
 msgid "The setting works when updating products (goods)."
 msgstr "Настройка работает при обновлении продуктов (товаров)."
 
@@ -2989,15 +3212,15 @@ msgstr "Заполнение артикула создаваемых проду�
 
 #: src/Schemas/Productscml/Admin.php:980
 msgid ""
-"The product SKU will be added according to data from 1C. It is recommended "
-"to enable this feature."
+"Product SKUs will be filled according to the data from 1C on the selected "
+"source for SKUs. It is recommended to enable this feature."
 msgstr ""
-"Артикул товара будет добавлен согласно данным от 1С. Рекомендуется включить "
-"эту функцию."
+"Артикулы для продуктов будут заполняться по данным 1С исходя из выбранного "
+"источника для артикулов. Рекомендуется включить эту функцию."
 
 #: src/Schemas/Productscml/Admin.php:981 src/Schemas/Productscml/Admin.php:1378
 #: src/Schemas/Productscml/Admin.php:1406
-#: src/Schemas/Productscml/Admin.php:1802
+#: src/Schemas/Productscml/Admin.php:1890
 msgid "The setting works when creating products (goods)."
 msgstr "Настройка работает при создании продуктов (товаров)."
 
@@ -3055,8 +3278,8 @@ msgstr "Из штрих-кода"
 #: src/Schemas/Productscml/Admin.php:1196
 #: src/Schemas/Productscml/Admin.php:1214
 #: src/Schemas/Productscml/Admin.php:1282
-#: src/Schemas/Productscml/Admin.php:1839
-#: src/Schemas/Productscml/Admin.php:1852
+#: src/Schemas/Productscml/Admin.php:1927
+#: src/Schemas/Productscml/Admin.php:1940
 msgid "From requisite with the specified name"
 msgstr "Из реквизита с указанным наименованием"
 
@@ -3542,7 +3765,7 @@ msgstr ""
 
 #: src/Schemas/Productscml/Admin.php:1464
 #: src/Schemas/Productscml/Admin.php:1480
-#: src/Schemas/Productscml/Admin.php:1827
+#: src/Schemas/Productscml/Admin.php:1915
 msgid "Add if not on the site, but available in 1C"
 msgstr "Добавлять если нет на сайте, но есть в 1С"
 
@@ -3627,19 +3850,94 @@ msgstr ""
 "Если указать одно изображение, оно будет загружено как основное без "
 "добавления остальных в галерею к продуктам (товарам)."
 
-#: src/Schemas/Productscml/Admin.php:1532
+#: src/Schemas/Productscml/Admin.php:1521
+#: src/Schemas/Productscml/Admin.php:1536
+#: src/Schemas/Productscml/Admin.php:1556
+#: src/Schemas/Productscml/Admin.php:1576
+#: src/Schemas/Productscml/Admin.php:1596
+msgid "При создании и обновлении продуктов"
+msgstr ""
+
+#: src/Schemas/Productscml/Admin.php:1522
+#: src/Schemas/Productscml/Admin.php:1538
+#: src/Schemas/Productscml/Admin.php:1558
+#: src/Schemas/Productscml/Admin.php:1578
+#: src/Schemas/Productscml/Admin.php:1598
+msgid "При создании продуктов"
+msgstr ""
+
+#: src/Schemas/Productscml/Admin.php:1523
+#: src/Schemas/Productscml/Admin.php:1540
+#: src/Schemas/Productscml/Admin.php:1560
+#: src/Schemas/Productscml/Admin.php:1580
+#: src/Schemas/Productscml/Admin.php:1600
+msgid "При обновлении продуктов"
+msgstr ""
+
+#: src/Schemas/Productscml/Admin.php:1528
+msgid "Обновление наименования изображений по наименованию продуктов"
+msgstr ""
+
+#: src/Schemas/Productscml/Admin.php:1535
+#: src/Schemas/Productscml/Admin.php:1555
+#: src/Schemas/Productscml/Admin.php:1575
+#: src/Schemas/Productscml/Admin.php:1595
+msgid "Обновление будет пропущено в любом случае."
+msgstr ""
+
+#: src/Schemas/Productscml/Admin.php:1537
+#: src/Schemas/Productscml/Admin.php:1557
+#: src/Schemas/Productscml/Admin.php:1577
+#: src/Schemas/Productscml/Admin.php:1597
+msgid ""
+"Обновление произойдет как при создании продукта, так и при его обновлении."
+msgstr ""
+
+#: src/Schemas/Productscml/Admin.php:1539
+#: src/Schemas/Productscml/Admin.php:1579
+msgid "Наименование будет обновлено только при создании продуктов."
+msgstr ""
+
+#: src/Schemas/Productscml/Admin.php:1541
+#: src/Schemas/Productscml/Admin.php:1581
+msgid "Наименование будет обновлено только при обновлении продуктов."
+msgstr ""
+
+#: src/Schemas/Productscml/Admin.php:1548
+msgid "Обновление атрибута ALT изображений по наименованию продуктов"
+msgstr ""
+
+#: src/Schemas/Productscml/Admin.php:1559
+#: src/Schemas/Productscml/Admin.php:1599
+msgid "Атрибут ALT будет обновлен только при создании продуктов."
+msgstr ""
+
+#: src/Schemas/Productscml/Admin.php:1561
+#: src/Schemas/Productscml/Admin.php:1601
+msgid "Атрибут ALT будет обновлен только при обновлении продуктов."
+msgstr ""
+
+#: src/Schemas/Productscml/Admin.php:1568
+msgid "Обновление наименования изображений из описания файла"
+msgstr ""
+
+#: src/Schemas/Productscml/Admin.php:1588
+msgid "Обновление атрибута ALT у изображений из описания файла"
+msgstr ""
+
+#: src/Schemas/Productscml/Admin.php:1620
 msgid "Products (goods): other"
 msgstr "Продукты (товары): прочие"
 
-#: src/Schemas/Productscml/Admin.php:1534
+#: src/Schemas/Productscml/Admin.php:1622
 msgid "Regulation of other algorithms for working with products (goods)."
 msgstr "Регулирование прочих алгоритмов работы с продуктами (товарами)."
 
-#: src/Schemas/Productscml/Admin.php:1542
+#: src/Schemas/Productscml/Admin.php:1630
 msgid "Status of the created product"
 msgstr "Статус создаваемых продуктов"
 
-#: src/Schemas/Productscml/Admin.php:1547
+#: src/Schemas/Productscml/Admin.php:1635
 msgid ""
 "Newly created products will have selected status. It is recommended to "
 "select the status: Draft."
@@ -3647,7 +3945,7 @@ msgstr ""
 "Вновь созданные продукты будут иметь выбранный статус. Рекомендуется выбрать "
 "статус: Черновик."
 
-#: src/Schemas/Productscml/Admin.php:1548
+#: src/Schemas/Productscml/Admin.php:1636
 msgid ""
 "The product catalog comes without prices and balances. Publication is best "
 "done at the stage of filling in this data."
@@ -3655,7 +3953,7 @@ msgstr ""
 "Каталог продукции поставляется без цен и остатков. Публикацию лучше делать "
 "на этапе заполнения этих данных."
 
-#: src/Schemas/Productscml/Admin.php:1549
+#: src/Schemas/Productscml/Admin.php:1637
 msgid ""
 "If a product is marked for deletion in 1C, it will be placed in the trash, "
 "regardless of the current setting."
@@ -3663,11 +3961,11 @@ msgstr ""
 "Если товар отмечен на удаление в 1С, он будет помещен в корзину вне "
 "зависимости от текущей настройки."
 
-#: src/Schemas/Productscml/Admin.php:1564
+#: src/Schemas/Productscml/Admin.php:1652
 msgid "Product status update when requesting product updates"
 msgstr "Обновление статуса продукта при запросе обновлений продуктов"
 
-#: src/Schemas/Productscml/Admin.php:1566
+#: src/Schemas/Productscml/Admin.php:1654
 msgid ""
 "The selected status will be assigned to all upgraded products when "
 "requesting product upgrades."
@@ -3675,45 +3973,45 @@ msgstr ""
 "Выбранный статус будет присвоен всем обновленным продуктам при запросе "
 "обновлений продуктов."
 
-#: src/Schemas/Productscml/Admin.php:1574
-#: src/Schemas/Productscml/Admin.php:1583
+#: src/Schemas/Productscml/Admin.php:1662
+#: src/Schemas/Productscml/Admin.php:1671
 msgid "Check"
 msgstr "Отметить"
 
-#: src/Schemas/Productscml/Admin.php:1575
-#: src/Schemas/Productscml/Admin.php:1585
+#: src/Schemas/Productscml/Admin.php:1663
+#: src/Schemas/Productscml/Admin.php:1673
 msgid "Uncheck"
 msgstr "Снять отметку"
 
-#: src/Schemas/Productscml/Admin.php:1582
+#: src/Schemas/Productscml/Admin.php:1670
 msgid "The current value of the option will remain."
 msgstr "Текущее значение опции останется."
 
-#: src/Schemas/Productscml/Admin.php:1584
+#: src/Schemas/Productscml/Admin.php:1672
 msgid "The mark will be set."
 msgstr "Отметка будет установлена."
 
-#: src/Schemas/Productscml/Admin.php:1586
+#: src/Schemas/Productscml/Admin.php:1674
 msgid "The mark will be removed."
 msgstr "Отметка будет удалена."
 
-#: src/Schemas/Productscml/Admin.php:1592
+#: src/Schemas/Productscml/Admin.php:1680
 msgid "Featured on create products"
 msgstr "Рекомендуемый продукт при создании продуктов"
 
-#: src/Schemas/Productscml/Admin.php:1595
+#: src/Schemas/Productscml/Admin.php:1683
 msgid "The created product will be marked as featured."
 msgstr "Созданный продукт будет помечен как рекомендуемый."
 
-#: src/Schemas/Productscml/Admin.php:1601
+#: src/Schemas/Productscml/Admin.php:1689
 msgid "Featured on update products"
 msgstr "Рекомендуемый у обновляемых продуктов"
 
-#: src/Schemas/Productscml/Admin.php:1610
+#: src/Schemas/Productscml/Admin.php:1698
 msgid "Individual sale on create products"
 msgstr "Индивидуальная продажа при создании продуктов"
 
-#: src/Schemas/Productscml/Admin.php:1613
+#: src/Schemas/Productscml/Admin.php:1701
 msgid ""
 "Enable to have the product sold individually in one order. Two units of a "
 "product in one order will be impossible to order."
@@ -3721,49 +4019,49 @@ msgstr ""
 "Включите продажу продукта по отдельности в одном заказе. Две единицы товара "
 "в одном заказе заказать будет невозможно."
 
-#: src/Schemas/Productscml/Admin.php:1619
+#: src/Schemas/Productscml/Admin.php:1707
 msgid "Individual sale on update products"
 msgstr "Индивидуальная продажа обновляемых продуктов"
 
-#: src/Schemas/Productscml/Admin.php:1630
+#: src/Schemas/Productscml/Admin.php:1718
 msgid "Product visibility on create products"
 msgstr "Видимость продукта при создании продуктов"
 
-#: src/Schemas/Productscml/Admin.php:1632
-#: src/Schemas/Productscml/Admin.php:1641
+#: src/Schemas/Productscml/Admin.php:1720
+#: src/Schemas/Productscml/Admin.php:1729
 msgid "This setting determines which pages products will be displayed on."
 msgstr ""
 "Этот параметр определяет, на каких страницах будут отображаться товары."
 
-#: src/Schemas/Productscml/Admin.php:1639
+#: src/Schemas/Productscml/Admin.php:1727
 msgid "Product visibility on update products"
 msgstr "Видимость обновляемых продуктов"
 
-#: src/Schemas/Productscml/Admin.php:1648
+#: src/Schemas/Productscml/Admin.php:1736
 msgid "Allow reviews on create products"
 msgstr "Разрешить отзывы к создаваемым продуктам"
 
-#: src/Schemas/Productscml/Admin.php:1651
+#: src/Schemas/Productscml/Admin.php:1739
 msgid "It will be allowed to leave reviews for created products."
 msgstr "Будет разрешено оставлять отзывы о создаваемых продуктах."
 
-#: src/Schemas/Productscml/Admin.php:1657
+#: src/Schemas/Productscml/Admin.php:1745
 msgid "Allow reviews on update products"
 msgstr "Разрешить отзывы к обновляемым продуктам"
 
-#: src/Schemas/Productscml/Admin.php:1678
+#: src/Schemas/Productscml/Admin.php:1766
 msgid "Media library"
 msgstr "Медиа библиотека"
 
-#: src/Schemas/Productscml/Admin.php:1680
+#: src/Schemas/Productscml/Admin.php:1768
 msgid "Regulation of algorithms for working with WordPress media library."
 msgstr "Регулирование алгоритмов работы с медиатекой WordPress."
 
-#: src/Schemas/Productscml/Admin.php:1685
+#: src/Schemas/Productscml/Admin.php:1773
 msgid "Using the media library"
 msgstr "Использование медиа библиотеки"
 
-#: src/Schemas/Productscml/Admin.php:1688
+#: src/Schemas/Productscml/Admin.php:1776
 msgid ""
 "All file handling capabilities available to the library will be enabled. If "
 "disabled, no actions will be performed on files in the library through the "
@@ -3773,11 +4071,11 @@ msgstr ""
 "Если этот параметр отключен, никакие действия над файлами в библиотеке через "
 "схему выполняться не будут."
 
-#: src/Schemas/Productscml/Admin.php:1694
+#: src/Schemas/Productscml/Admin.php:1782
 msgid "Images based on Receiver"
 msgstr "Изображения на основе файлов Получателя"
 
-#: src/Schemas/Productscml/Admin.php:1700
+#: src/Schemas/Productscml/Admin.php:1788
 msgid ""
 "All image files sent to Receiver files will be added to the WordPress media "
 "library."
@@ -3785,13 +4083,13 @@ msgstr ""
 "Все файлы изображений, отправленные в виде файлов на Получатель, будут "
 "добавлены в медиа библиотеку WordPress."
 
-#: src/Schemas/Productscml/Admin.php:1701
+#: src/Schemas/Productscml/Admin.php:1789
 msgid "These images can later be used to populate product images."
 msgstr ""
 "Эти изображения впоследствии можно использовать для заполнения изображений "
 "продуктов."
 
-#: src/Schemas/Productscml/Admin.php:1702
+#: src/Schemas/Productscml/Admin.php:1790
 msgid ""
 "When adding an image, it will be assigned the identifier of the current "
 "configuration, as well as the identifier of the scheme and the path of being "
@@ -3800,11 +4098,11 @@ msgstr ""
 "При добавлении изображения, ему будет присвоен идентификатор текущей "
 "конфигурации, а также идентификатор схемы и путь нахождения в 1С."
 
-#: src/Schemas/Productscml/Admin.php:1721
+#: src/Schemas/Productscml/Admin.php:1809
 msgid "Products (goods): inventories"
 msgstr "Продукты (товары): запасы"
 
-#: src/Schemas/Productscml/Admin.php:1723
+#: src/Schemas/Productscml/Admin.php:1811
 msgid ""
 "Comprehensive settings for updating inventories based on data from the offer "
 "package."
@@ -3812,11 +4110,11 @@ msgstr ""
 "Комплексные настройки обновления запасов на основе данных из пакета "
 "предложений."
 
-#: src/Schemas/Productscml/Admin.php:1728
+#: src/Schemas/Productscml/Admin.php:1816
 msgid "The stock status of product created"
 msgstr "Статус запаса создаваемых продуктов"
 
-#: src/Schemas/Productscml/Admin.php:1733
+#: src/Schemas/Productscml/Admin.php:1821
 msgid ""
 "Newly created products will have the selected stock status. It is "
 "recommended to select the status: Out of stock."
@@ -3824,7 +4122,7 @@ msgstr ""
 "Вновь созданные продукты будут иметь выбранный статус запаса. Рекомендуется "
 "выбрать статус: Нет в наличии."
 
-#: src/Schemas/Productscml/Admin.php:1734
+#: src/Schemas/Productscml/Admin.php:1822
 msgid ""
 "The product catalog comes without quantities. When creating new products, it "
 "is better not to expose their availability."
@@ -3832,11 +4130,11 @@ msgstr ""
 "Каталог продукции поставляется без количества. При создании новых продуктов "
 "лучше не выставлять напоказ их наличие."
 
-#: src/Schemas/Productscml/Admin.php:1749
+#: src/Schemas/Productscml/Admin.php:1837
 msgid "Product stock status update when requesting product updates"
 msgstr "Обновление статуса запасов обновляемых продуктов"
 
-#: src/Schemas/Productscml/Admin.php:1751
+#: src/Schemas/Productscml/Admin.php:1839
 msgid ""
 "Upgradable products will change the balance status to the selected option "
 "from the list. It is recommended to select the status: Out of stock. "
@@ -3847,11 +4145,11 @@ msgstr ""
 "Рекомендуется выбрать статус: Нет в наличии. Остатки в этом случае будут "
 "восстановлены с дальнейшей обработкой остатков."
 
-#: src/Schemas/Productscml/Admin.php:1758
+#: src/Schemas/Productscml/Admin.php:1846
 msgid "Filling inventories based on quantity from offers"
 msgstr "Заполнение запасов на основе количества из предложений"
 
-#: src/Schemas/Productscml/Admin.php:1761
+#: src/Schemas/Productscml/Admin.php:1849
 msgid ""
 "It will be allowed to fill in the quantity of product stocks in WooCommerce "
 "based on the quantity received in 1C offers."
@@ -3859,11 +4157,11 @@ msgstr ""
 "Будет разрешено заполнить количество продуктовых (товарных) запасов в "
 "WooCommerce исходя из количества, полученного в 1С предложениях."
 
-#: src/Schemas/Productscml/Admin.php:1767
+#: src/Schemas/Productscml/Admin.php:1855
 msgid "Minimum quantity for availability on the site"
 msgstr "Минимальное количество для наличия на сайте"
 
-#: src/Schemas/Productscml/Admin.php:1769
+#: src/Schemas/Productscml/Admin.php:1857
 msgid ""
 "Specify the minimum quantity of goods in 1C to calculate the availability on "
 "the site. If there are fewer balances in 1C, then the product will be on the "
@@ -3873,11 +4171,11 @@ msgstr ""
 "Если остатков в 1С меньше, то товар будет на сайте с остатком 0, т.е. со "
 "статусом нет в наличии."
 
-#: src/Schemas/Productscml/Admin.php:1788
+#: src/Schemas/Productscml/Admin.php:1876
 msgid "Products (goods): dimensions"
 msgstr "Продукты (товары): габариты"
 
-#: src/Schemas/Productscml/Admin.php:1790
+#: src/Schemas/Productscml/Admin.php:1878
 msgid ""
 "The main settings for filling in the dimensions of products (goods) "
 "according to data from 1C. Dimensions include: weight, length, width, height."
@@ -3885,11 +4183,11 @@ msgstr ""
 "Основные настройки заполнения габаритов продуктов (товаров) по данным из 1С. "
 "К габаритам относятся: вес, длина, ширина, высота."
 
-#: src/Schemas/Productscml/Admin.php:1795
+#: src/Schemas/Productscml/Admin.php:1883
 msgid "Filling the dimensions of the created product"
 msgstr "Заполнение габаритов создаваемых продуктов"
 
-#: src/Schemas/Productscml/Admin.php:1801
+#: src/Schemas/Productscml/Admin.php:1889
 msgid ""
 "The product dimensions will be added according to data from 1C. It is "
 "recommended to enable this feature."
@@ -3897,15 +4195,15 @@ msgstr ""
 "Габариты продукта будут добавлены согласно данным от 1С. Рекомендуется "
 "включить эту функцию."
 
-#: src/Schemas/Productscml/Admin.php:1817
+#: src/Schemas/Productscml/Admin.php:1905
 msgid "Dimensions update when products updates"
 msgstr "Обновление габаритов при обновлении продуктов"
 
-#: src/Schemas/Productscml/Admin.php:1824
+#: src/Schemas/Productscml/Admin.php:1912
 msgid "Dimensions updates will be skipped in any case."
 msgstr "Обновление габаритов будет пропущено в любом случае."
 
-#: src/Schemas/Productscml/Admin.php:1826
+#: src/Schemas/Productscml/Admin.php:1914
 msgid ""
 "Dimensions will be updated in any case. The same value will always be on the "
 "site and in 1C."
@@ -3913,7 +4211,7 @@ msgstr ""
 "Габариты будут обновляться в любом случае. На сайте и в 1С всегда будет одно "
 "и то же значение."
 
-#: src/Schemas/Productscml/Admin.php:1828
+#: src/Schemas/Productscml/Admin.php:1916
 msgid ""
 "Existing dimensions will not be affected. There will be a filling of those "
 "missing on the site if they are available in 1C."
@@ -3921,7 +4219,7 @@ msgstr ""
 "Существующие габариты не будут затронуты. Будет добавление отсутствующих на "
 "сайте при их наличии в 1С."
 
-#: src/Schemas/Productscml/Admin.php:1830
+#: src/Schemas/Productscml/Admin.php:1918
 msgid ""
 "Dimensions will be updated only if they are filled in 1C and on the site at "
 "the same time."
@@ -3929,11 +4227,11 @@ msgstr ""
 "Габариты будут обновляться только в случае их заполнения в 1С и на сайте "
 "одновременно."
 
-#: src/Schemas/Productscml/Admin.php:1844
+#: src/Schemas/Productscml/Admin.php:1932
 msgid "Source for dimensions"
 msgstr "Источник для габаритов"
 
-#: src/Schemas/Productscml/Admin.php:1851
+#: src/Schemas/Productscml/Admin.php:1939
 msgid ""
 "Populating the dimensions data from CommerceML data will be skipped. If a "
 "product is updating, then its current dimensions will not be updated."
@@ -3941,7 +4239,7 @@ msgstr ""
 "Заполнение данных габаритов из данных CommerceML будет пропущено. Если "
 "продукт обновляется, то его текущие габариты обновляться не будут."
 
-#: src/Schemas/Productscml/Admin.php:1853
+#: src/Schemas/Productscml/Admin.php:1941
 msgid ""
 "The dimensions data will be filled in based on the completed name of the "
 "requisite of the products (goods)."
@@ -3949,11 +4247,11 @@ msgstr ""
 "Данные габаритов будут заполняться на основании заполненного наименования "
 "реквизита продуктов (товаров)."
 
-#: src/Schemas/Productscml/Admin.php:1861
+#: src/Schemas/Productscml/Admin.php:1949
 msgid "Dimensions based on requisites: weight"
 msgstr "Габариты по реквизитам: вес"
 
-#: src/Schemas/Productscml/Admin.php:1863
+#: src/Schemas/Productscml/Admin.php:1951
 msgid ""
 "Specify the requisite name of the weight in 1C, which is used for filling to "
 "WooCommerce as the weight."
@@ -3961,15 +4259,15 @@ msgstr ""
 "Укажите необходимое название реквизита веса в 1С, которое используется для "
 "заполнения в WooCommerce в качестве веса."
 
-#: src/Schemas/Productscml/Admin.php:1864
+#: src/Schemas/Productscml/Admin.php:1952
 msgid "Weight"
 msgstr "Вес"
 
-#: src/Schemas/Productscml/Admin.php:1870
+#: src/Schemas/Productscml/Admin.php:1958
 msgid "Dimensions based on requisites: length"
 msgstr "Габариты по реквизитам: длина"
 
-#: src/Schemas/Productscml/Admin.php:1872
+#: src/Schemas/Productscml/Admin.php:1960
 msgid ""
 "Specify the requisite name of the length in 1C, which is used for filling to "
 "WooCommerce as the length."
@@ -3977,15 +4275,15 @@ msgstr ""
 "Укажите необходимое название реквизита длины в 1С, которое используется для "
 "заполнения в WooCommerce в качестве длины."
 
-#: src/Schemas/Productscml/Admin.php:1873
+#: src/Schemas/Productscml/Admin.php:1961
 msgid "Length"
 msgstr "Длина"
 
-#: src/Schemas/Productscml/Admin.php:1879
+#: src/Schemas/Productscml/Admin.php:1967
 msgid "Dimensions based on requisites: width"
 msgstr "Габариты по реквизитам: ширина"
 
-#: src/Schemas/Productscml/Admin.php:1881
+#: src/Schemas/Productscml/Admin.php:1969
 msgid ""
 "Specify the requisite name of the width in 1C, which is used for filling to "
 "WooCommerce as the width."
@@ -3993,15 +4291,15 @@ msgstr ""
 "Укажите необходимое название реквизита ширины в 1С, которое используется для "
 "заполнения в WooCommerce в качестве ширины."
 
-#: src/Schemas/Productscml/Admin.php:1882
+#: src/Schemas/Productscml/Admin.php:1970
 msgid "Width"
 msgstr "Ширина"
 
-#: src/Schemas/Productscml/Admin.php:1888
+#: src/Schemas/Productscml/Admin.php:1976
 msgid "Dimensions based on requisites: height"
 msgstr "Габариты по реквизитам: высота"
 
-#: src/Schemas/Productscml/Admin.php:1890
+#: src/Schemas/Productscml/Admin.php:1978
 msgid ""
 "Specify the requisite name of the height in 1C, which is used for filling to "
 "WooCommerce as the height."
@@ -4009,11 +4307,11 @@ msgstr ""
 "Укажите необходимое название реквизита высоты в 1С, которое используется для "
 "заполнения в WooCommerce в качестве высоты."
 
-#: src/Schemas/Productscml/Admin.php:1891
+#: src/Schemas/Productscml/Admin.php:1979
 msgid "Height"
 msgstr "Высота"
 
-#: src/Schemas/Productscml/Admin.php:1935
+#: src/Schemas/Productscml/Admin.php:2023
 msgid ""
 "Log files created daily. This option on the maximum number of stored files. "
 "By default saved of the logs are for the last 10 days."
@@ -4028,110 +4326,130 @@ msgstr "Обмен данными о продуктах через CommerceML"
 
 #: src/Schemas/Productscml/Core.php:65
 msgid ""
-"Creation and updating of products (goods) in WooCommerce according to data "
-"from 1C using the CommerceML protocol of various versions."
+"Creating and updating products (goods) in WooCommerce according to data from "
+"1C using the CommerceML protocol of different versions."
 msgstr ""
 "Создание и обновление продуктов (товаров) в WooCommerce по данным из 1С с "
 "использованием протокола CommerceML различных версий."
 
-#: src/Schemas/Productscml/Core.php:197
+#: src/Schemas/Productscml/Core.php:212
 msgid "DecoderCML has been overridden by external algorithms."
 msgstr "DecoderCML был переопределен внешними алгоритмами."
 
-#: src/Schemas/Productscml/Core.php:215
+#: src/Schemas/Productscml/Core.php:238
 msgid "ReaderCML has been overridden by external algorithms."
 msgstr "ReaderCML был переопределен внешними алгоритмами."
 
-#: src/Schemas/Productscml/Core.php:260
+#: src/Schemas/Productscml/Core.php:283
 msgid "Clearing the output buffer."
 msgstr "Очистка выходного буфера."
 
-#: src/Schemas/Productscml/Core.php:275
+#: src/Schemas/Productscml/Core.php:298
 msgid "Cleaned up data."
 msgstr "Данные очищенны."
 
-#: src/Schemas/Productscml/Core.php:358
-msgid "DecoderCML threw an exception while converting the classifier."
-msgstr "DecoderCML выдал исключение при преобразовании классификатора."
+#: src/Schemas/Productscml/Core.php:304
+msgid "Clearing the output buffer as completed."
+msgstr "Очистка буфера вывода завершена."
 
-#: src/Schemas/Productscml/Core.php:378
+#: src/Schemas/Productscml/Core.php:368
+msgid "Processing a commercial info."
+msgstr "Обработка коммерческой информации."
+
+#: src/Schemas/Productscml/Core.php:389
+msgid "Processing a classifier."
+msgstr "Обработка классификатора."
+
+#: src/Schemas/Productscml/Core.php:403
+msgid "SimpleXMLElement threw an exception when converting the classifier."
+msgstr "SimpleXMLElement вызвал исключение при преобразовании классификатора."
+
+#: src/Schemas/Productscml/Core.php:413
+msgid "DecoderCML threw an exception when converting the classifier."
+msgstr "DecoderCML вызвал исключение при преобразовании классификатора."
+
+#: src/Schemas/Productscml/Core.php:435
 msgid "Classifier !instanceof ClassifierDataContract. Processing skipped."
 msgstr ""
 "Классификатор не является экземпляром ClassifierDataContract. Обработка "
 "пропущена."
 
-#: src/Schemas/Productscml/Core.php:415
+#: src/Schemas/Productscml/Core.php:457
+msgid "Processing a classifier an completed."
+msgstr "Обработка классификатора завершена."
+
+#: src/Schemas/Productscml/Core.php:476
 msgid "Classifier groups is empty."
 msgstr "Группы классификатора пусты."
 
-#: src/Schemas/Productscml/Core.php:456
+#: src/Schemas/Productscml/Core.php:517
 msgid "Classifier group processing."
 msgstr "Обработка группы классификатора."
 
-#: src/Schemas/Productscml/Core.php:471
+#: src/Schemas/Productscml/Core.php:532
 msgid "Category search by external algorithms."
 msgstr "Поиск категории по внешним алгоритмам."
 
-#: src/Schemas/Productscml/Core.php:477
+#: src/Schemas/Productscml/Core.php:538
 msgid "Category search result by external algorithms."
 msgstr "Результат поиска категории с помощью внешних алгоритмов."
 
-#: src/Schemas/Productscml/Core.php:486
+#: src/Schemas/Productscml/Core.php:547
 msgid "Category search by group ID from 1C."
 msgstr "Поиск категории по идентификатору группы из 1С."
 
-#: src/Schemas/Productscml/Core.php:492
+#: src/Schemas/Productscml/Core.php:553
 msgid "Category search result by group ID from 1C."
 msgstr "Результат поиска категории по идентификатору группы из 1С."
 
-#: src/Schemas/Productscml/Core.php:509
+#: src/Schemas/Productscml/Core.php:570
 msgid ""
 "More than one category found by ID from 1C. Assigning the first available."
 msgstr ""
 "Более одной категории найдено по ID от 1С. Назначение первой доступной."
 
-#: src/Schemas/Productscml/Core.php:517
+#: src/Schemas/Productscml/Core.php:578
 msgid "Category not found. Trying to use existing categories."
 msgstr "Категория не найдена. Попытка использовать существующие категории."
 
-#: src/Schemas/Productscml/Core.php:526
+#: src/Schemas/Productscml/Core.php:587
 msgid "No category found for the specified name."
 msgstr "Для указанного имени категория не найдена."
 
-#: src/Schemas/Productscml/Core.php:546
+#: src/Schemas/Productscml/Core.php:607
 msgid "Category found by name without nesting."
 msgstr "Категория найдена по названию без вложенности."
 
-#: src/Schemas/Productscml/Core.php:558
+#: src/Schemas/Productscml/Core.php:619
 msgid "Category search taking into account nesting."
 msgstr "Поиск по категориям с учетом вложенности."
 
-#: src/Schemas/Productscml/Core.php:565
+#: src/Schemas/Productscml/Core.php:626
 msgid "Category found. The parent is absent both in 1C and on the site."
 msgstr "Категория найдена. Родитель отсутствует как в 1С, так и на сайте."
 
-#: src/Schemas/Productscml/Core.php:598
+#: src/Schemas/Productscml/Core.php:659
 msgid ""
 "Assigning a category identifier according to 1C data for an existing "
 "category."
 msgstr ""
 "Присвоение идентификатора категории по данным 1С для существующей категории."
 
-#: src/Schemas/Productscml/Core.php:606
+#: src/Schemas/Productscml/Core.php:667
 msgid "Assigning a parent category ID from 1C to an existing category."
 msgstr ""
 "Присвоение идентификатора родительской категории из 1С для существующей "
 "категории."
 
-#: src/Schemas/Productscml/Core.php:614
+#: src/Schemas/Productscml/Core.php:675
 msgid "Saving a category."
 msgstr "Сохранение категории."
 
-#: src/Schemas/Productscml/Core.php:626
+#: src/Schemas/Productscml/Core.php:687
 msgid "The category exists. Started updating the data of an existing category."
 msgstr "Категория существует. Начато обновление данных существующей категории."
 
-#: src/Schemas/Productscml/Core.php:630
+#: src/Schemas/Productscml/Core.php:691
 msgid ""
 "Category data update is skipped, it is disabled in the configuration "
 "settings."
@@ -4139,7 +4457,7 @@ msgstr ""
 "Обновление данных категории пропущено. Обновление выключено в настройках "
 "конфигурации."
 
-#: src/Schemas/Productscml/Core.php:639
+#: src/Schemas/Productscml/Core.php:700
 msgid ""
 "Category update skipped. The category was created from a different "
 "configuration."
@@ -4147,159 +4465,163 @@ msgstr ""
 "Обновление категории пропущено. Категория была создана из другой "
 "конфигурации."
 
-#: src/Schemas/Productscml/Core.php:648
+#: src/Schemas/Productscml/Core.php:709
 msgid "Category name update."
 msgstr "Обновление названия категории."
 
-#: src/Schemas/Productscml/Core.php:652
+#: src/Schemas/Productscml/Core.php:713
 msgid "The name of the category has not changed, skipping the name update."
 msgstr "Название категории не изменилось, пропуск обновления названия."
 
-#: src/Schemas/Productscml/Core.php:656
+#: src/Schemas/Productscml/Core.php:717
 msgid "A new category name has been set."
 msgstr "Задано новое название категории."
 
-#: src/Schemas/Productscml/Core.php:677 src/Schemas/Productscml/Core.php:690
+#: src/Schemas/Productscml/Core.php:738 src/Schemas/Productscml/Core.php:751
 msgid ""
 "The image updating for the category is missing. It is not found in the media "
 "library."
 msgstr ""
 "Обновление изображения для категории не произведено. В медиатеке его нет."
 
-#: src/Schemas/Productscml/Core.php:703
+#: src/Schemas/Productscml/Core.php:764
 msgid "Category description update."
 msgstr "Обновление описания категории."
 
-#: src/Schemas/Productscml/Core.php:707
+#: src/Schemas/Productscml/Core.php:768
 msgid ""
 "The description of the category has not changed, skipping the description "
 "update."
 msgstr "Описание категории не изменилось, пропуск обновления описания."
 
-#: src/Schemas/Productscml/Core.php:711
+#: src/Schemas/Productscml/Core.php:772
 msgid "A new category description has been set."
 msgstr "Установлено новое описание категории."
 
-#: src/Schemas/Productscml/Core.php:722
+#: src/Schemas/Productscml/Core.php:783
 msgid "Update the parent for the category."
 msgstr "Обновление родителя для категории."
 
-#: src/Schemas/Productscml/Core.php:726
+#: src/Schemas/Productscml/Core.php:787
 msgid "The parent is absent in 1C."
 msgstr "Родитель отсутствует в 1С."
 
-#: src/Schemas/Productscml/Core.php:732 src/Schemas/Productscml/Core.php:786
+#: src/Schemas/Productscml/Core.php:793 src/Schemas/Productscml/Core.php:847
 msgid "Search for a parent category by ID from 1C."
 msgstr "Поиск родительской категории по идентификатору из 1С."
 
-#: src/Schemas/Productscml/Core.php:741 src/Schemas/Productscml/Core.php:795
+#: src/Schemas/Productscml/Core.php:802 src/Schemas/Productscml/Core.php:856
 msgid ""
 "More than one parent category found by ID from 1C. Assigning the first "
 "available."
 msgstr ""
 "Более одной категории найдено по ID от 1С. Назначение первой доступной."
 
-#: src/Schemas/Productscml/Core.php:747 src/Schemas/Productscml/Core.php:801
+#: src/Schemas/Productscml/Core.php:808 src/Schemas/Productscml/Core.php:862
 msgid "Assigning parent IDs to a category."
 msgstr "Назначение родительских идентификаторов для категории."
 
-#: src/Schemas/Productscml/Core.php:757
+#: src/Schemas/Productscml/Core.php:818
 msgid "Update data of existing category completed successfully."
 msgstr "Обновление данных существующей категории успешно завершено."
 
-#: src/Schemas/Productscml/Core.php:766
+#: src/Schemas/Productscml/Core.php:827
 msgid "The category does not exist. Category creation started."
 msgstr "Категория не существует. Начато создание категории."
 
-#: src/Schemas/Productscml/Core.php:818
+#: src/Schemas/Productscml/Core.php:879
 msgid "Assign a description to a category."
 msgstr "Назначение описания для категории."
 
-#: src/Schemas/Productscml/Core.php:825
+#: src/Schemas/Productscml/Core.php:886
 msgid "Assign a image to a category."
 msgstr "Назначение изображения для категории."
 
-#: src/Schemas/Productscml/Core.php:837 src/Schemas/Productscml/Core.php:850
+#: src/Schemas/Productscml/Core.php:898 src/Schemas/Productscml/Core.php:911
 msgid ""
 "The image assignment for the category is missing. It is not found in the "
 "media library."
 msgstr ""
 "Назначение изображения для категории не произведено. В медиатеке его нет."
 
-#: src/Schemas/Productscml/Core.php:860
+#: src/Schemas/Productscml/Core.php:921
 msgid "Category creation completed successfully."
 msgstr "Создание категории успешно завершено."
 
-#: src/Schemas/Productscml/Core.php:867
+#: src/Schemas/Productscml/Core.php:928
 msgid "Creating, updating and using categories is disabled."
 msgstr "Создание, обновление и использование категорий отключено."
 
-#: src/Schemas/Productscml/Core.php:888
+#: src/Schemas/Productscml/Core.php:944
 msgid "Classifier properties is empty."
 msgstr "Свойства классификатора пусты."
 
-#: src/Schemas/Productscml/Core.php:904
+#: src/Schemas/Productscml/Core.php:960
 msgid "Creating and updating attributes based on classifier properties."
 msgstr "Создание и обновление атрибутов на основе свойств классификатора."
 
-#: src/Schemas/Productscml/Core.php:913
+#: src/Schemas/Productscml/Core.php:969
 msgid "Classifier properties processing."
 msgstr "Обработка свойств классификатора."
 
-#: src/Schemas/Productscml/Core.php:926
+#: src/Schemas/Productscml/Core.php:982
 msgid "Attribute search by external algorithms for the classifier property."
 msgstr "Поиск атрибута по внешним алгоритмам для свойства классификатора."
 
-#: src/Schemas/Productscml/Core.php:931
+#: src/Schemas/Productscml/Core.php:987
 msgid "An existing attribute was found when searching by external algorithms."
 msgstr ""
 "Существующий атрибут был найден при поиске с помощью внешних алгоритмов."
 
-#: src/Schemas/Productscml/Core.php:940
+#: src/Schemas/Productscml/Core.php:996
 msgid "Search for an attribute by name for a classifier property."
 msgstr "Поиск атрибута по имени для свойства классификатора."
 
-#: src/Schemas/Productscml/Core.php:946
+#: src/Schemas/Productscml/Core.php:1002
 msgid "An existing attribute was found when searching by name."
 msgstr "При поиске по имени был найден существующий атрибут."
 
-#: src/Schemas/Productscml/Core.php:957
+#: src/Schemas/Productscml/Core.php:1013
 msgid "The attribute was not found. Creating."
 msgstr "Атрибут не был найден. Создание."
 
-#: src/Schemas/Productscml/Core.php:966
+#: src/Schemas/Productscml/Core.php:1022
+msgid "The attribute was not created. Creating error."
+msgstr "Атрибут не был создан. Ошибка создания."
+
+#: src/Schemas/Productscml/Core.php:1029
 msgid "The attribute was not found. Creating disabled."
 msgstr "Атрибут не был найден. Создание отключено."
 
-#: src/Schemas/Productscml/Core.php:975
+#: src/Schemas/Productscml/Core.php:1038
 msgid ""
 "Values for the attribute were found in the classifier properties. Processing."
 msgstr ""
 "Значения для атрибута были найдены в свойствах классификатора. Обработка."
 
-#: src/Schemas/Productscml/Core.php:981
+#: src/Schemas/Productscml/Core.php:1044
 msgid "Assigning a value for an attribute."
 msgstr "Назначение значения для атрибута."
 
-#: src/Schemas/Productscml/Core.php:987
+#: src/Schemas/Productscml/Core.php:1050
 msgid "Value for attribute not found. Adding value."
 msgstr "Значение атрибута не найдено. Добавление значения."
 
-#: src/Schemas/Productscml/Core.php:991
+#: src/Schemas/Productscml/Core.php:1054
 msgid "Failed to add value for attribute."
 msgstr "Не удалось добавить значение для атрибута."
 
-#: src/Schemas/Productscml/Core.php:996
+#: src/Schemas/Productscml/Core.php:1059
 msgid "The value for the attribute was added earlier. Skip adding value."
 msgstr "Значение атрибута было добавлено ранее. Пропуск добавления значения."
 
-#: src/Schemas/Productscml/Core.php:1002
+#: src/Schemas/Productscml/Core.php:1065
 msgid ""
 "Adding values for attributes based on classifier properties is disabled."
 msgstr ""
 "Добавление значений для атрибутов на основе свойств классификатора отключено."
 
-#: src/Schemas/Productscml/Core.php:1007
+#: src/Schemas/Productscml/Core.php:1070
 msgid ""
 "The creation and updates of attributes based on the classifier properties "
 "has been successfully completed."
@@ -4307,188 +4629,217 @@ msgstr ""
 "Создание и обновление атрибутов на основе свойств классификатора успешно "
 "завершено."
 
-#: src/Schemas/Productscml/Core.php:1011
+#: src/Schemas/Productscml/Core.php:1074
 msgid "Creating, updating and using attributes is disabled."
 msgstr "Создание, обновление и использование атрибутов отключено."
 
-#: src/Schemas/Productscml/Core.php:1024
-msgid "Classifier processing."
-msgstr "Обработка классификатора."
+#: src/Schemas/Productscml/Core.php:1087
+msgid "Saving classifier data."
+msgstr "Сохранение данных классификатора."
 
-#: src/Schemas/Productscml/Core.php:1031
+#: src/Schemas/Productscml/Core.php:1094
 msgid "Found existing classifiers. Search in existing ones by ID."
 msgstr "Найдены существующие классификаторы. Поиск в существующих по ID."
 
-#: src/Schemas/Productscml/Core.php:1040
+#: src/Schemas/Productscml/Core.php:1103
 msgid "The processed classifier is found in the existing ones."
 msgstr "Обрабатываемый классификатор находится в существующих."
 
-#: src/Schemas/Productscml/Core.php:1048
+#: src/Schemas/Productscml/Core.php:1111
 msgid "Classifier not found. Adding a classifier to existing ones."
 msgstr "Классификатор не найден. Добавление классификатора к существующим."
 
-#: src/Schemas/Productscml/Core.php:1067
+#: src/Schemas/Productscml/Core.php:1130
 msgid "Updating the data of an existing classifier."
 msgstr "Обновление данных существующего классификатора."
 
-#: src/Schemas/Productscml/Core.php:1071
+#: src/Schemas/Productscml/Core.php:1134
 msgid "Update the properties of an existing classifier."
 msgstr "Обновление свойств существующего классификатора."
 
-#: src/Schemas/Productscml/Core.php:1078
+#: src/Schemas/Productscml/Core.php:1141
 msgid "Update the groups of an existing classifier."
 msgstr "Обновление групп существующего классификатора."
 
-#: src/Schemas/Productscml/Core.php:1085
+#: src/Schemas/Productscml/Core.php:1148
 msgid "Update the units of an existing classifier."
 msgstr "Обновление единиц измерений существующего классификатора."
 
-#: src/Schemas/Productscml/Core.php:1092
+#: src/Schemas/Productscml/Core.php:1155
 msgid "Update the warehouses of an existing classifier."
 msgstr "Обновление складов существующего классификатора."
 
-#: src/Schemas/Productscml/Core.php:1099
+#: src/Schemas/Productscml/Core.php:1162
 msgid "Update the price types of an existing classifier."
 msgstr "Обновление типов цен существующего классификатора."
 
-#: src/Schemas/Productscml/Core.php:1106
+#: src/Schemas/Productscml/Core.php:1169
 msgid "Saving classifier data in its entirety."
 msgstr "Сохранение данных классификатора целиком."
 
-#: src/Schemas/Productscml/Core.php:1114
+#: src/Schemas/Productscml/Core.php:1177
 msgid "Saving classifier data in terms of groups."
 msgstr "Сохранение данных классификатора по частям: группы."
 
-#: src/Schemas/Productscml/Core.php:1122
+#: src/Schemas/Productscml/Core.php:1185
 msgid "Saving classifier data in terms of categories."
 msgstr "Сохранение данных классификатора по частям: категории."
 
-#: src/Schemas/Productscml/Core.php:1130
+#: src/Schemas/Productscml/Core.php:1193
 msgid "Saving classifier data in terms of properties."
 msgstr "Сохранение данных классификатора по частям: свойства."
 
-#: src/Schemas/Productscml/Core.php:1138
+#: src/Schemas/Productscml/Core.php:1201
 msgid "Saving classifier data in terms of price types."
 msgstr "Сохранение данных классификатора по частям: типы цен."
 
-#: src/Schemas/Productscml/Core.php:1146
+#: src/Schemas/Productscml/Core.php:1209
 msgid "Saving classifier data in terms of units."
 msgstr "Сохранение данных классификатора по частям: единицы измерения."
 
-#: src/Schemas/Productscml/Core.php:1154
+#: src/Schemas/Productscml/Core.php:1217
 msgid "Saving classifier data in terms of warehouses."
 msgstr "Сохранение данных классификатора по частям: склады."
 
-#: src/Schemas/Productscml/Core.php:1182
-msgid "Processing of the product catalog is completed."
-msgstr "Обработка каталога продукции завершена."
+#: src/Schemas/Productscml/Core.php:1224
+msgid "Saving classifier data as completed."
+msgstr "Сохранение данных классификатора завершено."
 
-#: src/Schemas/Productscml/Core.php:1187
+#: src/Schemas/Productscml/Core.php:1245
+msgid ""
+"The catalog with products contains full data. The time of the last full "
+"exchange has been set."
+msgstr ""
+"Каталог с продуктами содержит полные данные. Установлено время последнего "
+"полного обмена."
+
+#: src/Schemas/Productscml/Core.php:1270
+msgid "Processing a catalog with products as completed."
+msgstr "Обработка каталога с продуктами завершена."
+
+#: src/Schemas/Productscml/Core.php:1275
 msgid "Saving a catalog to meta configuration data."
 msgstr "Сохранение каталога в метаданные конфигурации."
 
-#: src/Schemas/Productscml/Core.php:1201
+#: src/Schemas/Productscml/Core.php:1287
+msgid "Processing a catalog with products."
+msgstr "Обработка каталога с продуктами."
+
+#: src/Schemas/Productscml/Core.php:1291
 msgid "The catalog object has not been previously initialized. Initialization."
 msgstr "Объект каталога ранее не был инициализирован. Инициализация."
 
-#: src/Schemas/Productscml/Core.php:1217
-#: src/Schemas/Productscml/Receiver.php:130
-msgid "The time of the last full exchange has been set."
-msgstr "Установлено время последнего полного обмена."
-
-#: src/Schemas/Productscml/Core.php:1230
+#: src/Schemas/Productscml/Core.php:1310
 msgid "The catalog object has been assigned an ID."
 msgstr "Объекту каталога присвоен идентификатор."
 
-#: src/Schemas/Productscml/Core.php:1234
+#: src/Schemas/Productscml/Core.php:1314
 msgid "The catalog object has been assigned a classifier ID."
 msgstr "Объекту каталога присвоен идентификатор классификатора."
 
-#: src/Schemas/Productscml/Core.php:1238
+#: src/Schemas/Productscml/Core.php:1318
 msgid "A name has been assigned to the catalog object."
 msgstr "Объекту каталога присвоено имя."
 
-#: src/Schemas/Productscml/Core.php:1243
+#: src/Schemas/Productscml/Core.php:1323
 msgid "The catalog object has been assigned an owner."
 msgstr "Объекту каталога назначен владелец."
 
-#: src/Schemas/Productscml/Core.php:1247
+#: src/Schemas/Productscml/Core.php:1327
 msgid "A description has been assigned to the catalog object."
 msgstr "Объекту каталога присвоено описание."
 
-#: src/Schemas/Productscml/Core.php:1252
+#: src/Schemas/Productscml/Core.php:1332
 msgid "A warehouses has been assigned to the catalog object."
 msgstr "Объекту каталога присвоены склады."
 
-#: src/Schemas/Productscml/Core.php:1266
+#: src/Schemas/Productscml/Core.php:1346
 msgid ""
 "Products creation and updating is disabled. The processing of goods was "
 "skipped."
 msgstr ""
 "Создание и обновление продуктов отключено. Обработка товаров была пропущена."
 
-#: src/Schemas/Productscml/Core.php:1291
+#: src/Schemas/Productscml/Core.php:1358
+msgid "An exception was thrown from SimpleXMLElement."
+msgstr "Из SimpleXMLElement было выброшено исключение."
+
+#: src/Schemas/Productscml/Core.php:1371
+msgid "An exception was thrown while decoding the product."
+msgstr "При декодировании продукта возникло исключение."
+
+#: src/Schemas/Productscml/Core.php:1387
 msgid "The product is modified according to external algorithms."
 msgstr "Продукт изменен по внешним алгоритмам."
 
-#: src/Schemas/Productscml/Core.php:1296
+#: src/Schemas/Productscml/Core.php:1392
 msgid "Product !instanceof ProductDataContract. Processing skipped."
 msgstr ""
 "Продукт не является экземпляром ProductDataContract. Обработка пропущена."
 
-#: src/Schemas/Productscml/Core.php:1305 src/Schemas/Productscml/Core.php:4514
+#: src/Schemas/Productscml/Core.php:1401 src/Schemas/Productscml/Core.php:4737
 msgid ""
 "The use of products with characteristics is disabled. Processing skipped."
 msgstr ""
 "Использование продуктов с характеристиками отключено. Обработка пропущена."
 
-#: src/Schemas/Productscml/Core.php:1349
+#: src/Schemas/Productscml/Core.php:1421
+msgid "An exception was thrown while processing the product."
+msgstr "При обработке продукта в цикле, выброшено исключение."
+
+#: src/Schemas/Productscml/Core.php:1445
 msgid "Move on to the next product."
 msgstr "Переход к следующему продукту."
 
-#: src/Schemas/Productscml/Core.php:1367
+#: src/Schemas/Productscml/Core.php:1463
 msgid "Assign a name to the product."
 msgstr "Назначение наименования для продукта."
 
-#: src/Schemas/Productscml/Core.php:1371
+#: src/Schemas/Productscml/Core.php:1467
 msgid "The product is a variation. Name assignment omitted."
 msgstr "Продукт является вариацией. Назначение наименования пропущено."
 
-#: src/Schemas/Productscml/Core.php:1380
+#: src/Schemas/Productscml/Core.php:1476
 msgid "The source for assigning the product name has not been selected."
 msgstr "Не выбран источник для присвоения наименования продукта."
 
-#: src/Schemas/Productscml/Core.php:1387
+#: src/Schemas/Productscml/Core.php:1483
 msgid "Product name update skipped because its disabled in the settings."
 msgstr ""
 "Обновление наименования продукта пропущено, так как обновление отключено в "
 "настройках."
 
-#: src/Schemas/Productscml/Core.php:1429
+#: src/Schemas/Productscml/Core.php:1525
 msgid "Assign name of the product has been successfully completed."
 msgstr "Назначение наименования продукта успешно завершено."
 
-#: src/Schemas/Productscml/Core.php:1433
+#: src/Schemas/Productscml/Core.php:1529
 msgid "The name assignment for the product is skipping. Name is not changed."
 msgstr "Назначение наименования продукта пропущено. Наименование не изменено."
 
-#: src/Schemas/Productscml/Core.php:1497
-msgid "Assign a SKU to a product."
+#: src/Schemas/Productscml/Core.php:1593
+msgid "Assigning a SKU to a product."
 msgstr "Назначение артикула для продукта."
 
-#: src/Schemas/Productscml/Core.php:1501
-msgid "SKU update during product update is disabled in the settings."
-msgstr "Обновление артикула при обновлении продукта отключено в настройках."
+#: src/Schemas/Productscml/Core.php:1597
+msgid ""
+"SKU update during product update is disabled in the configuration settings."
+msgstr ""
+"Обновление артикула при обновлении продукта отключено в настройках "
+"конфигурации."
 
-#: src/Schemas/Productscml/Core.php:1508
-msgid "Adding a SKU when adding a product is disabled in the settings."
-msgstr "Добавление артикула при добавлении продукта отключено в настройках."
+#: src/Schemas/Productscml/Core.php:1604
+msgid ""
+"Adding a SKU when adding a product is disabled in the configuration settings."
+msgstr ""
+"Добавление артикула при добавлении продукта отключено в настройках "
+"конфигурации."
 
-#: src/Schemas/Productscml/Core.php:1517
-msgid "The source for the article is not specified."
-msgstr "Источник артикула не указан."
+#: src/Schemas/Productscml/Core.php:1613
+msgid "The source of the SKUs is not specified."
+msgstr "Источник артикула не указан в настройках конфигурации."
 
-#: src/Schemas/Productscml/Core.php:1559
+#: src/Schemas/Productscml/Core.php:1655
 msgid ""
 "SKU update skipped. The mode of adding SKU is enabled for products that do "
 "not have them."
@@ -4496,7 +4847,7 @@ msgstr ""
 "Обновление артикула пропущено. Режим добавления SKU включен для продуктов, у "
 "которых их нет."
 
-#: src/Schemas/Productscml/Core.php:1566
+#: src/Schemas/Productscml/Core.php:1662
 msgid ""
 "SKU update skipped. The mode for adding SKUs is enabled for products that "
 "have them on the site and in 1C."
@@ -4504,19 +4855,24 @@ msgstr ""
 "Обновление артикула пропущено. Режим добавления артикулов включен для "
 "продуктов, у которых они есть на сайте и в 1С."
 
-#: src/Schemas/Productscml/Core.php:1575
-msgid "The SKU assignment for the product has been successfully completed."
-msgstr "Назначение артикула для продукта успешно выполнено."
+#: src/Schemas/Productscml/Core.php:1669
+msgid "SKU update skipped. A new SKU is equal to an already filled SKU."
+msgstr ""
+"Обновление артикула пропущено. Новый артикул равен уже заполненному артикулу."
 
-#: src/Schemas/Productscml/Core.php:1579
+#: src/Schemas/Productscml/Core.php:1676
+msgid "Assigning a SKU to a product as completed."
+msgstr "Назначение артикула для продукта завершено."
+
+#: src/Schemas/Productscml/Core.php:1682
 msgid "Failed to set SKU for product."
 msgstr "Ошибка установки артикула для продукта."
 
-#: src/Schemas/Productscml/Core.php:1864
+#: src/Schemas/Productscml/Core.php:1967
 msgid "Assign a description to the product."
 msgstr "Назначение описания для продукта."
 
-#: src/Schemas/Productscml/Core.php:1868
+#: src/Schemas/Productscml/Core.php:1971
 msgid ""
 "Assigning a description to the created product is disabled. Assigning "
 "description skipped."
@@ -4524,7 +4880,7 @@ msgstr ""
 "Назначение описания создаваемым продуктам отключено. Назначение описания "
 "пропущено."
 
-#: src/Schemas/Productscml/Core.php:1875
+#: src/Schemas/Productscml/Core.php:1978
 msgid ""
 "Assigning a description to the updated product is disabled. Assigning "
 "description skipped."
@@ -4532,7 +4888,7 @@ msgstr ""
 "Назначение описания обновляемым продуктам отключено. Назначение описания "
 "пропущено."
 
-#: src/Schemas/Productscml/Core.php:1921
+#: src/Schemas/Productscml/Core.php:2024
 msgid ""
 "When updating products, it is allowed to add descriptions only to products "
 "without a description on the site if there is a description in 1C. Assigning "
@@ -4541,7 +4897,7 @@ msgstr ""
 "При обновлении продуктов разрешено добавлять описания только к продуктам без "
 "описания на сайте при наличии описания в 1С. Назначение пропущено."
 
-#: src/Schemas/Productscml/Core.php:1928
+#: src/Schemas/Productscml/Core.php:2031
 msgid ""
 "When updating products, it is allowed to add descriptions only to products "
 "with a description on the site if there is a description in 1C. Assigning "
@@ -4550,21 +4906,21 @@ msgstr ""
 "При обновлении продуктов разрешено добавлять описания только к продуктам с "
 "описанием на сайте при наличии описания в 1С. Назначение пропущено."
 
-#: src/Schemas/Productscml/Core.php:1939
+#: src/Schemas/Productscml/Core.php:2042
 msgid "Assign description of the product has been successfully completed."
 msgstr "Назначение описания для продукта успешно выполнено."
 
-#: src/Schemas/Productscml/Core.php:1943
+#: src/Schemas/Productscml/Core.php:2046
 msgid ""
 "The description assignment for the product is skipping. Description is not "
 "changed."
 msgstr "Пропуск назначения описания продукта. Описание не изменено."
 
-#: src/Schemas/Productscml/Core.php:1961
+#: src/Schemas/Productscml/Core.php:2064
 msgid "Assign a full description to the product."
 msgstr "Назначение полного описания для продукта."
 
-#: src/Schemas/Productscml/Core.php:1965
+#: src/Schemas/Productscml/Core.php:2068
 msgid ""
 "Assigning a full description to the created product is disabled. Assigning "
 "description skipped."
@@ -4572,7 +4928,7 @@ msgstr ""
 "Назначение полного описания создаваемым товарам отключено. Назначение "
 "описания пропущено."
 
-#: src/Schemas/Productscml/Core.php:1972
+#: src/Schemas/Productscml/Core.php:2075
 msgid ""
 "Assigning a full description to the updated product is disabled. Assigning "
 "description skipped."
@@ -4580,7 +4936,7 @@ msgstr ""
 "Назначение обновляемым продуктам полного описания отключено. Назначение "
 "описания пропущено."
 
-#: src/Schemas/Productscml/Core.php:2017
+#: src/Schemas/Productscml/Core.php:2120
 msgid ""
 "When updating products, it is allowed to add full descriptions only to "
 "products without a description on the site if there is a description in 1C. "
@@ -4590,7 +4946,7 @@ msgstr ""
 "продуктам без описания на сайте при наличии описания в 1С. Назначение "
 "пропущено."
 
-#: src/Schemas/Productscml/Core.php:2024
+#: src/Schemas/Productscml/Core.php:2127
 msgid ""
 "When updating products, it is allowed to add full descriptions only to "
 "products with a description on the site if there is a description in 1C. "
@@ -4600,26 +4956,26 @@ msgstr ""
 "продуктам с описанием на сайте при наличии описания в 1С. Назначение "
 "пропущено."
 
-#: src/Schemas/Productscml/Core.php:2035
+#: src/Schemas/Productscml/Core.php:2138
 msgid "Assign full description of the product has been successfully completed."
 msgstr "Назначение полного описания продукта успешно завершено."
 
-#: src/Schemas/Productscml/Core.php:2039
+#: src/Schemas/Productscml/Core.php:2142
 msgid ""
 "The full description assignment for the product is skipping. Description is "
 "not changed."
 msgstr "Назначение полного описания продукта пропущено. Описание не изменено."
 
-#: src/Schemas/Productscml/Core.php:2058
+#: src/Schemas/Productscml/Core.php:2161
 msgid "Assign categories to a product."
-msgstr "Назначение каттегорий для продукта."
+msgstr "Назначение категорий для продукта."
 
-#: src/Schemas/Productscml/Core.php:2062
+#: src/Schemas/Productscml/Core.php:2165
 msgid ""
 "Assigning categories when creating products is disabled in the settings."
 msgstr "Назначение категорий при создании продуктов отключено в настройках."
 
-#: src/Schemas/Productscml/Core.php:2069
+#: src/Schemas/Productscml/Core.php:2172
 msgid ""
 "The assignment of categories when creating products is enabled, but in 1C "
 "the product does not have groups."
@@ -4627,38 +4983,38 @@ msgstr ""
 "Назначение категорий при создании продуктов включено, но в 1С у продукта нет "
 "групп."
 
-#: src/Schemas/Productscml/Core.php:2076
+#: src/Schemas/Productscml/Core.php:2179
 msgid "Update categories when updating products is disabled in the settings."
 msgstr "Обновление категорий при обновлении продуктов отключено в настройках."
 
-#: src/Schemas/Productscml/Core.php:2083
+#: src/Schemas/Productscml/Core.php:2186
 msgid "Variations cannot be categorized. Skip assigning categories."
 msgstr "Вариации не могут иметь категории. Пропуск назначения категорий."
 
-#: src/Schemas/Productscml/Core.php:2092
+#: src/Schemas/Productscml/Core.php:2195
 msgid ""
 "The source for assigning categories was not specified. Skip assigning "
 "categories."
 msgstr ""
 "Источник для назначения категорий не указан. Пропуск назначения категорий."
 
-#: src/Schemas/Productscml/Core.php:2106
+#: src/Schemas/Productscml/Core.php:2209
 msgid "Filling in product categories based on classifier groups."
 msgstr "Заполнение категорий продуктов на основе групп классификатора."
 
-#: src/Schemas/Productscml/Core.php:2110
+#: src/Schemas/Productscml/Core.php:2213
 msgid "Processing of the classifier group."
 msgstr "Обработка группы из классификатора."
 
-#: src/Schemas/Productscml/Core.php:2116
+#: src/Schemas/Productscml/Core.php:2219
 msgid "The category was found by the external group ID from 1C."
 msgstr "Категория найдена по идентификатору группы из 1С."
 
-#: src/Schemas/Productscml/Core.php:2122
+#: src/Schemas/Productscml/Core.php:2225
 msgid "Category not found by external group ID from 1C."
 msgstr "Категория не найдена по идентификатору группы из 1С."
 
-#: src/Schemas/Productscml/Core.php:2128
+#: src/Schemas/Productscml/Core.php:2231
 msgid ""
 "Categories update skipped. The mode of adding categories is enabled for "
 "products that do not have them."
@@ -4666,7 +5022,7 @@ msgstr ""
 "Обновление категорий пропущено. Режим добавления категорий включен для "
 "продуктов, у которых их нет."
 
-#: src/Schemas/Productscml/Core.php:2135
+#: src/Schemas/Productscml/Core.php:2238
 msgid ""
 "Categories update skipped. The mode for adding categories is enabled for "
 "products that have them on the site and in 1C."
@@ -4674,68 +5030,69 @@ msgstr ""
 "Обновление категорий пропущено. Режим добавления категорий включен для "
 "продуктов, у которых они есть на сайте и в 1С."
 
-#: src/Schemas/Productscml/Core.php:2147
+#: src/Schemas/Productscml/Core.php:2250
 msgid "Filling parent categories according to the WordPress structure."
 msgstr ""
 "Заполнение родительских категорий в соответствии со структурой WordPress."
 
-#: src/Schemas/Productscml/Core.php:2151
+#: src/Schemas/Productscml/Core.php:2254
 msgid "Filling result."
 msgstr "Результат заполнения."
 
-#: src/Schemas/Productscml/Core.php:2156
+#: src/Schemas/Productscml/Core.php:2259
 msgid "Category assignment completed successfully."
 msgstr "Назначение категорий успешно завершено."
 
-#: src/Schemas/Productscml/Core.php:2286
+#: src/Schemas/Productscml/Core.php:2389
 msgid "Assigning images to a product by offers."
 msgstr "Назначение изображений для продукта по пакету предложений."
 
-#: src/Schemas/Productscml/Core.php:2290
+#: src/Schemas/Productscml/Core.php:2393
 msgid ""
-"Assignment of images based on offer package is only possible for "
-"variations.. Assigning skipped"
+"Assigning of images based on offer package is only possible for variations. "
+"Assignment skipped."
 msgstr ""
 "Назначение изображений на основе пакета предложений возможно только для "
-"вариаций. Назначение пропущено"
+"вариаций. Назначение пропущено."
 
-#: src/Schemas/Productscml/Core.php:2297 src/Schemas/Productscml/Core.php:2421
+#: src/Schemas/Productscml/Core.php:2400
 msgid ""
 "Image assignments for CommerceML data are disabled in the settings. "
-"Assigning skipped."
+"Assignment skipped."
 msgstr ""
-"Назначение изображений из данных CommerceML отключено в настройках. "
+"Назначение изображений для данных CommerceML отключено в настройках. "
 "Назначение пропущено."
 
-#: src/Schemas/Productscml/Core.php:2304
-msgid "There are no images for the product. Assigning skipped."
-msgstr "Изображения продукта отсутствуют. Назначение пропущено."
+#: src/Schemas/Productscml/Core.php:2407
+msgid "There are no images for the product. Assignment skipped."
+msgstr "Для продукта нет изображений. Назначение пропущено."
 
-#: src/Schemas/Productscml/Core.php:2311 src/Schemas/Productscml/Core.php:2449
+#: src/Schemas/Productscml/Core.php:2414
 msgid ""
-"Image assignment for the product being updated is disabled. Assigning "
+"Image assigning for the product being updated is disabled. Assignment "
 "skipped."
 msgstr ""
 "Назначение изображения для обновляемого продукта отключено. Назначение "
 "пропущено."
 
-#: src/Schemas/Productscml/Core.php:2322 src/Schemas/Productscml/Core.php:2460
+#: src/Schemas/Productscml/Core.php:2425
 msgid ""
 "The product being updated contains images. Adding images is allowed only if "
-"there are none. Assigning skipped."
+"there are none. Assignment skipped."
 msgstr ""
-"Обновляемый продукт содержит изображения. Добавление изображений разрешено, "
-"только если их нет. Назначение пропущено."
+"Обновляемый продукт содержит изображения. Добавление изображений разрешено "
+"только в том случае, если их нет. Назначение пропущено."
 
-#: src/Schemas/Productscml/Core.php:2329 src/Schemas/Productscml/Core.php:2467
+#: src/Schemas/Productscml/Core.php:2432
 msgid ""
 "The product being updated does not contain an image. Updating images is "
-"allowed only if they are present on the site and in 1C. Assigning skipped."
+"allowed only if they are present on the site and in 1C. Assignment skipped."
 msgstr ""
 "Обновляемый продукт не содержит изображения. Обновление изображений "
-"допускается только при их наличии на сайте и в 1С. Назначение пропущено."
+"разрешено только в том случае, если они присутствуют на сайте и в 1С. "
+"Назначение пропущено."
 
-#: src/Schemas/Productscml/Core.php:2348 src/Schemas/Productscml/Core.php:2483
+#: src/Schemas/Productscml/Core.php:2451 src/Schemas/Productscml/Core.php:2586
 msgid ""
 "The maximum possible number of images has been processed. The rest of the "
 "images are skip."
@@ -4743,8 +5100,8 @@ msgstr ""
 "Обработано максимально возможное количество изображений. Остальные "
 "изображения пропущены."
 
-#: src/Schemas/Productscml/Core.php:2358 src/Schemas/Productscml/Core.php:2371
-#: src/Schemas/Productscml/Core.php:2493 src/Schemas/Productscml/Core.php:2506
+#: src/Schemas/Productscml/Core.php:2461 src/Schemas/Productscml/Core.php:2474
+#: src/Schemas/Productscml/Core.php:2596 src/Schemas/Productscml/Core.php:2609
 msgid ""
 "The image assignment for the product is missing. Image is not found in the "
 "media library."
@@ -4752,95 +5109,131 @@ msgstr ""
 "Отсутствует назначение изображения для продукта. Изображение не найдено в "
 "медиатеке."
 
-#: src/Schemas/Productscml/Core.php:2391
+#: src/Schemas/Productscml/Core.php:2494
 msgid "Assigning a main image for a product variation."
 msgstr "Назначение основного изображения для вариации."
 
-#: src/Schemas/Productscml/Core.php:2399 src/Schemas/Productscml/Core.php:2528
-msgid "Product images assign completed successfully."
-msgstr "Назначение изображений продукта успешно завершено."
+#: src/Schemas/Productscml/Core.php:2502
+msgid "Assigning images to a product by offers as completed."
+msgstr "Присвоение изображений продукту по предложениям завершено."
 
-#: src/Schemas/Productscml/Core.php:2417
+#: src/Schemas/Productscml/Core.php:2520
 msgid "Assign images to a product."
 msgstr "Назначение изображений для продукта."
 
-#: src/Schemas/Productscml/Core.php:2428
+#: src/Schemas/Productscml/Core.php:2524
+msgid ""
+"Image assignments for CommerceML data are disabled in the settings. "
+"Assigning skipped."
+msgstr ""
+"Назначение изображений из данных CommerceML отключено в настройках. "
+"Назначение пропущено."
+
+#: src/Schemas/Productscml/Core.php:2531
 msgid "There are no images for the product being created. Assigning skipped."
 msgstr "Нет изображений для создаваемого продукта. Назначение пропущено."
 
-#: src/Schemas/Productscml/Core.php:2435
+#: src/Schemas/Productscml/Core.php:2538
 msgid ""
 "Assigning images to a product variation is not possible. Assigning skipped"
 msgstr ""
 "Назначение изображений варианту продукта невозможно. Назначение пропущено"
 
-#: src/Schemas/Productscml/Core.php:2442
+#: src/Schemas/Productscml/Core.php:2545
 msgid "Assigning images to the created product is disabled. Assigning skipped."
 msgstr ""
 "Привязка изображений к созданному товару отключена. Назначение пропущено."
 
-#: src/Schemas/Productscml/Core.php:2517
+#: src/Schemas/Productscml/Core.php:2552
+msgid ""
+"Image assignment for the product being updated is disabled. Assigning "
+"skipped."
+msgstr ""
+"Назначение изображения для обновляемого продукта отключено. Назначение "
+"пропущено."
+
+#: src/Schemas/Productscml/Core.php:2563
+msgid ""
+"The product being updated contains images. Adding images is allowed only if "
+"there are none. Assigning skipped."
+msgstr ""
+"Обновляемый продукт содержит изображения. Добавление изображений разрешено, "
+"только если их нет. Назначение пропущено."
+
+#: src/Schemas/Productscml/Core.php:2570
+msgid ""
+"The product being updated does not contain an image. Updating images is "
+"allowed only if they are present on the site and in 1C. Assigning skipped."
+msgstr ""
+"Обновляемый продукт не содержит изображения. Обновление изображений "
+"допускается только при их наличии на сайте и в 1С. Назначение пропущено."
+
+#: src/Schemas/Productscml/Core.php:2691
 msgid "Assigning a main image for a product."
 msgstr "Назначение основного изображения для продукта."
 
-#: src/Schemas/Productscml/Core.php:2736
+#: src/Schemas/Productscml/Core.php:2702
+msgid "Assign images to a product as completed."
+msgstr "Назначение изображений продукту завершено."
+
+#: src/Schemas/Productscml/Core.php:2910
 msgid "Assigning attributes for product."
 msgstr "Назначение атрибутов для продукта."
 
-#: src/Schemas/Productscml/Core.php:2852
+#: src/Schemas/Productscml/Core.php:3026
 msgid "Adding attributes to the product is successfully."
 msgstr "Добавление атрибутов к продукту выполнено успешно."
 
-#: src/Schemas/Productscml/Core.php:2858
+#: src/Schemas/Productscml/Core.php:3032
 msgid "Adding default attributes to the variable product is successfully."
 msgstr ""
 "Добавление атрибутов по умолчанию к вариативному продукту выполнено успешно."
 
-#: src/Schemas/Productscml/Core.php:2876
+#: src/Schemas/Productscml/Core.php:3050
 msgid "Assigning attributes for variation."
 msgstr "Назначение атрибутов для вариаии."
 
-#: src/Schemas/Productscml/Core.php:2886
+#: src/Schemas/Productscml/Core.php:3060
 msgid "The parent product was not found. Skipped."
 msgstr "Родительский продукт не был найден. Пропуск."
 
-#: src/Schemas/Productscml/Core.php:2893
+#: src/Schemas/Productscml/Core.php:3067
 msgid "The parent product is variation. Skipped."
 msgstr "Родительский продукт - это вариация. Пропуск."
 
-#: src/Schemas/Productscml/Core.php:2902
+#: src/Schemas/Productscml/Core.php:3076
 msgid "The parent product attributes."
 msgstr "Атрибуты родительского продукта."
 
-#: src/Schemas/Productscml/Core.php:2919
+#: src/Schemas/Productscml/Core.php:3093
 msgid "The attribute was not found in the parent product."
 msgstr "Атрибут не найден в родительском продукте."
 
-#: src/Schemas/Productscml/Core.php:2925
+#: src/Schemas/Productscml/Core.php:3099
 msgid "The attribute is not for variations."
 msgstr "Атрибут не для вариаций."
 
-#: src/Schemas/Productscml/Core.php:2952
+#: src/Schemas/Productscml/Core.php:3126
 msgid "Adding attributes to the variation is successfully."
 msgstr "Добавление атрибутов к вариации выполнено успешно."
 
-#: src/Schemas/Productscml/Core.php:2969
+#: src/Schemas/Productscml/Core.php:3143
 msgid "Getting to variation parent attributes."
 msgstr "Получение родительских атрибутов для вариации."
 
-#: src/Schemas/Productscml/Core.php:2993
+#: src/Schemas/Productscml/Core.php:3167
 msgid "The attribute is not for variations. Save required."
 msgstr "Атрибут не для вариаций. Требуется сохранить."
 
-#: src/Schemas/Productscml/Core.php:3006
+#: src/Schemas/Productscml/Core.php:3180
 msgid "Preserve parent attributes for accessibility in variations."
 msgstr "Сохранение родительских атрибутов для доступности в вариантах."
 
-#: src/Schemas/Productscml/Core.php:3028
+#: src/Schemas/Productscml/Core.php:3202
 msgid "Processing of product attributes."
 msgstr "Обработка атрибутов продукта."
 
-#: src/Schemas/Productscml/Core.php:3032
+#: src/Schemas/Productscml/Core.php:3206
 msgid ""
 "Assigning attributes when creating products is disabled. Attribute "
 "assignment skipped."
@@ -4848,7 +5241,7 @@ msgstr ""
 "Назначение атрибутов при создании товаров отключено. Назначение атрибута "
 "пропущено."
 
-#: src/Schemas/Productscml/Core.php:3039
+#: src/Schemas/Productscml/Core.php:3213
 msgid ""
 "Assigning attributes when updating products is disabled. Attribute "
 "assignment skipped."
@@ -4856,33 +5249,33 @@ msgstr ""
 "Назначение атрибутов при обновлении продуктов отключено. Назначение атрибута "
 "пропущено."
 
-#: src/Schemas/Productscml/Core.php:3044
+#: src/Schemas/Productscml/Core.php:3218
 msgid ""
 "Assigning attributes to a product based on the properties of the product "
 "catalog."
 msgstr "Присвоение атрибутов продукту на основе свойств каталога продуктов."
 
-#: src/Schemas/Productscml/Core.php:3048
+#: src/Schemas/Productscml/Core.php:3222
 msgid "Zeroing the characteristics of a variable product."
 msgstr "Обнуление характеристик вариативного продукта."
 
-#: src/Schemas/Productscml/Core.php:3063 src/Schemas/Productscml/Core.php:3294
+#: src/Schemas/Productscml/Core.php:3237 src/Schemas/Productscml/Core.php:3468
 msgid "Processing of product properties."
 msgstr "Обработка свойств продукта."
 
-#: src/Schemas/Productscml/Core.php:3071 src/Schemas/Productscml/Core.php:3308
+#: src/Schemas/Productscml/Core.php:3245 src/Schemas/Productscml/Core.php:3482
 msgid "The attribute has an empty value."
 msgstr "Атрибут имеет пустое значение."
 
-#: src/Schemas/Productscml/Core.php:3077 src/Schemas/Productscml/Core.php:3314
+#: src/Schemas/Productscml/Core.php:3251 src/Schemas/Productscml/Core.php:3488
 msgid "The attribute was not found in the classifier properties."
 msgstr "Атрибут не был найден в свойствах классификатора."
 
-#: src/Schemas/Productscml/Core.php:3091 src/Schemas/Productscml/Core.php:3328
+#: src/Schemas/Productscml/Core.php:3265 src/Schemas/Productscml/Core.php:3502
 msgid "The attribute contains an empty value identifier."
 msgstr "Атрибут содержит пустой идентификатор значения."
 
-#: src/Schemas/Productscml/Core.php:3114 src/Schemas/Productscml/Core.php:3358
+#: src/Schemas/Productscml/Core.php:3288 src/Schemas/Productscml/Core.php:3532
 msgid ""
 "Adding values from product properties is disabled and the value is missing "
 "from the classifier properties directory. Adding a value is skipped."
@@ -4890,22 +5283,22 @@ msgstr ""
 "Добавление значений из свойств продукта отключено и значение отсутствует в "
 "справочнике свойств классификатора. Добавление значения пропущено."
 
-#: src/Schemas/Productscml/Core.php:3141 src/Schemas/Productscml/Core.php:3381
+#: src/Schemas/Productscml/Core.php:3315 src/Schemas/Productscml/Core.php:3555
 msgid "Processing of product characteristics."
 msgstr "Обработка характеристик продукта."
 
-#: src/Schemas/Productscml/Core.php:3165 src/Schemas/Productscml/Core.php:3404
-#: src/Schemas/Productscml/Core.php:3482
+#: src/Schemas/Productscml/Core.php:3339 src/Schemas/Productscml/Core.php:3578
+#: src/Schemas/Productscml/Core.php:3656
 msgid "The characteristic has an empty value."
 msgstr "Характеристика имеет пустое значение."
 
-#: src/Schemas/Productscml/Core.php:3175 src/Schemas/Productscml/Core.php:3414
-#: src/Schemas/Productscml/Core.php:3490
+#: src/Schemas/Productscml/Core.php:3349 src/Schemas/Productscml/Core.php:3588
+#: src/Schemas/Productscml/Core.php:3664
 msgid "The attribute was not found. Creating by characteristic."
 msgstr "Атрибут не найден. Создание по характеристике."
 
-#: src/Schemas/Productscml/Core.php:3199 src/Schemas/Productscml/Core.php:3445
-#: src/Schemas/Productscml/Core.php:3514
+#: src/Schemas/Productscml/Core.php:3373 src/Schemas/Productscml/Core.php:3619
+#: src/Schemas/Productscml/Core.php:3688
 msgid ""
 "Adding values from product characteristics is disabled and the value is "
 "missing in global attributes. Adding a value is skipped."
@@ -4913,17 +5306,17 @@ msgstr ""
 "Добавление значений из характеристик продукта отключено, и это значение "
 "отсутствует в глобальных атрибутах. Добавление значения пропущено."
 
-#: src/Schemas/Productscml/Core.php:3243 src/Schemas/Productscml/Core.php:3557
+#: src/Schemas/Productscml/Core.php:3417 src/Schemas/Productscml/Core.php:3731
 msgid "Attributes before processing."
 msgstr "Атрибуты перед обработкой."
 
-#: src/Schemas/Productscml/Core.php:3269
+#: src/Schemas/Productscml/Core.php:3443
 msgid ""
 "Assigning attributes to a product based on the properties of the offers "
 "package."
 msgstr "Присвоение атрибутов продукту на основе свойств пакета предложений."
 
-#: src/Schemas/Productscml/Core.php:3273
+#: src/Schemas/Productscml/Core.php:3447
 msgid ""
 "The file type is not an offer package. Skip assigning attributes on offer "
 "data."
@@ -4931,131 +5324,131 @@ msgstr ""
 "Тип файла не является пакетом предложений. Пропустить присвоение атрибутов "
 "данным предложения."
 
-#: src/Schemas/Productscml/Core.php:3335
+#: src/Schemas/Productscml/Core.php:3509
 msgid "The attribute contains in products characteristics."
 msgstr "Атрибут содержится в характеристиках товаров."
 
-#: src/Schemas/Productscml/Core.php:3561
+#: src/Schemas/Productscml/Core.php:3735
 msgid "Attributes not found. Skipped."
 msgstr "Атрибуты не найдены. Пропуск."
 
-#: src/Schemas/Productscml/Core.php:3593
+#: src/Schemas/Productscml/Core.php:3767
 msgid "Prices processing."
 msgstr "Обработка цен."
 
-#: src/Schemas/Productscml/Core.php:3597
+#: src/Schemas/Productscml/Core.php:3771
 msgid "Prices is not found. Update skipping."
 msgstr "Цены не найдены. Пропуск обновления."
 
-#: src/Schemas/Productscml/Core.php:3603
+#: src/Schemas/Productscml/Core.php:3777
 msgid "Prices before processing."
 msgstr "Цены до обработки."
 
-#: src/Schemas/Productscml/Core.php:3641
+#: src/Schemas/Productscml/Core.php:3815
 msgid "Assign the regular price."
 msgstr "Назначение обычной цены."
 
-#: src/Schemas/Productscml/Core.php:3674
+#: src/Schemas/Productscml/Core.php:3848
 msgid "Assign the sale price."
 msgstr "Назначение цены распродажи."
 
-#: src/Schemas/Productscml/Core.php:3682
+#: src/Schemas/Productscml/Core.php:3856
 msgid "Assign the current price from sale price."
 msgstr "Назначение текущей цены из цены распродажи."
 
-#: src/Schemas/Productscml/Core.php:3687
+#: src/Schemas/Productscml/Core.php:3861
 msgid "Assign the current price from regular price."
 msgstr "Назначение текущей цены из базовой цены."
 
-#: src/Schemas/Productscml/Core.php:3694
+#: src/Schemas/Productscml/Core.php:3868
 msgid "Prices processing is off. Assigning is skip."
 msgstr "Обработка цен отключена. Назначение пропущено."
 
-#: src/Schemas/Productscml/Core.php:3698
+#: src/Schemas/Productscml/Core.php:3872
 msgid "Prices processing is successful."
 msgstr "Обработка цен прошла успешно."
 
-#: src/Schemas/Productscml/Core.php:3720
+#: src/Schemas/Productscml/Core.php:3894
 msgid "Inventories processing."
 msgstr "Обработка запасов."
 
-#: src/Schemas/Productscml/Core.php:3724
+#: src/Schemas/Productscml/Core.php:3898
 msgid ""
 "Product inventories update by offers quantity is disabled. Update skipping."
 msgstr ""
 "Обновление товарных запасов по количеству предложений отключено. Пропуск "
 "обновления."
 
-#: src/Schemas/Productscml/Core.php:3728
+#: src/Schemas/Productscml/Core.php:3902
 msgid "Set inventories by offers quantity: start."
 msgstr "Установка запасов по количеству предложений: начато."
 
-#: src/Schemas/Productscml/Core.php:3744
+#: src/Schemas/Productscml/Core.php:3918
 msgid ""
 "Product inventories stored in parent product. Update variation skipping."
 msgstr ""
 "Запасы продуктов хранятся в родительском продукте. Пропуск обновления "
 "вариации."
 
-#: src/Schemas/Productscml/Core.php:3778
+#: src/Schemas/Productscml/Core.php:3952
 msgid "Set inventories by offers quantity: end."
 msgstr "Установка запасов по количеству предложений: завершено."
 
-#: src/Schemas/Productscml/Core.php:3804 src/Schemas/Productscml/Core.php:4184
+#: src/Schemas/Productscml/Core.php:3978 src/Schemas/Productscml/Core.php:4376
 msgid "Product search by external ID from 1C."
 msgstr "Поиск продукта по внешнему идентификатору из 1С."
 
-#: src/Schemas/Productscml/Core.php:3814 src/Schemas/Productscml/Core.php:4194
+#: src/Schemas/Productscml/Core.php:3988 src/Schemas/Productscml/Core.php:4386
 msgid "Product search result by external ID from 1C."
 msgstr "Результат поиска продукта по идентификатору из 1С."
 
-#: src/Schemas/Productscml/Core.php:3829
+#: src/Schemas/Productscml/Core.php:4003
 msgid "Product search by external algorithms."
 msgstr "Поиск продукта с помощью внешних алгоритмов."
 
-#: src/Schemas/Productscml/Core.php:3854
+#: src/Schemas/Productscml/Core.php:4028
 msgid "Products create is disabled. Product create skipped."
 msgstr "Создание новых продуктов отключено. Создание продукта пропущено."
 
-#: src/Schemas/Productscml/Core.php:3863
+#: src/Schemas/Productscml/Core.php:4037
 msgid "The use of products delete mark is disabled. Product create skipped."
 msgstr ""
 "Использование метки удаления продуктов отключено. Создание продукта "
 "пропущено."
 
-#: src/Schemas/Productscml/Core.php:3876 src/Schemas/Productscml/Core.php:4237
+#: src/Schemas/Productscml/Core.php:4050 src/Schemas/Productscml/Core.php:4429
 msgid "The product contains the characteristics."
 msgstr "Продукт содержит характеристики."
 
-#: src/Schemas/Productscml/Core.php:3885
+#: src/Schemas/Productscml/Core.php:4059
 msgid "Parent product search by external ID from 1C."
 msgstr "Поиск родительского продукта по идентификатору от 1С."
 
-#: src/Schemas/Productscml/Core.php:3891 src/Schemas/Productscml/Core.php:3916
-#: src/Schemas/Productscml/Core.php:4252
+#: src/Schemas/Productscml/Core.php:4065 src/Schemas/Productscml/Core.php:4090
+#: src/Schemas/Productscml/Core.php:4444
 msgid ""
 "Several identical parent products were found. The first one is selected."
 msgstr ""
 "Было обнаружено несколько идентичных родительских продуктов. Выбран первый "
 "из найденных."
 
-#: src/Schemas/Productscml/Core.php:3895
+#: src/Schemas/Productscml/Core.php:4069
 msgid "Parent product search result by external ID from 1C."
 msgstr "Поиска родительского продукта по внешнему идентификатору от 1С."
 
-#: src/Schemas/Productscml/Core.php:3910
+#: src/Schemas/Productscml/Core.php:4084
 msgid "Parent product search by external algorithms."
 msgstr "Поиска родительского продукта по внешним алгоритмам."
 
-#: src/Schemas/Productscml/Core.php:3920 src/Schemas/Productscml/Core.php:4271
+#: src/Schemas/Productscml/Core.php:4094 src/Schemas/Productscml/Core.php:4463
 msgid "Parent product search result by external algorithms."
 msgstr "Результат поиска родительского продукта по внешним алгоритмам."
 
-#: src/Schemas/Productscml/Core.php:3927 src/Schemas/Productscml/Core.php:4278
+#: src/Schemas/Productscml/Core.php:4101 src/Schemas/Productscml/Core.php:4470
 msgid "Parent product is not found."
 msgstr "Родительский продукт не найден."
 
-#: src/Schemas/Productscml/Core.php:3928
+#: src/Schemas/Productscml/Core.php:4102
 msgid ""
 "Creating simple products by characteristics is disabled in the settings. "
 "Product create skipped."
@@ -5063,7 +5456,7 @@ msgstr ""
 "Создание простых продуктов по характеристикам отключено в настройках. "
 "Создание продукта пропущено."
 
-#: src/Schemas/Productscml/Core.php:3932 src/Schemas/Productscml/Core.php:4283
+#: src/Schemas/Productscml/Core.php:4106 src/Schemas/Productscml/Core.php:4475
 msgid ""
 "Creating simple products by characteristics is enabled in the settings. "
 "Parent product is not found. Creating simple product by characteristic."
@@ -5071,32 +5464,32 @@ msgstr ""
 "Создание простых продуктов по характеристикам включено в настройках. "
 "Родительский продукт не найден. Создание простого продукта по характеристике."
 
-#: src/Schemas/Productscml/Core.php:3943 src/Schemas/Productscml/Core.php:4294
+#: src/Schemas/Productscml/Core.php:4117 src/Schemas/Productscml/Core.php:4486
 msgid "Changing the parent product type to variable."
 msgstr "Изменение типа родительского продукта на вариативный."
 
-#: src/Schemas/Productscml/Core.php:3950 src/Schemas/Productscml/Core.php:4301
+#: src/Schemas/Productscml/Core.php:4124 src/Schemas/Productscml/Core.php:4493
 msgid "Variation is not found. Creating."
 msgstr "Вариация не найдена. Создание."
 
-#: src/Schemas/Productscml/Core.php:3964 src/Schemas/Productscml/Core.php:4315
+#: src/Schemas/Productscml/Core.php:4138 src/Schemas/Productscml/Core.php:4507
 msgid "The creation of the variation is completed."
 msgstr "Создание вариации завершено."
 
-#: src/Schemas/Productscml/Core.php:3969
+#: src/Schemas/Productscml/Core.php:4143
 msgid "The product is simple. Creating."
 msgstr "Продукт простой. Создание."
 
-#: src/Schemas/Productscml/Core.php:4003
+#: src/Schemas/Productscml/Core.php:4177
 msgid ""
 "Assignment of data for the created product according to external algorithms."
 msgstr "Назначение данных для созданного продукта по внешним алгоритмам."
 
-#: src/Schemas/Productscml/Core.php:4016
+#: src/Schemas/Productscml/Core.php:4190
 msgid "The product is created."
 msgstr "Продукт создан."
 
-#: src/Schemas/Productscml/Core.php:4035
+#: src/Schemas/Productscml/Core.php:4209
 msgid ""
 "Assignment of data for the created product according to external algorithms "
 "after saving."
@@ -5104,41 +5497,46 @@ msgstr ""
 "Присвоение данных для созданного продукта по внешним алгоритмам после "
 "сохранения."
 
-#: src/Schemas/Productscml/Core.php:4043
+#: src/Schemas/Productscml/Core.php:4217
 msgid "The product has been updated using external algorithms."
 msgstr "Продукт был обновлен с использованием внешних алгоритмов."
 
-#: src/Schemas/Productscml/Core.php:4054
+#: src/Schemas/Productscml/Core.php:4228
 msgid "Product is found. Updating."
 msgstr "Продукт найден. Обновление."
 
-#: src/Schemas/Productscml/Core.php:4061
+#: src/Schemas/Productscml/Core.php:4235
 msgid "Products update is disabled in settings. Product update skipped."
 msgstr ""
 "Обновление продуктов отключено в настройках. Обновление продукта пропущено."
 
-#: src/Schemas/Productscml/Core.php:4075 src/Schemas/Productscml/Core.php:4338
+#: src/Schemas/Productscml/Core.php:4249 src/Schemas/Productscml/Core.php:4530
 msgid "The product is created from a different configuration. Update skipped."
 msgstr "Продукт создан на основе другой конфигурации. Обновление пропущено."
 
-#: src/Schemas/Productscml/Core.php:4084 src/Schemas/Productscml/Core.php:4347
+#: src/Schemas/Productscml/Core.php:4258 src/Schemas/Productscml/Core.php:4539
 msgid "The product is created from a different schema. Update skipped."
 msgstr "Продукт создан на основе другой схемы. Обновление пропущено."
 
-#: src/Schemas/Productscml/Core.php:4098
+#: src/Schemas/Productscml/Core.php:4272
 msgid "The use of products from trash is disabled. Updating skipped."
 msgstr "Использование продуктов из корзины отключено. Обновление пропущено."
 
-#: src/Schemas/Productscml/Core.php:4114
+#: src/Schemas/Productscml/Core.php:4288
 msgid ""
 "Assignment of data for the updated product according to external algorithms."
 msgstr "Назначение данных для обновляемого продукта по внешним алгоритмам."
 
-#: src/Schemas/Productscml/Core.php:4127
-msgid "Product update has been successfully completed."
-msgstr "Обновление продукта успешно завершено."
+#: src/Schemas/Productscml/Core.php:4311
+msgid "Product is found. Product data is changed. Saving changes is completed."
+msgstr ""
+"Продукт найден. Данные продукта изменены. Сохранение изменений завершено."
 
-#: src/Schemas/Productscml/Core.php:4146
+#: src/Schemas/Productscml/Core.php:4315
+msgid "Product is found. Product data is not changed. Updating is completed."
+msgstr "Продукт найден. Данные продукта не изменены. Обновление завершено."
+
+#: src/Schemas/Productscml/Core.php:4335
 msgid ""
 "Assignment of data for the updated product according to external algorithms "
 "after saving."
@@ -5146,7 +5544,7 @@ msgstr ""
 "Назначение данных для обновляемого товара по внешним алгоритмам после "
 "сохранения."
 
-#: src/Schemas/Productscml/Core.php:4154
+#: src/Schemas/Productscml/Core.php:4345
 msgid ""
 "Product update after assigning data using external algorithms has been "
 "successfully completed."
@@ -5154,23 +5552,23 @@ msgstr ""
 "Обновление продукта после присвоения данных с помощью внешних алгоритмов "
 "успешно завершено."
 
-#: src/Schemas/Productscml/Core.php:4174
+#: src/Schemas/Productscml/Core.php:4366
 msgid "Processing an offer from a package of offers."
 msgstr "Обработка предложения из пакета предложений."
 
-#: src/Schemas/Productscml/Core.php:4208
+#: src/Schemas/Productscml/Core.php:4400
 msgid "Product not found. Search by external algorithms."
 msgstr "Продукт не найден. Поиск по внешним алгоритмам."
 
-#: src/Schemas/Productscml/Core.php:4226
+#: src/Schemas/Productscml/Core.php:4418
 msgid "Product not found."
 msgstr "Продукт не найден."
 
-#: src/Schemas/Productscml/Core.php:4248
+#: src/Schemas/Productscml/Core.php:4440
 msgid "Parent product search result by external code from 1C."
 msgstr "Результат поиска родительского продукта по внешнему коду от 1С."
 
-#: src/Schemas/Productscml/Core.php:4279
+#: src/Schemas/Productscml/Core.php:4471
 msgid ""
 "Creating simple products by characteristics is disabled in the settings. "
 "Processing skipped."
@@ -5178,78 +5576,131 @@ msgstr ""
 "Создание простых продуктов по характеристикам отключено в настройках. "
 "Обработка пропущена."
 
-#: src/Schemas/Productscml/Core.php:4320
+#: src/Schemas/Productscml/Core.php:4512
 msgid "Offer update skipped."
 msgstr "Обновление предложения пропущено."
 
-#: src/Schemas/Productscml/Core.php:4408 src/Schemas/Productscml/Core.php:4413
+#: src/Schemas/Productscml/Core.php:4589
+msgid "Processing a the offers from offers package as completed."
+msgstr "Обработка предложений из пакета предложений завершена."
+
+#: src/Schemas/Productscml/Core.php:4594
+msgid "Processing a offers package as completed."
+msgstr "Обработка пакета предложений завершена."
+
+#: src/Schemas/Productscml/Core.php:4607
+msgid "Processing a offers package."
+msgstr "Обработка пакета предложений."
+
+#: src/Schemas/Productscml/Core.php:4621 src/Schemas/Productscml/Core.php:4626
 msgid "The offer package object contains only the changes."
 msgstr "Объект пакета предложений содержит только изменения."
 
-#: src/Schemas/Productscml/Core.php:4458
+#: src/Schemas/Productscml/Core.php:4669
+msgid "Processing a the offers from offers package."
+msgstr "Обработка предложений из пакета предложений."
+
+#: src/Schemas/Productscml/Core.php:4673
 msgid "Saving the offer package to configuration meta data."
 msgstr "Сохранение пакета предложений в метаданные конфигурации."
 
-#: src/Schemas/Productscml/Core.php:4484
-msgid "An exception was thrown decode the offer."
-msgstr "При декодировании предложения возникло исключение."
+#: src/Schemas/Productscml/Core.php:4697
+msgid "SimpleXMLElement threw an exception when converting the offer."
+msgstr ""
+"При преобразовании предложения в SimpleXMLElement выброшено исключение."
 
-#: src/Schemas/Productscml/Core.php:4500
+#: src/Schemas/Productscml/Core.php:4707
+msgid "DecoderCML threw an exception when converting the offer."
+msgstr "DecoderCML выбросил исключение при конвертации предложения."
+
+#: src/Schemas/Productscml/Core.php:4723
 msgid "The offer has been changed according to external algorithms."
 msgstr "Предложение было изменено в соответствии с внешними алгоритмами."
 
-#: src/Schemas/Productscml/Core.php:4505
+#: src/Schemas/Productscml/Core.php:4728
 msgid "Offer !instanceof ProductDataContract. Processing skipped."
 msgstr ""
 "Предложение не является экземпляром ProductDataContract. Обработка пропущена."
 
-#: src/Schemas/Productscml/Core.php:4524
+#: src/Schemas/Productscml/Core.php:4754
 msgid "An exception was thrown while processing the offer."
 msgstr "При обработке предложения возникло исключение."
+
+#: src/Schemas/Productscml/Core.php:4778
+msgid "Move on to the next offer."
+msgstr "Переход к следующему предложению."
+
+#: src/Schemas/Productscml/Receiver.php:52
+msgid "Received new request from 1C for Receiver."
+msgstr "Получен новый запрос от 1С для Получателя."
+
+#: src/Schemas/Productscml/Receiver.php:58
+msgid "The resulting query parameters."
+msgstr "Полученные параметры запроса."
 
 #: src/Schemas/Productscml/Receiver.php:101
 msgid "Action is not found in schema."
 msgstr "Действие не найдено в схеме."
 
-#: src/Schemas/Productscml/Receiver.php:114
+#: src/Schemas/Productscml/Receiver.php:115
 msgid "Sending a successful completion of the exchange in 1C."
 msgstr "Отправка ответа об успешном завершении обмена в 1С."
 
-#: src/Schemas/Productscml/Receiver.php:414
+#: src/Schemas/Productscml/Receiver.php:127
+msgid "The time of the last full exchange has been set."
+msgstr "Установлено время последнего полного обмена."
+
+#: src/Schemas/Productscml/Receiver.php:320
+msgid "1C authorization has been successfully passed."
+msgstr "Авторизация 1С успешно пройдена."
+
+#: src/Schemas/Productscml/Receiver.php:427
 msgid "PHP session none, restart last PHP session."
 msgstr "Сессия PHP отсутствует, восстановление последней сессии PHP."
 
-#: src/Schemas/Productscml/Receiver.php:457
+#: src/Schemas/Productscml/Receiver.php:449
+msgid "Cleaning the directory for temporary files as completed."
+msgstr "Очистка каталога для временных файлов завершена."
+
+#: src/Schemas/Productscml/Receiver.php:453
+msgid "Cleaning the directory for temporary files as failed."
+msgstr "Очистка каталога для временных файлов не удалась."
+
+#: src/Schemas/Productscml/Receiver.php:472
 msgid "Session for receiving requests is changed by external algorithms."
 msgstr "Сессия для приема запросов изменена внешними алгоритмами."
 
-#: src/Schemas/Productscml/Receiver.php:461
+#: src/Schemas/Productscml/Receiver.php:477
 msgid "Check the directory for temporary files."
 msgstr "Проверка каталога для временных файлов."
 
-#: src/Schemas/Productscml/Receiver.php:467
+#: src/Schemas/Productscml/Receiver.php:483
 msgid "Failed to check the temp directory."
 msgstr "Не удалось проверить временный каталог для файлов."
 
-#: src/Schemas/Productscml/Receiver.php:622
+#: src/Schemas/Productscml/Receiver.php:585
+msgid "Writing data to a file named:"
+msgstr "Запись данных в файл с именем:"
+
+#: src/Schemas/Productscml/Receiver.php:641
 msgid ""
 "The file was not saved to the media library. Adding is disabled in the "
 "settings."
 msgstr "Файл не был сохранен в медиатеке. Добавление отключено в настройках."
 
-#: src/Schemas/Productscml/Receiver.php:671
+#: src/Schemas/Productscml/Receiver.php:697
 msgid "No name"
 msgstr "Без имени"
 
-#: src/Schemas/Productscml/Receiver.php:688
+#: src/Schemas/Productscml/Receiver.php:719
 msgid "The image has not been added to the media library."
 msgstr "Изображение не было добавлено в медиатеку."
 
-#: src/Schemas/Productscml/Receiver.php:692
+#: src/Schemas/Productscml/Receiver.php:723
 msgid "Image added to media library, id:"
 msgstr "Изображение добавлено в медиатеку, идентификатор:"
 
-#: src/Schemas/Productscml/Receiver.php:700
+#: src/Schemas/Productscml/Receiver.php:731
 msgid ""
 "The image has not been added to the media library. It was added earlier, id:"
 msgstr ""
@@ -5660,19 +6111,19 @@ msgstr "Получение кода"
 msgid "The code can be obtained from the plugin website."
 msgstr "Код можно получить на сайте плагина."
 
-#: views/activation/form.php:34 views/configurations/create_form.php:40
+#: views/activation/form.php:34 views/configurations/create_form.php:39
 msgid "Site:"
 msgstr "Сайт:"
 
-#: views/activation/form.php:38 views/promo/activation.php:61
+#: views/activation/form.php:38 views/promo/activation.php:63
 msgid "No financial opportunity?"
 msgstr "Нет финансовой возможности?"
 
-#: views/activation/form.php:39 views/promo/activation.php:62
+#: views/activation/form.php:39 views/promo/activation.php:64
 msgid "Take part in the development of the solution you use."
 msgstr "Примите участие в разработке решения, которое вы используете."
 
-#: views/activation/form.php:41 views/promo/activation.php:64
+#: views/activation/form.php:41 views/promo/activation.php:66
 msgid ""
 "Information on how to participate is available in the official documentation "
 "on the official website."
@@ -5680,15 +6131,15 @@ msgstr ""
 "Информация о том, как принять участие, доступна в официальной документации "
 "на официальном сайте."
 
-#: views/activation/form.php:43 views/promo/activation.php:66
+#: views/activation/form.php:43 views/promo/activation.php:68
 msgid "Docs:"
 msgstr "Документация:"
 
-#: views/activation/form.php:47 views/promo/activation.php:70
+#: views/activation/form.php:47 views/promo/activation.php:72
 msgid "Every activation counts!"
 msgstr "Каждая активация имеет значение!"
 
-#: views/activation/form.php:48 views/promo/activation.php:71
+#: views/activation/form.php:48 views/promo/activation.php:73
 msgid ""
 "By activating your project, you let the WC1C team know that the plugin is in "
 "active use."
@@ -5696,7 +6147,7 @@ msgstr ""
 "Активируя свой проект, вы сообщаете команде WC1C, что плагин активно "
 "используется."
 
-#: views/activation/form.php:50 views/promo/activation.php:73
+#: views/activation/form.php:50 views/promo/activation.php:75
 msgid ""
 "Also, you give a financial opportunity to release compatibility updates and "
 "add new features!"
@@ -5721,14 +6172,10 @@ msgid "Create configuration"
 msgstr "Создать конфигурацию"
 
 #: views/configurations/create_form.php:35
-msgid "More schemas for configurations"
-msgstr "Больше схем для конфигураций"
-
-#: views/configurations/create_form.php:36
 msgid "Additional schemes are available in extensions on the official website."
 msgstr "Дополнительные схемы доступны в расширениях на официальном сайте."
 
-#: views/configurations/create_form.php:38
+#: views/configurations/create_form.php:37
 msgid ""
 "Each exchange scheme has a unique algorithm of operation and purpose. You "
 "need to choose only the scheme you need."
@@ -5756,15 +6203,45 @@ msgstr "Ошибка. Удаление недоступно"
 msgid "Delete"
 msgstr "Удалить"
 
-#: views/configurations/empty.php:7
+#: views/configurations/empty.php:8
+msgid ""
+"To exchange data, at least one configuration must be created and configured."
+msgstr ""
+"Для обмена данными необходимо создать и настроить хотя бы одну конфигурацию."
+
+#: views/configurations/empty.php:9
+msgid ""
+"The number of settings and method of data exchange in the configuration "
+"depends on the scheme selected for exchange during creation."
+msgstr ""
+"Количество настроек и способ обмена данными в конфигурации зависит от схемы, "
+"выбранной для обмена при создании."
+
+#: views/configurations/empty.php:22
 msgid "Configurations by query is not found, query:"
 msgstr "Конфигурации по запросу не найдены, запрос:"
 
-#: views/configurations/empty.php:11
-msgid "Configurations not found."
-msgstr "Конфигурации не найдены."
+#: views/configurations/empty.php:26
+msgid "Configurations not found"
+msgstr "Конфигурации не найдены"
 
-#: views/configurations/empty.php:16 views/header.php:6
+#: views/configurations/empty.php:36
+msgid ""
+"For flexible exchange distribution, an unlimited number of configurations "
+"can be created."
+msgstr ""
+"Для гибкого распределения обмена можно создать неограниченное количество "
+"конфигураций."
+
+#: views/configurations/empty.php:37
+msgid ""
+"It is recommended to create at least two configurations: 1. To exchange "
+"nomenclature data, 2. To exchange orders data."
+msgstr ""
+"Рекомендуется создать не менее двух конфигураций: 1. Для обмена "
+"номенклатурными данными, 2. Для обмена данными о заказах."
+
+#: views/configurations/empty.php:40 views/header.php:6
 msgid "New configuration"
 msgstr "Новая конфигурация"
 
@@ -5788,7 +6265,7 @@ msgstr "Сохранить конфигурацию"
 msgid "Warning"
 msgstr "Предупреждение"
 
-#: views/configurations/update_schema_error.php:5
+#: views/configurations/update_schema_error.php:6
 msgid "Update is not available."
 msgstr "Обновление не доступно."
 
@@ -5997,11 +6474,11 @@ msgstr ""
 msgid "Documentation"
 msgstr "Документация"
 
-#: views/promo/activation.php:6
+#: views/promo/activation.php:8
 msgid "Your copy of the free software has not been activated."
 msgstr "Ваша копия бесплатного программного обеспечения не активирована."
 
-#: views/promo/activation.php:7
+#: views/promo/activation.php:9
 msgid ""
 "We recommend that you activate your copy of the free software for stable "
 "updates and better performance."
@@ -6010,16 +6487,16 @@ msgstr ""
 "обеспечения для получения стабильных обновлений и повышения "
 "производительности."
 
-#: views/promo/activation.php:8
+#: views/promo/activation.php:10
 msgid ""
 "After activation, this section will disappear and will no longer be shown."
 msgstr "После активации этот раздел исчезнет и больше не будет отображаться."
 
-#: views/promo/activation.php:19
+#: views/promo/activation.php:22
 msgid "How to activate?"
 msgstr "Как активировать?"
 
-#: views/promo/activation.php:21
+#: views/promo/activation.php:24
 msgid ""
 "Get an activation code in any available way. For example, on the official "
 "website."
@@ -6027,15 +6504,15 @@ msgstr ""
 "Получить код активации любым доступным способом. Например, на официальном "
 "сайте."
 
-#: views/promo/activation.php:22
+#: views/promo/activation.php:25
 msgid "Enter the activation code in the plugin settings."
 msgstr "Ввести полученный код активации в настройках плагина."
 
-#: views/promo/activation.php:27
+#: views/promo/activation.php:30
 msgid "Why is activation required?"
 msgstr "Зачем нужна активация?"
 
-#: views/promo/activation.php:29
+#: views/promo/activation.php:32
 msgid ""
 "You received a copy of the software completely free of charge and you can "
 "use it as is without any activation."
@@ -6043,7 +6520,7 @@ msgstr ""
 "Вы получили копию программного обеспечения совершенно бесплатно и можете "
 "использовать плагин как есть без какой-либо активации."
 
-#: views/promo/activation.php:30
+#: views/promo/activation.php:33
 msgid ""
 "However, in order to receive timely, as well as necessary updates and "
 "improvements, it is necessary to activate the current environment."
@@ -6051,7 +6528,7 @@ msgstr ""
 "Однако для получения своевременных, а также необходимых обновлений и "
 "улучшений необходимо активировать текущую среду."
 
-#: views/promo/activation.php:33
+#: views/promo/activation.php:36
 msgid ""
 "Activation is vital for the performance of the plugin and its further active "
 "development. Dont ignore activation."
@@ -6059,13 +6536,13 @@ msgstr ""
 "Активация необходима для работоспособности плагина и его дальнейшего "
 "активного развития. Не игнорируйте активацию."
 
-#: views/promo/activation.php:34
+#: views/promo/activation.php:37
 msgid "Each activation triggers a mechanism to improve the software you use."
 msgstr ""
 "Каждая активация запускает механизм улучшения используемого вами "
 "программного обеспечения."
 
-#: views/promo/activation.php:37
+#: views/promo/activation.php:40
 msgid ""
 "In addition to supporting the software you use, additional features will be "
 "added."
@@ -6073,11 +6550,11 @@ msgstr ""
 "Помимо поддержки используемого вами программного обеспечения, будут "
 "добавлены дополнительные функции."
 
-#: views/promo/activation.php:40
+#: views/promo/activation.php:43
 msgid "ATTENTION! Activation does not add the possibility of extensions."
 msgstr "ВНИМАНИЕ! Активация не добавляет возможности расширений."
 
-#: views/promo/activation.php:42
+#: views/promo/activation.php:45
 msgid ""
 "Additional features are implemented in extensions! After activation, "
 "features from extensions are not activated."
@@ -6085,7 +6562,7 @@ msgstr ""
 "Дополнительные возможности реализованы в расширениях! После активации "
 "функции из расширений не активируются."
 
-#: views/promo/activation.php:43
+#: views/promo/activation.php:46
 msgid ""
 "To add features, you need to install extensions. They are supplied by "
 "separate plugins, after activation of which the necessary features are added."
@@ -6094,15 +6571,15 @@ msgstr ""
 "отдельными плагинами, после активации которых добавляются необходимые "
 "функции."
 
-#: views/promo/activation.php:54
+#: views/promo/activation.php:56
 msgid "Do not wait until something breaks!"
 msgstr "Не ждите, пока что-нибудь сломается!"
 
-#: views/promo/activation.php:55
+#: views/promo/activation.php:57
 msgid "Activate your current copy of the software."
 msgstr "Активируйте вашу текущую копию программного обеспечения."
 
-#: views/promo/activation.php:57
+#: views/promo/activation.php:59
 msgid "Buy code:"
 msgstr "Купить код:"
 
@@ -6145,6 +6622,10 @@ msgstr "Инструменты не найдены."
 #: views/tools/empty.php:5
 msgid "As soon as the tools are installed, they will appear in this section."
 msgstr "Как только инструменты будут установлены, они появятся в этом разделе."
+
+#: views/tools/item.php:14
+msgid "Open tool"
+msgstr "Открыть инструмент"
 
 #: views/wizards/error.php:3
 msgid "Error. Step not found or unavailable."
@@ -6238,11 +6719,11 @@ msgstr "https://wordpress.org/plugins/wc1c-main/"
 
 #. Description of the plugin/theme
 msgid ""
-"Implementation of a mechanism for flexible exchange of various data between "
-"1C products and the WooCommerce plugin."
+"Implementing a flexible mechanism for exchanging various data between 1C "
+"Company products and the WooCommerce plugin."
 msgstr ""
-"Реализация механизма гибкого обмена различными данными между продуктами 1С и "
-"плагином WooCommerce."
+"Реализация гибкого механизма обмена различными данными между продуктами "
+"фирмы 1С и плагином WooCommerce."
 
 #. Author of the plugin/theme
 msgid "WC1C team"
@@ -6251,6 +6732,70 @@ msgstr "Команда WC1C"
 #. Author URI of the plugin/theme
 msgid "https://wc1c.info"
 msgstr "https://wc1c.info"
+
+#~ msgid "Product update has been successfully completed."
+#~ msgstr "Обновление продукта успешно завершено."
+
+#~ msgid "Classifier processing."
+#~ msgstr "Обработка классификатора."
+
+#~ msgid ""
+#~ "All events of the selected level will be recorded the Receiver events in "
+#~ "the log file. The higher the level, the less data is recorded."
+#~ msgstr ""
+#~ "Все события выбранного уровня будут записаны как события приемника в файл "
+#~ "журнала. Чем выше уровень, тем меньше данных записывается."
+
+#~ msgid ""
+#~ "It is convenient to use for debugging missing requests from 1C to the "
+#~ "site in case need to understand on which side there is a problem with the "
+#~ "connection."
+#~ msgstr ""
+#~ "Его удобно использовать для отладки пропавших запросов от 1С к сайту в "
+#~ "случае, если нужно понять, на какой стороне есть проблема с соединением."
+
+#~ msgid "More schemas for configurations"
+#~ msgstr "Больше схем для конфигураций"
+
+#~ msgid "The SKU assignment for the product has been successfully completed."
+#~ msgstr "Назначение артикула для продукта успешно выполнено."
+
+#~ msgid "An exception was thrown decode the offer."
+#~ msgstr "При декодировании предложения возникло исключение."
+
+#~ msgid "Product images assign completed successfully."
+#~ msgstr "Назначение изображений продукта успешно завершено."
+
+#~ msgid "Create configuration error. Name exists."
+#~ msgstr "Ошибка создания конфигурации. Наименование существует."
+
+#~ msgid "Deleting error. Please retry again."
+#~ msgstr "Ошибка при удалении. Пожалуйста, попробуйте еще раз."
+
+#~ msgid "Deleting error. Please retry."
+#~ msgstr "Ошибка удаления. Пожалуйста повторите."
+
+#~ msgid "Login"
+#~ msgstr "Логин"
+
+#~ msgid "Save success."
+#~ msgstr "Успешное сохранение."
+
+#~ msgid "Timer is not loaded."
+#~ msgstr "Таймер не загружен."
+
+#~ msgid "Init extension exception:"
+#~ msgstr "Исключение инициализации расширения:"
+
+#~ msgid ""
+#~ "All events of the selected level will be recorded the schemas events in "
+#~ "the log file. The higher the level, the less data is recorded."
+#~ msgstr ""
+#~ "Все события выбранного уровня будут записаны как события схемам в файл "
+#~ "журнала. Чем выше уровень, тем меньше данных записывается."
+
+#~ msgid "in"
+#~ msgstr "в"
 
 #~ msgid ""
 #~ "The extended state is required for users, while this token is used for "

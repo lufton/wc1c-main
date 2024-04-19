@@ -377,4 +377,12 @@ class Reader
     {
         return $this->xml_reader->nodeType === XMLReader::ELEMENT;
     }
+
+    /**
+     * @return string
+     */
+    public function getFile(): string
+    {
+        return $this->file;
+    }
 }
